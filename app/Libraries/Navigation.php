@@ -44,7 +44,7 @@ class Navigation
         $data_ref_modul = $this->db->query("SELECT
                                             ref_modul_akses_label
                                         FROM
-                                            ref_modul_akses 
+                                            ref_modul_akses
                                         WHERE
                                             lower(ref_modul_akses_label) = '".trim(strtolower($controller))."'")->getRowArray();
         if(!empty($data_ref_modul)){
@@ -52,13 +52,13 @@ class Navigation
             $data_modul = $this->db->query("SELECT
                                                 ref_modul_akses_label
                                             FROM
-                                                ref_modul_akses 
+                                                ref_modul_akses
                                             WHERE
                                                 ref_modul_akses_group_id IN (
                                             SELECT
-                                                ref_user_akses_group_id 
+                                                ref_user_akses_group_id
                                             FROM
-                                                ref_user_akses 
+                                                ref_user_akses
                                             WHERE
                                                 ref_user_akses_user_id = ".$user['user_id'].")
                                                 and lower(ref_modul_akses_label) = '".trim(strtolower($controller))."'")->getRowArray();
@@ -78,6 +78,11 @@ class Navigation
             array(
                 'label'         => 'Pencarian RUTA',
                 'controller'    => 'admin/ruta',
+                'icon'          => 'fa-home',
+            ),
+            array(
+                'label'         => 'Berita',
+                'controller'    => 'admin/berita',
                 'icon'          => 'fa-home',
             ),
             array(
