@@ -12,7 +12,7 @@
  Target Server Version : 100015
  File Encoding         : 65001
 
- Date: 08/12/2020 21:27:32
+ Date: 08/12/2020 22:18:53
 */
 
 
@@ -112,6 +112,17 @@ CREATE TABLE "public"."berita" (
 INSERT INTO "public"."berita" VALUES (1, 'banjir', '2020-12-06', 'berita <br> banjir', 'foto1.jpg');
 
 -- ----------------------------
+-- Table structure for gallery
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."gallery";
+CREATE TABLE "public"."gallery" (
+  "gallery_id" int4 NOT NULL,
+  "gallery_nama" varchar(255) COLLATE "pg_catalog"."default",
+  "gallery_foto" varchar(255) COLLATE "pg_catalog"."default"
+)
+;
+
+-- ----------------------------
 -- Table structure for karyawan
 -- ----------------------------
 DROP TABLE IF EXISTS "public"."karyawan";
@@ -196,6 +207,17 @@ CREATE TABLE "public"."ruta" (
 ;
 
 -- ----------------------------
+-- Table structure for slide
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."slide";
+CREATE TABLE "public"."slide" (
+  "slide_id" int4 NOT NULL,
+  "slide_judul" varchar(255) COLLATE "pg_catalog"."default",
+  "slide_foto" varchar(255) COLLATE "pg_catalog"."default"
+)
+;
+
+-- ----------------------------
 -- Table structure for user
 -- ----------------------------
 DROP TABLE IF EXISTS "public"."user";
@@ -258,6 +280,11 @@ SELECT setval('"public"."user_user_id_seq"', 2, false);
 ALTER TABLE "public"."berita" ADD CONSTRAINT "berita_pkey" PRIMARY KEY ("berita_id");
 
 -- ----------------------------
+-- Primary Key structure for table gallery
+-- ----------------------------
+ALTER TABLE "public"."gallery" ADD CONSTRAINT "gallery_pkey" PRIMARY KEY ("gallery_id");
+
+-- ----------------------------
 -- Primary Key structure for table karyawan
 -- ----------------------------
 ALTER TABLE "public"."karyawan" ADD CONSTRAINT "karyawan_pkey" PRIMARY KEY ("kar_id");
@@ -281,6 +308,11 @@ ALTER TABLE "public"."ref_user_akses" ADD CONSTRAINT "ref_user_akses_pkey" PRIMA
 -- Primary Key structure for table ruta
 -- ----------------------------
 ALTER TABLE "public"."ruta" ADD CONSTRAINT "ruta_pkey" PRIMARY KEY ("ruta_id");
+
+-- ----------------------------
+-- Primary Key structure for table slide
+-- ----------------------------
+ALTER TABLE "public"."slide" ADD CONSTRAINT "slide_pkey" PRIMARY KEY ("slide_id");
 
 -- ----------------------------
 -- Primary Key structure for table user
