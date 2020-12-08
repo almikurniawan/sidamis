@@ -11,7 +11,7 @@ class Berita extends BaseController
     public function index()
     {
         $data['grid']   = $this->grid();
-        // $data['search'] = $this->search();
+        $data['search'] = $this->search();
         $data['title']  = 'Berita';
 
         return view('admin/berita/list', $data);
@@ -20,13 +20,16 @@ class Berita extends BaseController
     public function grid()
     {
         $SQL = "SELECT
-                    user_id AS ID,user_name,
-                    ARRAY_TO_STRING(( SELECT ARRAY_AGG(ref_group_akses_label) FROM ref_user_akses left join ref_group_akses on ref_group_akses_id = ref_user_akses_group_id where ref_user_akses_user_id = user_id ),', ') as group
+                    berita_id||'/'||berita_judul as id, *,
+                    '<button onclick=\"approve('||berita_id||')\" class=\"btn btn-sm btn-success\">Approve</button>' as approve
                 FROM
-                    PUBLIC.USER";
+                    berita";
 
         $action['edit']     = array(
             'link'          => 'admin/aksesUser/edit/'
+        );
+        $action['detail']     = array(
+            'link'          => 'admin/berita/detail/'
         );
         $action['delete']     = array(
             'jsf'          => 'deleteUser'
@@ -34,35 +37,48 @@ class Berita extends BaseController
 
         $grid = new Grid();
         return $grid->set_query($SQL, array(
-                array('user_name', $this->request->getGet('user'))
-            ))
-            ->set_sort(array('id', 'desc'))
+            array('berita_judul', $this->request->getGet('berita_judul')),
+            array('berita_tanggal', $this->request->getGet('berita_tanggal'),'='),
+          ))
+            ->set_sort(array('id', 'asc'))
             // ->set_snippet(function($id, $data){
             //     $data['user_name'] = $data['user_name'];
             //     return $data;
             // })
             ->configure(
                 array(
-                    'datasouce_url' => base_url("admin/aksesUser/grid?datasource&" . get_query_string()),
+                    'datasouce_url' => base_url("admin/berita/grid?datasource&" . get_query_string()),
                     'grid_columns'  => array(
                         array(
-                            'field' => 'user_name',
-                            'title' => 'Nama User',
+                            'field' => 'berita_judul',
+                            'title' => 'Judul Berita',
                         ),
                         array(
-                            'field' => 'group',
-                            'title' => 'Group',
-                            'encoded' => false
+                            'field' => 'berita_tanggal',
+                            'title' => 'Tanggal',
+                            'format' => 'date',
                         ),
+                        array(
+                            'field' => 'berita_konten',
+                            'title' => 'Konten',
+                            'encoded'=> false
+                        ),
+                        array(
+                            'field' => 'approve',
+                            'title' => 'Approve',
+                            'encoded'=> false
+                        ),
+
                     ),
                     'action'    => $action,
                 )
             )
             ->set_toolbar(function($toolbar){
                 $toolbar
-                // ->addHtml('<a href="" class="btn">Tambah User Bos</a>')
-                ->add('add', ['label'=>'Tambah User', 'url'=> base_url("admin/aksesUser/add")])
-                ->add('download');
+                ->addHtml('<a href="" class="btn ">Print PDF</a>')
+                ->add('add', ['label'=>'Tambah berita', 'url'=> base_url("admin/berita/add")])
+                ->add('download')
+                ;
             })
             ->output();
     }
@@ -72,8 +88,14 @@ class Berita extends BaseController
         $form = new Form();
         return $form->set_form_type('search')
             ->set_form_method('GET')
-            ->set_submit_label('Cari')
-            ->add('user', 'Username', 'text', false, $this->request->getGet('user'), 'style="width:100%;" ')
+            ->set_submit_label('Search')
+            ->add('berita_judul', 'Judul berita', 'text', false, $this->request->getGet('berita_judul'), 'style="width:100%;" ')
+            ->add('berita_tanggal', 'Judul tanggal', 'date', false, $this->request->getGet('berita_tanggal'), 'style="width:100%;" ')
+            ->add('berita_tipe', 'Judul tipe', 'select', false, $this->request->getGet('berita_tipe'), 'style="width:100%;" ', array(
+              'table'=>'public.user',
+              'id' => 'user_id',
+              'label' => 'user_name'
+            ))
             ->output();
     }
 
@@ -81,7 +103,7 @@ class Berita extends BaseController
     {
         $data['title']  = 'Tambah user';
         $data['form']   = $this->form();
-        $data['url_back']= base_url("admin/aksesUser");
+        $data['url_back']= base_url("admin/berita");
         return view('global/form', $data);
     }
 
@@ -123,16 +145,17 @@ class Berita extends BaseController
         }
 
         $form = new Form();
-        $form->set_attribute_form('class="form-horizontal"')->set_form_action(base_url(('admin/aksesUser/form/' . $id)))
+        $form->set_attribute_form('class="form-horizontal"')
             ->add('user_namalengkap', 'Nama Lengkap', 'text', true, ($data) ? $data['user_namalengkap'] : '', 'style="width:100%;"')
             ->add('user_name', 'Username', 'text', true, ($data) ? $data['user_name'] : '', 'style="width:100%;"')
             ->add('user_password', 'Password', 'password', false, '', 'style="width:100%;"')
-            ->add('ref_user_akses_group_id', 'Nama Group', 'select_multiple', true, ($data) ? $group : '', ' style="width:100%;"', array(
+            ->add('ref_user_akses_group_id', 'Nama Group', 'select_multiple', false, ($data) ? $group : '', ' style="width:100%;"', array(
                 'table' => 'ref_group_akses',
                 'id' => 'ref_group_akses_id',
                 'label' => 'ref_group_akses_label',
             ));
         if ($form->formVerified()) {
+            die(print_r($form->get_data()));
             $data_insert = array(
                 'user_namalengkap'    => $this->request->getPost('user_namalengkap'),
                 'user_name'    => $this->request->getPost('user_name'),

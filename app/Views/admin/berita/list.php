@@ -8,7 +8,7 @@
                     <?= $title ?>
                 </h1>
                 <hr/>
-                <?= $grid ?>
+                <?= $search.$grid ?>
             </div>
         </div>
     </div>
@@ -16,7 +16,7 @@
 <script>
     function deleteUser(id) {
         kendo.confirm("Yakin ingin delete data ini?").then(function() {
-            $.post("<?= base_url('admin/aksesUser/delete') ?>", {
+            $.post("<?= base_url('admin/berita/delete') ?>", {
                 id: id
             }, function(result) {
                 if (result.status) {
@@ -27,6 +27,9 @@
                 }
             }, 'json');
         }, function() {});
+    }
+    function approve(berita_id){
+      alert(berita_id)
     }
 </script>
 <?= $this->endSection() ?>

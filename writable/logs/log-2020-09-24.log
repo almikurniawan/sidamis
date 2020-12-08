@@ -1,0 +1,179 @@
+CRITICAL - 2020-09-24 01:31:43 --> Call to undefined method App\Controllers\Admin\Survey::formSurveyEdit()
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->edit('20')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-24 01:42:42 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('admin/survey/ed...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('admin/survey/ed...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-24 01:42:48 --> Undefined variable: group
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 131, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(85): App\Controllers\Admin\AksesUser->form()
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->add()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-24 01:43:08 --> pg_query(): Query failed: ERROR:  syntax error at or near &quot;and&quot;
+LINE 1: ...join survey_detail on survey_det_head_id = 20 and and survey...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #179, 'select ref_prod...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select ref_prod...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select ref_prod...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Survey.php(132): CodeIgniter\Database\BaseConnection->query('select ref_prod...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Survey.php(125): App\Controllers\Admin\Survey->formSurveyEdit('20')
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->edit('20')
+#7 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-09-24 01:46:56 --> Undefined variable: data_detail
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Survey.php(145): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 145, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->formSurveyEdit('20')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-24 01:55:14 --> Undefined index: ref_produk_var_satuan_id
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\RefProdukVarian.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 133, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\RefProdukVarian.php(90): App\Controllers\Admin\RefProdukVarian->form()
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\RefProdukVarian->add()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefProdukVarian))
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-24 02:00:07 --> Invalid file: admin/refProdukSatuan.php
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/refProduk...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/refProduk...', Array, true)
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\RefProdukSatuan.php(30): view('admin/refProduk...', Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\RefProdukSatuan->index()
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\RefProdukSatuan))
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-24 02:31:39 --> pg_query(): Query failed: ERROR:  column &quot;id&quot; does not exist
+LINE 14: ...      survey_det_tanggal = '2020-09-24') order by id asc lim...
+                                                              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #180, 'SELECT\r\n       ...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Survey.php(219): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->gridBelumSurvey('2020-09-24')
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-24 02:31:39 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-24 02:31:52 --> pg_query(): Query failed: ERROR:  column &quot;id&quot; does not exist
+LINE 14: ...      survey_det_tanggal = '2020-09-24') order by id asc lim...
+                                                              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #180, 'SELECT\r\n       ...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Survey.php(219): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->gridBelumSurvey('2020-09-24')
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-24 21:32:35 --> Undefined variable: title
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Views\admin\validasi.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 8, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/validasi', Array, true)
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Validasi.php(17): view('admin/validasi', Array)
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Validasi->index()
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Validasi))
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-24 21:32:41 --> Undefined variable: title
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Views\admin\validasi.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 8, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/validasi', Array, true)
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Validasi.php(17): view('admin/validasi', Array)
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Validasi->index()
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Validasi))
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-24 21:34:27 --> Undefined variable: title
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Views\admin\validasi.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 8, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/validasi', Array, true)
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Validasi.php(17): view('admin/validasi', Array)
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Validasi->index()
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Validasi))
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-24 23:23:04 --> Trying to access array offset on value of type null
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\Navigation.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp7\\htdoc...', 54, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\Navigation.php(23): App\Libraries\Navigation->cek_akses('admin/survey')
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\Navigation.php(15): App\Libraries\Navigation->gen_menu()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\Cell.php(149): App\Libraries\Navigation->menu()
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Common.php(1140): CodeIgniter\View\Cell->render('\\App\\Libraries\\...', NULL, 0, 'AppLibrariesNav...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Views\template\default.php(116): view_cell('\\App\\Libraries\\...')
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#7 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\View.php(257): CodeIgniter\View\View->render('template/defaul...', Array, true)
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/admin', Array, true)
+#9 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(30): view('admin/admin', Array)
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#11 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#12 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2020-09-24 23:23:06 --> Trying to access array offset on value of type null
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\Navigation.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp7\\htdoc...', 54, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\Navigation.php(23): App\Libraries\Navigation->cek_akses('admin/survey')
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\Navigation.php(15): App\Libraries\Navigation->gen_menu()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\Cell.php(149): App\Libraries\Navigation->menu()
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Common.php(1140): CodeIgniter\View\Cell->render('\\App\\Libraries\\...', NULL, 0, 'AppLibrariesNav...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Views\template\default.php(116): view_cell('\\App\\Libraries\\...')
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#7 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\View.php(257): CodeIgniter\View\View->render('template/defaul...', Array, true)
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/admin', Array, true)
+#9 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(30): view('admin/admin', Array)
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#11 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#12 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2020-09-24 23:30:25 --> Class 'App\Filters\Navigation' not found
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Filters\Filters.php(173): App\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(382): CodeIgniter\Filters\Filters->run('admin/home', 'before')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-24 23:36:33 --> Invalid file: forbidden.php
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('forbidden.php')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('forbidden', Array, true)
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Config\Routes.php(36): view('forbidden')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(859): CodeIgniter\CodeIgniter->Config\{closure}()
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}

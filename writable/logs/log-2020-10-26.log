@@ -1,0 +1,106 @@
+CRITICAL - 2020-10-26 02:04:35 --> Call to undefined method App\Controllers\Admin\Pengajuan::formPengajuan()
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(131): App\Controllers\Admin\Pengajuan->step1('2', '17')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->pengajuan('2', '17')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-26 02:06:21 --> Class 'App\Libraries\Tcpdf\TCPDF' not found
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(365): require_once()
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\P...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\P...')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Cetak.php(13): spl_autoload_call('App\\Libraries\\P...')
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Cetak->profil()
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-10-26 02:08:39 --> require(C:\xampp7\htdocs\apps\dinkop\app\Controllers/vendor/autoload.php): failed to open stream: No such file or directory
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Cetak.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\xamp...', 'C:\\xampp7\\htdoc...', 15, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Cetak.php(15): require()
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Cetak->profil()
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-26 02:12:19 --> Call to undefined method App\Controllers\Admin\Pengajuan::table()
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(86): App\Controllers\Admin\Pengajuan->stepper_form('5')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('5')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-26 02:13:42 --> Invalid file: admin/pengajuan/stepper_form_jenis_2.php
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/pengajuan...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pengajuan...', Array, true)
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(111): view('admin/pengajuan...', Array)
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(86): App\Controllers\Admin\Pengajuan->stepper_form('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('5')
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-26 02:14:05 --> require(C:\xampp7\htdocs\apps\dinkop\app\Controllers/vendor/autoload.php): failed to open stream: No such file or directory
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Cetak.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\xamp...', 'C:\\xampp7\\htdoc...', 15, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Cetak.php(15): require()
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Cetak->profil()
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-26 02:19:15 --> syntax error, unexpected '';' (T_CONSTANT_ENCAPSED_STRING)
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('cetak/profil')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('cetak/profil')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-26 02:27:09 --> Undefined variable: html
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Cetak.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 28, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Cetak->profil()
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-26 02:27:11 --> Undefined variable: html
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Cetak.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 28, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Cetak->profil()
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-26 02:27:33 --> Undefined variable: transaksi
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Cetak.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 27, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Cetak->profil()
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-26 03:01:56 --> Undefined index: peng_jam_jenis_bpkb
+#0 C:\xampp7\htdocs\apps\dinkop\app\Views\admin\pengajuan\sf_step3_jenis2.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 16, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pengajuan...', Array, true)
+#3 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Form.php(350): view('admin/pengajuan...', Array)
+#4 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(677): App\Libraries\SmartComponent\Form->output()
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(608): App\Controllers\Admin\Pengajuan->formStep3Jenis2('5')
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(106): App\Controllers\Admin\Pengajuan->formStep3('5')
+#7 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(86): App\Controllers\Admin\Pengajuan->stepper_form('5')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('5')
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#10 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-10-26 03:09:32 --> Cannot redeclare App\Controllers\Admin\Pengajuan::formStep3Jenis3()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-26 03:10:25 --> Undefined variable: id
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(709): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 709, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(699): App\Controllers\Admin\Pengajuan->formStep4Jenis2('5')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(108): App\Controllers\Admin\Pengajuan->formStep4('5')
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(86): App\Controllers\Admin\Pengajuan->stepper_form('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('5')
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

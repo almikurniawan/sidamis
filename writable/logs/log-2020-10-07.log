@@ -1,0 +1,18 @@
+CRITICAL - 2020-10-07 21:07:46 --> Call to undefined method CodeIgniter\HTTP\Response::json()
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Komoditas->index()
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Komoditas))
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-10-07 21:07:57 --> Call to undefined method CodeIgniter\HTTP\Response::withJson()
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Komoditas->index()
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Komoditas))
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-10-07 21:08:16 --> Call to undefined method CodeIgniter\HTTP\Response::JSON()
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Komoditas->index()
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Komoditas))
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
