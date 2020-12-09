@@ -12,7 +12,7 @@
  Target Server Version : 100015
  File Encoding         : 65001
 
- Date: 08/12/2020 22:18:53
+ Date: 09/12/2020 13:15:33
 */
 
 
@@ -102,7 +102,7 @@ CREATE TABLE "public"."berita" (
   "berita_judul" varchar(255) COLLATE "pg_catalog"."default",
   "berita_tanggal" date,
   "berita_konten" varchar(255) COLLATE "pg_catalog"."default",
-  "foto" varchar(255) COLLATE "pg_catalog"."default"
+  "berita_foto" varchar(255) COLLATE "pg_catalog"."default"
 )
 ;
 
@@ -112,15 +112,71 @@ CREATE TABLE "public"."berita" (
 INSERT INTO "public"."berita" VALUES (1, 'banjir', '2020-12-06', 'berita <br> banjir', 'foto1.jpg');
 
 -- ----------------------------
+-- Table structure for dinas
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."dinas";
+CREATE TABLE "public"."dinas" (
+  "dinas_id" int4 NOT NULL,
+  "dinas_nama" varchar(255) COLLATE "pg_catalog"."default",
+  "dinas_logo" varchar(255) COLLATE "pg_catalog"."default",
+  "dinas_link" varchar(255) COLLATE "pg_catalog"."default"
+)
+;
+
+-- ----------------------------
 -- Table structure for gallery
 -- ----------------------------
 DROP TABLE IF EXISTS "public"."gallery";
 CREATE TABLE "public"."gallery" (
   "gallery_id" int4 NOT NULL,
   "gallery_nama" varchar(255) COLLATE "pg_catalog"."default",
-  "gallery_foto" varchar(255) COLLATE "pg_catalog"."default"
+  "gallery_foto" varchar(255) COLLATE "pg_catalog"."default",
+  "gallery_deskripsi" varchar(255) COLLATE "pg_catalog"."default",
+  "kategori_id" int4
 )
 ;
+
+-- ----------------------------
+-- Records of gallery
+-- ----------------------------
+INSERT INTO "public"."gallery" VALUES (1, 'Kegiatan 1', 'foto1.jpg', 'snsisjss', 1);
+INSERT INTO "public"."gallery" VALUES (2, 'Event 1', 'foto1.jpg', 'snj jsn snj', 2);
+
+-- ----------------------------
+-- Table structure for gallery_kategori
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."gallery_kategori";
+CREATE TABLE "public"."gallery_kategori" (
+  "gallery_kategori_id" int4 NOT NULL,
+  "kategori_nama" varchar(255) COLLATE "pg_catalog"."default"
+)
+;
+
+-- ----------------------------
+-- Records of gallery_kategori
+-- ----------------------------
+INSERT INTO "public"."gallery_kategori" VALUES (1, 'KEGIATAN');
+INSERT INTO "public"."gallery_kategori" VALUES (2, 'EVENT');
+
+-- ----------------------------
+-- Table structure for informasi
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."informasi";
+CREATE TABLE "public"."informasi" (
+  "informasi_id" int4 NOT NULL,
+  "informasi_nama" varchar(255) COLLATE "pg_catalog"."default",
+  "informasi_tanggal" date,
+  "informasi_isi" varchar(255) COLLATE "pg_catalog"."default",
+  "informasi_file" varchar(255) COLLATE "pg_catalog"."default",
+  "informasi_foto" varchar(255) COLLATE "pg_catalog"."default"
+)
+;
+
+-- ----------------------------
+-- Records of informasi
+-- ----------------------------
+INSERT INTO "public"."informasi" VALUES (2, '1', '2020-12-09', '1', '1.jpg', 'foto1.jpg');
+INSERT INTO "public"."informasi" VALUES (1, '1', '2020-12-09', '1', '1.jpg', 'foto1.jpg');
 
 -- ----------------------------
 -- Table structure for karyawan
@@ -137,6 +193,36 @@ CREATE TABLE "public"."karyawan" (
   "kar_visible" bool
 )
 ;
+
+-- ----------------------------
+-- Table structure for kontak
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."kontak";
+CREATE TABLE "public"."kontak" (
+  "kontak_id" int4 NOT NULL,
+  "kontak_nama" varchar(255) COLLATE "pg_catalog"."default",
+  "kontak_email" varchar(255) COLLATE "pg_catalog"."default",
+  "kontak_telp" varchar(255) COLLATE "pg_catalog"."default",
+  "kontak_pesan" varchar(255) COLLATE "pg_catalog"."default"
+)
+;
+
+-- ----------------------------
+-- Table structure for layanan
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."layanan";
+CREATE TABLE "public"."layanan" (
+  "layanan_id" int4 NOT NULL,
+  "layanan_nama" varchar(255) COLLATE "pg_catalog"."default",
+  "layanan_deskripsi" varchar(255) COLLATE "pg_catalog"."default",
+  "layanan_foto" varchar(255) COLLATE "pg_catalog"."default"
+)
+;
+
+-- ----------------------------
+-- Records of layanan
+-- ----------------------------
+INSERT INTO "public"."layanan" VALUES (1, 'SIDAMIS', 'SIDAMIS', 'foto1.jpg');
 
 -- ----------------------------
 -- Table structure for ref_group_akses
@@ -213,9 +299,16 @@ DROP TABLE IF EXISTS "public"."slide";
 CREATE TABLE "public"."slide" (
   "slide_id" int4 NOT NULL,
   "slide_judul" varchar(255) COLLATE "pg_catalog"."default",
+  "slide_tag" varchar(255) COLLATE "pg_catalog"."default",
   "slide_foto" varchar(255) COLLATE "pg_catalog"."default"
 )
 ;
+
+-- ----------------------------
+-- Records of slide
+-- ----------------------------
+INSERT INTO "public"."slide" VALUES (1, 'Slide 1', 'slide 1 merupakan ......', 'foto1.jpg');
+INSERT INTO "public"."slide" VALUES (2, 'Slide 2', 'slide 2 merupakan ......', 'foto2.jpg');
 
 -- ----------------------------
 -- Table structure for user
@@ -280,14 +373,39 @@ SELECT setval('"public"."user_user_id_seq"', 2, false);
 ALTER TABLE "public"."berita" ADD CONSTRAINT "berita_pkey" PRIMARY KEY ("berita_id");
 
 -- ----------------------------
+-- Primary Key structure for table dinas
+-- ----------------------------
+ALTER TABLE "public"."dinas" ADD CONSTRAINT "dinas_pkey" PRIMARY KEY ("dinas_id");
+
+-- ----------------------------
 -- Primary Key structure for table gallery
 -- ----------------------------
 ALTER TABLE "public"."gallery" ADD CONSTRAINT "gallery_pkey" PRIMARY KEY ("gallery_id");
 
 -- ----------------------------
+-- Primary Key structure for table gallery_kategori
+-- ----------------------------
+ALTER TABLE "public"."gallery_kategori" ADD CONSTRAINT "gallery_kategori_pkey" PRIMARY KEY ("gallery_kategori_id");
+
+-- ----------------------------
+-- Primary Key structure for table informasi
+-- ----------------------------
+ALTER TABLE "public"."informasi" ADD CONSTRAINT "informasi_pkey" PRIMARY KEY ("informasi_id");
+
+-- ----------------------------
 -- Primary Key structure for table karyawan
 -- ----------------------------
 ALTER TABLE "public"."karyawan" ADD CONSTRAINT "karyawan_pkey" PRIMARY KEY ("kar_id");
+
+-- ----------------------------
+-- Primary Key structure for table kontak
+-- ----------------------------
+ALTER TABLE "public"."kontak" ADD CONSTRAINT "kontak_pkey" PRIMARY KEY ("kontak_id");
+
+-- ----------------------------
+-- Primary Key structure for table layanan
+-- ----------------------------
+ALTER TABLE "public"."layanan" ADD CONSTRAINT "layanan_pkey" PRIMARY KEY ("layanan_id");
 
 -- ----------------------------
 -- Primary Key structure for table ref_group_akses

@@ -16,3 +16,7 @@
 
 <!-- Template Main CSS File -->
 <link href="<?php echo base_url();?>/frontend/assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="<?php echo base_url();?>/frontend/webfont/demo-files/demo.css">
+<link rel="stylesheet" href="<?php echo base_url();?>/frontend/webfont/style.css">
+<!--[if lt IE 8]><!-->
+<link rel="stylesheet" href="<?php echo base_url();?>/frontend/webfont/ie7/ie7.css">

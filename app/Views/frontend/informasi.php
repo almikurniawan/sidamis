@@ -30,10 +30,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Berita</h2>
+          <h2>informasi</h2>
           <ol>
             <li><a href="<?php echo base_url();?>">Beranda</a></li>
-            <li>Berita</li>
+            <li>informasi</li>
           </ol>
         </div>
 
@@ -49,33 +49,35 @@
 
 
 
-           <?php foreach($berita as $row):?>
-          <div class="col-lg-4  col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+           <?php foreach($informasi as $row):?>
+          <div class="col-lg-12  col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <article class="entry">
 
               <div class="entry-img">
-                <img src="<?php echo base_url();?>/uploads/berita/<?= $row->berita_foto;?>" alt="" class="img-fluid">
+                <img src="<?php echo base_url();?>/uploads/informasi/<?= $row->informasi_foto;?>" alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
-                <a href="blog-single.html"><?= $row->berita_judul;?></a>
+                <a href="<?php echo base_url();?>/informasi/detail/<?= $row->informasi_id;?>"><?= $row->informasi_nama;?></a>
               </h2>
 
               <div class="entry-meta">
                 <ul>
                   <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">Admin</a></li>
-                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="<?php echo base_url();?>/berita/detail/<?= $row->berita_id;?>"><time datetime="2020-01-01"><?= $row->berita_tanggal;?></time></a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="<?php echo base_url();?>/informasi/detail/<?= $row->informasi_id;?>"><time datetime="2020-01-01"><?= $row->informasi_tanggal;?></time></a></li>
                 </ul>
               </div>
 
               <div class="entry-content">
                 <p>
-                  <?= $row->berita_konten;?>
+                  <?= $row->informasi_isi;?>
                 <div class="read-more">
-                  <a href="<?php echo base_url();?>/berita/detail/<?= $row->berita_id;?>">Baca selengkapnya</a>
+                  <a href="<?php echo base_url();?>/informasi/detail/<?= $row->informasi_id;?>">Baca selengkapnya</a>
                 </div>
               </div>
-
+              <div class="social">
+                <a href="<?php echo base_url();?>/uploads/informasi/<?= $row->informasi_file;?>"><h1><i class="icofont-download"></i></h1> Download file</a>
+              </div>
             </article><!-- End blog entry -->
           </div>
         <?php endforeach;?>

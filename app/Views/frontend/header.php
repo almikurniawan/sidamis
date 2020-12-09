@@ -17,15 +17,14 @@
             <li><a href="about.html">Struktur Organisasi</a></li>
           </ul>
         </li>
-        <li><a href="pricing.html">Informasi umum</a></li>
+        <li><a href="<?php echo base_url();?>/informasi">Informasi umum</a></li>
         <li><a href="services.html">Layanan</a></li>
-        <li><a href="portfolio.html">Gallery</a></li>
+        <li><a href="<?php echo base_url();?>/gallery">Gallery</a></li>
         <li><a href="<?php echo base_url();?>/berita">Berita</a></li>
-        <li><a href="contact.html">Kontak</a></li>
 
     </nav><!-- .nav-menu -->
 
-    <a href="index.html" class="get-started-btn ml-auto">Get Started</a>
+    <a href="index.html" class="get-started-btn ml-auto">Kontak</a>
 
   </div>
 </header><!-- End Header -->
