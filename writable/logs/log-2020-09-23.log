@@ -1,0 +1,1004 @@
+CRITICAL - 2020-09-23 03:01:00 --> Undefined property: CodeIgniter\View\View::$request
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Views\admin\rekap.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp7\\htdoc...', 17, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/rekap', Array, true)
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(28): view('admin/rekap', Array)
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->index()
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 03:01:01 --> Undefined property: CodeIgniter\View\View::$request
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Views\admin\rekap.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp7\\htdoc...', 17, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/rekap', Array, true)
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(28): view('admin/rekap', Array)
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->index()
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 03:01:02 --> Undefined property: CodeIgniter\View\View::$request
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Views\admin\rekap.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp7\\htdoc...', 17, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/rekap', Array, true)
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(28): view('admin/rekap', Array)
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->index()
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 03:01:02 --> Undefined property: CodeIgniter\View\View::$request
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Views\admin\rekap.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp7\\htdoc...', 17, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/rekap', Array, true)
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(28): view('admin/rekap', Array)
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->index()
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 03:01:02 --> Undefined property: CodeIgniter\View\View::$request
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Views\admin\rekap.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp7\\htdoc...', 17, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/rekap', Array, true)
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(28): view('admin/rekap', Array)
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->index()
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 03:01:03 --> Undefined property: CodeIgniter\View\View::$request
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Views\admin\rekap.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp7\\htdoc...', 17, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/rekap', Array, true)
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(28): view('admin/rekap', Array)
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->index()
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 03:04:33 --> Invalid file: admin/aksesModul.php
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/aksesModu...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/aksesModu...', Array, true)
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesModul.php(30): view('admin/aksesModu...', Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesModul->index()
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesModul))
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-23 03:10:58 --> Undefined index: ref_modul_akses_group_id
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesModul.php(127): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 127, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesModul.php(81): App\Controllers\Admin\AksesModul->form()
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesModul->add()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesModul))
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 03:11:59 --> Undefined index: ref_modul_akses_group_id
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesModul.php(127): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 127, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesModul.php(81): App\Controllers\Admin\AksesModul->form()
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesModul->add()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesModul))
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 03:15:40 --> pg_query(): Query failed: ERROR:  function lower(integer) does not exist
+LINE 2: ...f_modul_akses_group_id = ref_group_akses_id where lower(ref_...
+                                                             ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #121, 'select ref_modu...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select ref_modu...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select ref_modu...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(74): CodeIgniter\Database\BaseConnection->query('select ref_modu...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(129): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(94): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesModul.php(67): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesModul->grid()
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesModul))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 03:15:41 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-23 03:16:03 --> pg_query(): Query failed: ERROR:  function lower(integer) does not exist
+LINE 2: ...f_modul_akses_group_id = ref_group_akses_id where lower(ref_...
+                                                             ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #121, 'select ref_modu...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select ref_modu...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select ref_modu...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(74): CodeIgniter\Database\BaseConnection->query('select ref_modu...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(129): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(94): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesModul.php(67): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesModul->grid()
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesModul))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 03:16:03 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-23 03:16:26 --> pg_query(): Query failed: ERROR:  function lower(integer) does not exist
+LINE 2: ...f_modul_akses_group_id = ref_group_akses_id where lower(ref_...
+                                                             ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #121, 'select ref_modu...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select ref_modu...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select ref_modu...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(74): CodeIgniter\Database\BaseConnection->query('select ref_modu...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(129): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(94): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesModul.php(67): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesModul->grid()
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesModul))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 03:16:26 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-23 03:16:28 --> pg_query(): Query failed: ERROR:  function lower(integer) does not exist
+LINE 2: ...f_modul_akses_group_id = ref_group_akses_id where lower(ref_...
+                                                             ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #121, 'select ref_modu...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select ref_modu...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select ref_modu...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(74): CodeIgniter\Database\BaseConnection->query('select ref_modu...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(129): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(94): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesModul.php(67): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesModul->grid()
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesModul))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 03:16:28 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-23 03:16:35 --> pg_query(): Query failed: ERROR:  function lower(integer) does not exist
+LINE 2: ...f_modul_akses_group_id = ref_group_akses_id where lower(ref_...
+                                                             ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #121, 'select ref_modu...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select ref_modu...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select ref_modu...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(74): CodeIgniter\Database\BaseConnection->query('select ref_modu...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(129): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(94): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesModul.php(67): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesModul->grid()
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesModul))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 03:16:35 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-23 03:16:37 --> pg_query(): Query failed: ERROR:  function lower(integer) does not exist
+LINE 2: ...f_modul_akses_group_id = ref_group_akses_id where lower(ref_...
+                                                             ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #121, 'select ref_modu...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select ref_modu...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select ref_modu...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(74): CodeIgniter\Database\BaseConnection->query('select ref_modu...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(129): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(94): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesModul.php(67): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesModul->grid()
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesModul))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 03:16:37 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-23 03:17:41 --> pg_query(): Query failed: ERROR:  column &quot;ref_produk_label&quot; does not exist
+LINE 14: ...rvey_detail.survey_det_produk_var_id = 2 order by ref_produk...
+                                                              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #121, 'SELECT\r\n       ...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(74): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(129): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(94): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(150): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->gridRekapDetail('2020-09-17', '2')
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 03:17:41 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-23 03:17:47 --> pg_query(): Query failed: ERROR:  column &quot;ref_produk_label&quot; does not exist
+LINE 14: ...rvey_detail.survey_det_produk_var_id = 2 order by ref_produk...
+                                                              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #121, 'SELECT\r\n       ...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(74): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(129): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(94): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(150): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->gridRekapDetail('2020-09-17', '2')
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 03:17:47 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-23 03:18:05 --> pg_query(): Query failed: ERROR:  column &quot;ref_produk_label&quot; does not exist
+LINE 14: ...rvey_detail.survey_det_produk_var_id = 2 order by ref_produk...
+                                                              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #121, 'SELECT\r\n       ...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(74): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(129): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(94): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(150): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->gridRekapDetail('2020-09-17', '2')
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 03:21:06 --> Invalid file: admin/aksesUser.php
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/aksesUser...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/aksesUser', Array, true)
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(30): view('admin/aksesUser', Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->index()
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-23 03:23:11 --> Undefined index: toolbar
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 50, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(65): App\Libraries\SmartComponent\Grid->configure(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(26): App\Controllers\Admin\AksesUser->grid()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->index()
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-23 03:23:14 --> Undefined index: toolbar
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 50, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(65): App\Libraries\SmartComponent\Grid->configure(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(26): App\Controllers\Admin\AksesUser->grid()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->index()
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-23 03:24:11 --> Undefined index: toolbar
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 50, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(66): App\Libraries\SmartComponent\Grid->configure(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(26): App\Controllers\Admin\AksesUser->grid()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->index()
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-23 03:25:43 --> pg_query(): Query failed: ERROR:  column &quot;user_id&quot; does not exist
+LINE 3:         left join user on user_id = ref_user_akses_user_id o...
+                                  ^
+HINT:  Perhaps you meant to reference the column &quot;user.user&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #121, 'select ref_user...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select ref_user...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select ref_user...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(74): CodeIgniter\Database\BaseConnection->query('select ref_user...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(131): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(96): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(68): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->grid()
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 03:25:43 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-23 03:26:17 --> pg_query(): Query failed: ERROR:  column &quot;user_id&quot; does not exist
+LINE 3:         left join user on user_id = ref_user_akses_user_id o...
+                                  ^
+HINT:  Perhaps you meant to reference the column &quot;user.user&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #121, 'select ref_user...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select ref_user...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select ref_user...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(74): CodeIgniter\Database\BaseConnection->query('select ref_user...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(131): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(96): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(68): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->grid()
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 03:26:17 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-23 03:27:06 --> pg_query(): Query failed: ERROR:  column &quot;user_id&quot; does not exist
+LINE 3:         left join user on user_id = ref_user_akses_user_id o...
+                                  ^
+HINT:  Perhaps you meant to reference the column &quot;user.user&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #121, 'select ref_user...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select ref_user...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select ref_user...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(74): CodeIgniter\Database\BaseConnection->query('select ref_user...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(131): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(96): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(68): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->grid()
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 03:27:06 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-23 03:28:07 --> pg_query(): Query failed: ERROR:  column &quot;user_id&quot; does not exist
+LINE 3:         left join user on user_id = ref_user_akses_user_id o...
+                                  ^
+HINT:  Perhaps you meant to reference the column &quot;user.user&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #121, 'select ref_user...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select ref_user...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select ref_user...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(74): CodeIgniter\Database\BaseConnection->query('select ref_user...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(128): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(94): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(68): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->grid()
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 03:28:07 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-23 03:33:33 --> unlink(C:\xampp7\htdocs\apps\surveypasar\writable\debugbar/debugbar_1600849145.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp7\\htdoc...', 106, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Toolbar\Collectors\History.php(106): unlink('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Toolbar.php(483): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1600850013, 20)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#5 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Events\Events.php(188): call_user_func(Object(Closure))
+#7 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#8 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-09-23 03:33:33 --> pg_query(): Query failed: ERROR:  column &quot;user_id&quot; does not exist
+LINE 3:         left join user on user_id = ref_user_akses_user_id o...
+                                  ^
+HINT:  Perhaps you meant to reference the column &quot;user.user&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #121, 'select ref_user...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select ref_user...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select ref_user...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(74): CodeIgniter\Database\BaseConnection->query('select ref_user...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(129): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(95): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(68): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->grid()
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 03:33:33 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-23 03:33:34 --> Undefined index: option
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Form.php(184): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 184, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(140): App\Libraries\SmartComponent\Form->add('ref_user_akses_...', 'Nama Group', 'select_multiple', true, '', 'multiple="multi...', Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(92): App\Controllers\Admin\AksesUser->form()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->add()
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-23 03:34:25 --> Undefined index: page
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 55, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(129): App\Libraries\SmartComponent\Datasource->run()
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(95): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(82): App\Libraries\SmartComponent\Grid->output()
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->gridRekap()
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 03:34:43 --> Undefined index: page
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 55, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(129): App\Libraries\SmartComponent\Datasource->run()
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(95): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(82): App\Libraries\SmartComponent\Grid->output()
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->gridRekap()
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 03:34:51 --> Undefined index: page
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 55, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(129): App\Libraries\SmartComponent\Datasource->run()
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(95): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(82): App\Libraries\SmartComponent\Grid->output()
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->gridRekap()
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 03:34:55 --> Undefined index: page
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 55, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(129): App\Libraries\SmartComponent\Datasource->run()
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(95): App\Libraries\SmartComponent\Grid->get_datasource()
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(82): App\Libraries\SmartComponent\Grid->output()
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->gridRekap()
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 03:39:34 --> pg_query(): Query failed: ERROR:  column &quot;user_id&quot; does not exist
+LINE 1: select user_id as id, user_name as label from user  
+               ^
+HINT:  Perhaps you meant to reference the column &quot;user.user&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #120, 'select user_id ...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select user_id ...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select user_id ...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Form.php(144): CodeIgniter\Database\BaseConnection->query('select user_id ...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(145): App\Libraries\SmartComponent\Form->add('ref_user_akses_...', 'Nama user', 'select', true, '', 'style="width:10...', Array)
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(92): App\Controllers\Admin\AksesUser->form()
+#7 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->add()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-23 03:40:31 --> pg_query(): Query failed: ERROR:  column &quot;user_id&quot; does not exist
+LINE 1: select user_id as id, user_name as label from user  
+               ^
+HINT:  Perhaps you meant to reference the column &quot;user.user&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #120, 'select user_id ...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select user_id ...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select user_id ...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Form.php(144): CodeIgniter\Database\BaseConnection->query('select user_id ...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(145): App\Libraries\SmartComponent\Form->add('ref_user_akses_...', 'Nama user', 'select', true, '', 'style="width:10...', Array)
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(92): App\Controllers\Admin\AksesUser->form()
+#7 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->add()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-23 03:41:24 --> pg_query(): Query failed: ERROR:  column &quot;user_id&quot; does not exist
+LINE 3:         left join user on user_id = ref_user_akses_user_id o...
+                                  ^
+HINT:  Perhaps you meant to reference the column &quot;user.user&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #121, 'select ref_user...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select ref_user...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select ref_user...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(74): CodeIgniter\Database\BaseConnection->query('select ref_user...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(135): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(97): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(68): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->grid()
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 03:41:24 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-23 03:41:26 --> pg_query(): Query failed: ERROR:  column &quot;user_id&quot; does not exist
+LINE 1: select user_id as id, user_name as label from user  
+               ^
+HINT:  Perhaps you meant to reference the column &quot;user.user&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #120, 'select user_id ...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select user_id ...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select user_id ...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Form.php(144): CodeIgniter\Database\BaseConnection->query('select user_id ...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(145): App\Libraries\SmartComponent\Form->add('ref_user_akses_...', 'Nama user', 'select', true, '', 'style="width:10...', Array)
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(92): App\Controllers\Admin\AksesUser->form()
+#7 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->add()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-23 03:42:46 --> pg_query(): Query failed: ERROR:  column &quot;user_id&quot; does not exist
+LINE 3:         left join user on user_id = ref_user_akses_user_id o...
+                                  ^
+HINT:  Perhaps you meant to reference the column &quot;user.user&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #121, 'select ref_user...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select ref_user...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select ref_user...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('select ref_user...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(135): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(97): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(68): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->grid()
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 03:42:46 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-23 04:02:33 --> Undefined variable: row
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Report.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 85, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(158): App\Libraries\SmartComponent\Report->output()
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(101): App\Libraries\SmartComponent\Grid->download()
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(82): App\Libraries\SmartComponent\Grid->output()
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(26): App\Controllers\Admin\Rekap->gridRekap()
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->index()
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#7 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-09-23 20:39:32 --> Undefined index: field
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Report.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 92, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(158): App\Libraries\SmartComponent\Report->output()
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(101): App\Libraries\SmartComponent\Grid->download()
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(83): App\Libraries\SmartComponent\Grid->output()
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(26): App\Controllers\Admin\Rekap->gridRekap()
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->index()
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#7 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-09-23 20:39:46 --> Undefined index: fields
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Report.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 92, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(158): App\Libraries\SmartComponent\Report->output()
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(101): App\Libraries\SmartComponent\Grid->download()
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(83): App\Libraries\SmartComponent\Grid->output()
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(26): App\Controllers\Admin\Rekap->gridRekap()
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->index()
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#7 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-09-23 20:40:38 --> Undefined index: field
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Report.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 94, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(158): App\Libraries\SmartComponent\Report->output()
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(101): App\Libraries\SmartComponent\Grid->download()
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(83): App\Libraries\SmartComponent\Grid->output()
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(26): App\Controllers\Admin\Rekap->gridRekap()
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->index()
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#7 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-09-23 20:47:26 --> Call to a member function set_row_start() on null
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(113): App\Libraries\SmartComponent\Grid->download()
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(83): App\Libraries\SmartComponent\Grid->output()
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(26): App\Controllers\Admin\Rekap->gridRekap()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->index()
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-23 20:49:13 --> Call to a member function set_header() on null
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(26): App\Controllers\Admin\Rekap->gridRekap()
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->index()
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-23 20:50:04 --> Call to a member function output() on null
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(26): App\Controllers\Admin\Rekap->gridRekap()
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->index()
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-23 20:50:16 --> Call to a member function output() on null
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(26): App\Controllers\Admin\Rekap->gridRekap()
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->index()
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-23 20:50:52 --> Call to a member function set_row_start() on null
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(115): App\Libraries\SmartComponent\Grid->download()
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(85): App\Libraries\SmartComponent\Grid->output()
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(26): App\Controllers\Admin\Rekap->gridRekap()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->index()
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-23 20:52:06 --> Invalid cell coordinate 0
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php(1248): PhpOffice\PhpSpreadsheet\Cell\Coordinate::coordinateFromString('0')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php(1208): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->createNewCell('0')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php(1109): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->getCell(0)
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Report.php(97): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->setCellValue(0, 'A1')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(174): App\Libraries\SmartComponent\Report->output()
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(115): App\Libraries\SmartComponent\Grid->download()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(85): App\Libraries\SmartComponent\Grid->output()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(26): App\Controllers\Admin\Rekap->gridRekap()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->index()
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 20:54:12 --> Invalid cell coordinate 0
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php(1248): PhpOffice\PhpSpreadsheet\Cell\Coordinate::coordinateFromString('0')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php(1208): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->createNewCell('0')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php(1109): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->getCell(0)
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Report.php(98): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->setCellValue(0, 'A1')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(174): App\Libraries\SmartComponent\Report->output()
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(115): App\Libraries\SmartComponent\Grid->download()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(85): App\Libraries\SmartComponent\Grid->output()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(26): App\Controllers\Admin\Rekap->gridRekap()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->index()
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 20:54:14 --> Invalid cell coordinate 0
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php(1248): PhpOffice\PhpSpreadsheet\Cell\Coordinate::coordinateFromString('0')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php(1208): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->createNewCell('0')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php(1109): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->getCell(0)
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Report.php(98): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->setCellValue(0, 'A1')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(174): App\Libraries\SmartComponent\Report->output()
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(115): App\Libraries\SmartComponent\Grid->download()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(85): App\Libraries\SmartComponent\Grid->output()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Rekap.php(26): App\Controllers\Admin\Rekap->gridRekap()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Rekap->index()
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Rekap))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 20:56:15 --> syntax error, unexpected ';', expecting ')'
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('admin/rekap')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('admin/rekap')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-23 21:38:24 --> Undefined index: id
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Form.php(144): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 144, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(122): App\Libraries\SmartComponent\Form->add('user_id', 'Username', 'select', true, '', 'style="width:10...')
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(85): App\Controllers\Admin\AksesUser->form()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->add()
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-23 21:38:52 --> Undefined index: id
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Form.php(144): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 144, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(124): App\Libraries\SmartComponent\Form->add('user_id', 'Username', 'select', true, '', 'style="width:10...')
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(85): App\Controllers\Admin\AksesUser->form()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->add()
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-23 21:39:58 --> Undefined index: id
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Form.php(144): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 144, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(124): App\Libraries\SmartComponent\Form->add('user_id', 'Username', 'select', true, '', 'style="width:10...')
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(85): App\Controllers\Admin\AksesUser->form()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->add()
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-23 21:49:40 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;wina&quot;
+LINE 1: ...kap&quot;, &quot;user_id&quot;, &quot;user_password&quot;) VALUES ('wina', 'wina', '4...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #180, 'INSERT INTO "us...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(149): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->form()
+#7 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-09-23 21:50:13 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;wina&quot;
+LINE 1: ...kap&quot;, &quot;user_id&quot;, &quot;user_password&quot;) VALUES ('wina', 'wina', '4...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #179, 'INSERT INTO "us...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(149): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->form()
+#7 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-09-23 21:51:12 --> Undefined index: user_name
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(125): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 125, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(85): App\Controllers\Admin\AksesUser->form()
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->add()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 21:51:14 --> Undefined index: user_name
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(125): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 125, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(85): App\Controllers\Admin\AksesUser->form()
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->add()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 21:51:43 --> Undefined variable: data
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 117, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(85): App\Controllers\Admin\AksesUser->form()
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->add()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 21:52:00 --> pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;user_pkey&quot;
+DETAIL:  Key (user_id)=(2) already exists.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #179, 'INSERT INTO "us...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(149): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->form()
+#7 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-09-23 22:02:02 --> Undefined index: user_namalengkap
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 129, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(93): App\Controllers\Admin\AksesUser->form('3')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->edit('3')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 22:02:05 --> Undefined index: user_namalengkap
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 129, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(93): App\Controllers\Admin\AksesUser->form('3')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->edit('3')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 22:03:37 --> pg_query(): Query failed: ERROR:  function lower(integer) does not exist
+LINE 1: ...ref_pasar on ref_pasar_id = seller_pasar_id where lower(sell...
+                                                             ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #180, 'select '<a href...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select '<a href...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select '<a href...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('select '<a href...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(149): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Grid.php(111): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Survey.php(87): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->gridSeller('2020-09-23')
+#9 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#10 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-23 22:03:37 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-23 22:04:25 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('admin/survey')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('admin/survey')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-23 22:04:26 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('admin/survey')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('admin/survey')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-23 22:31:59 --> in_array() expects parameter 2 to be array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expe...', 'C:\\xampp7\\htdoc...', 191, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Form.php(191): in_array('1', 'Admin')
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(133): App\Libraries\SmartComponent\Form->add('ref_user_akses_...', 'Nama Group', 'select_multiple', true, 'Admin', ' style="width:1...', Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(93): App\Controllers\Admin\AksesUser->form('3')
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->edit('3')
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 23:00:38 --> Invalid argument supplied for foreach()
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp7\\htdoc...', 158, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->form('3')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-23 23:00:41 --> Invalid argument supplied for foreach()
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp7\\htdoc...', 158, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->form('3')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-23 23:04:07 --> in_array() expects parameter 2 to be array, int given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expe...', 'C:\\xampp7\\htdoc...', 191, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Form.php(191): in_array('1', 123)
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(134): App\Libraries\SmartComponent\Form->add('ref_user_akses_...', 'Nama Group', 'select_multiple', true, 123, ' style="width:1...', Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(93): App\Controllers\Admin\AksesUser->form('3')
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->edit('3')
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 23:04:10 --> in_array() expects parameter 2 to be array, int given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expe...', 'C:\\xampp7\\htdoc...', 191, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Libraries\SmartComponent\Form.php(191): in_array('1', 123)
+#2 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(134): App\Libraries\SmartComponent\Form->add('ref_user_akses_...', 'Nama Group', 'select_multiple', true, 123, ' style="width:1...', Array)
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(93): App\Controllers\Admin\AksesUser->form('3')
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->edit('3')
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-23 23:11:56 --> Undefined index: ref_user_akses_group_id
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 129, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(93): App\Controllers\Admin\AksesUser->form('3')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->edit('3')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-23 23:13:21 --> Call to undefined method CodeIgniter\Database\Postgre\Result::getRowtArray()
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\AksesUser.php(93): App\Controllers\Admin\AksesUser->form('3')
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->edit('3')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

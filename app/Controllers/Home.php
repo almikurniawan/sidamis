@@ -13,5 +13,6 @@ class Home extends BaseController
         $data['search']  = 'Dashboard';
         $data['url_delete']  = 'Dashboard';
         // return view('global/list', $data);
+        return view('frontend/home');
     }
 }

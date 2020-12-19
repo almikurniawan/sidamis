@@ -133,8 +133,10 @@ class Form{
         }else{
             $method = $_GET;
         }
+        // print_r($_POST);
+        // die();
         if(isset($method[$this->submit_name])){
-            if($type!='file'){
+            if($type!='file' && $type!='select_multiple'){
                 $value = $method[$name];
             }
         }
@@ -172,7 +174,7 @@ class Form{
             if(isset($attribute_select['where'])){
                 $where .= ' where ' . $attribute_select['where'];
             }
-            
+
             $order_by = '';
             if(isset($attribute_select['sort'])){
                 $order_by .= ' order by ' . $attribute_select['sort'];
@@ -217,7 +219,7 @@ class Form{
             if(isset($attribute_select['where'])){
                 $where .= ' where ' . $attribute_select['where'];
             }
-            
+
             $order_by = '';
             if(isset($attribute_select['sort'])){
                 $order_by .= ' order by ' . $attribute_select['sort'];
@@ -234,7 +236,7 @@ class Form{
             $js = '<script type="text/javascript">$("#'.$name.'").kendoSlider({increaseButtonTitle: "Right",decreaseButtonTitle: "Left",min: '.$attribute_select['min'].',max: '.$attribute_select['max'].',smallStep: '.$attribute_select['smallStep'].',largeStep: '.$attribute_select['largeStep'].'}).data("kendoSlider");</script>';
             $field = '<input name="'.$name.'" id="'.$name.'" value="'.$value.'" '.$extraAttribute.' />'.$js;
         }
-        
+
         if($required){
             $title .= ' <i class="k-icon k-i-warning"></i>';
         }
@@ -322,9 +324,9 @@ class Form{
             }
             if($status == 'warning'){
                 $alert = '<div class="alert alert-warning" role="alert">'.$message.'</div>';
-            }   
+            }
         }
-        
+
         $this->fields = array();
 
         $form = $alert . '<form action="'.$this->form_action.'" autocomplete="off" method="'.$this->form_method.'" '.$this->attribute_form.'>'.$view.'</form>';

@@ -1,0 +1,550 @@
+CRITICAL - 2020-10-27 02:52:56 --> unlink(C:\xampp7\htdocs\apps\dinkop\writable\debugbar/debugbar_1603699402.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp7\\htdoc...', 106, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Toolbar\Collectors\History.php(106): unlink('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Toolbar.php(483): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1603785174, 20)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#5 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Events\Events.php(188): call_user_func(Object(Closure))
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#8 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-10-27 02:52:56 --> Undefined variable: totalTime
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 56, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Toolbar.php(498): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 C:\xampp7\htdocs\apps\dinkop\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-27 03:32:44 --> Invalid file: admin/pengajuan/sf_foto_usaha.php
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/pengajuan...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pengajuan...', Array, true)
+#2 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Form.php(350): view('admin/pengajuan...', Array)
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(791): App\Libraries\SmartComponent\Form->output()
+#4 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(770): App\Controllers\Admin\Pengajuan->formStep6Jenis2('5')
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(112): App\Controllers\Admin\Pengajuan->formStep6('5')
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(86): App\Controllers\Admin\Pengajuan->stepper_form('5')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('5')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-10-27 03:41:46 --> Undefined index: min
+#0 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Form.php(220): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 220, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(788): App\Libraries\SmartComponent\Form->add('foto', 'Foto Kegiatan U...', 'slider', true, '', 'style="width:10...')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(776): App\Controllers\Admin\Pengajuan->formStep6Jenis2('5')
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(112): App\Controllers\Admin\Pengajuan->formStep6('5')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(86): App\Controllers\Admin\Pengajuan->stepper_form('5')
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('5')
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-10-27 04:02:54 --> syntax error, unexpected 'List' (T_LIST), expecting identifier (T_STRING) or '{'
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('admin/pengajuan...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('admin/pengajuan...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-27 04:05:49 --> syntax error, unexpected 'List' (T_LIST), expecting identifier (T_STRING)
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('admin/pengajuan...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('admin/pengajuan...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-27 04:07:56 --> Class 'App\Controllers\Admin\App\Libraries\SmartComponent\ListView' not found
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(777): App\Controllers\Admin\Pengajuan->listFoto('5')
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(113): App\Controllers\Admin\Pengajuan->formStep6('5')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('5')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-27 04:07:57 --> Class 'App\Controllers\Admin\App\Libraries\SmartComponent\ListView' not found
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(777): App\Controllers\Admin\Pengajuan->listFoto('5')
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(113): App\Controllers\Admin\Pengajuan->formStep6('5')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('5')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-27 04:08:06 --> Class 'App\Controllers\Admin\App\Libraries\SmartComponent\ListView' not found
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(777): App\Controllers\Admin\Pengajuan->listFoto('5')
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(113): App\Controllers\Admin\Pengajuan->formStep6('5')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('5')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-27 04:08:07 --> Class 'App\Controllers\Admin\App\Libraries\SmartComponent\ListView' not found
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(777): App\Controllers\Admin\Pengajuan->listFoto('5')
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(113): App\Controllers\Admin\Pengajuan->formStep6('5')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('5')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-27 04:08:34 --> Call to a member function set_query() on null
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(777): App\Controllers\Admin\Pengajuan->listFoto('5')
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(113): App\Controllers\Admin\Pengajuan->formStep6('5')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('5')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-27 04:10:23 --> Call to a member function set_template() on null
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(777): App\Controllers\Admin\Pengajuan->listFoto('5')
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(113): App\Controllers\Admin\Pengajuan->formStep6('5')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('5')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-27 04:10:25 --> Call to a member function set_template() on null
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(777): App\Controllers\Admin\Pengajuan->listFoto('5')
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(113): App\Controllers\Admin\Pengajuan->formStep6('5')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('5')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-27 04:13:53 --> pg_query(): Query failed: ERROR:  syntax error at or near &quot;selcet&quot;
+LINE 1: selcet * from pengajuan_foto where peng_foto_peng_id = '5' o...
+        ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'selcet * from p...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('selcet * from p...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('selcet * from p...')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('selcet * from p...')
+#5 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\ListView.php(64): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\ListView.php(54): App\Libraries\SmartComponent\ListView->get_datasource()
+#7 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(814): App\Libraries\SmartComponent\ListView->output()
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->listFoto('5')
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#10 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-10-27 04:13:53 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-27 04:14:12 --> pg_query(): Query failed: ERROR:  syntax error at or near &quot;selcet&quot;
+LINE 1: selcet * from pengajuan_foto where peng_foto_peng_id = '5' o...
+        ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'selcet * from p...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('selcet * from p...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('selcet * from p...')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('selcet * from p...')
+#5 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\ListView.php(64): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\ListView.php(54): App\Libraries\SmartComponent\ListView->get_datasource()
+#7 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(814): App\Libraries\SmartComponent\ListView->output()
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->listFoto('5')
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#10 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-10-27 04:14:20 --> pg_query(): Query failed: ERROR:  column &quot;id&quot; does not exist
+LINE 1: ...ajuan_foto where peng_foto_peng_id = '5' order by id asc lim...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'select * from p...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select * from p...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#5 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\ListView.php(64): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\ListView.php(54): App\Libraries\SmartComponent\ListView->get_datasource()
+#7 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(814): App\Libraries\SmartComponent\ListView->output()
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->listFoto('5')
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#10 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-10-27 04:14:21 --> pg_query(): Query failed: ERROR:  column &quot;id&quot; does not exist
+LINE 1: ...ajuan_foto where peng_foto_peng_id = '5' order by id asc lim...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'select * from p...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select * from p...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#5 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\ListView.php(64): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\ListView.php(54): App\Libraries\SmartComponent\ListView->get_datasource()
+#7 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(814): App\Libraries\SmartComponent\ListView->output()
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->listFoto('5')
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#10 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-10-27 22:28:48 --> Undefined variable: id
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Cetak1.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 30, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Cetak1->profil1()
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak1))
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-27 22:29:16 --> pg_query(): Query failed: ERROR:  column &quot;member_id&quot; does not exist
+LINE 3: WHERE &quot;member_id&quot; = '1'
+              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #189, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Cetak1.php(30): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Cetak1->profil1('1')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak1))
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-10-27 22:38:15 --> Undefined index: foto
+#0 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Form.php(383): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 383, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(792): App\Libraries\SmartComponent\Form->formVerified()
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(777): App\Controllers\Admin\Pengajuan->formStep6Jenis2('5')
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(113): App\Controllers\Admin\Pengajuan->formStep6('5')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('5')
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('5')
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-10-27 22:38:29 --> Call to a member function getClientExtension() on null
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(777): App\Controllers\Admin\Pengajuan->formStep6Jenis2('5')
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(113): App\Controllers\Admin\Pengajuan->formStep6('5')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('5')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-10-27 22:41:52 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;&lt;&quot;
+LINE 3: WHERE &quot;peng_id&quot; = '&lt;'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(95): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('<')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('<')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-10-27 22:41:52 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-27 22:41:52 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;&lt;&quot;
+LINE 3: WHERE &quot;peng_id&quot; = '&lt;'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(95): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('<')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('<')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-10-27 22:41:52 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-27 22:41:52 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;&lt;&quot;
+LINE 3: WHERE &quot;peng_id&quot; = '&lt;'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(95): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('<')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('<')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-10-27 22:41:52 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-27 22:43:04 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;&lt;&quot;
+LINE 3: WHERE &quot;peng_id&quot; = '&lt;'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(95): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('<')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('<')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-10-27 22:43:04 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-27 22:43:04 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;&lt;&quot;
+LINE 3: WHERE &quot;peng_id&quot; = '&lt;'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(95): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('<')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('<')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-10-27 22:43:04 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-27 22:43:04 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;&lt;&quot;
+LINE 3: WHERE &quot;peng_id&quot; = '&lt;'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(95): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('<')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('<')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-10-27 22:43:04 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-27 22:43:06 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;&lt;&quot;
+LINE 3: WHERE &quot;peng_id&quot; = '&lt;'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(95): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('<')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('<')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-10-27 22:43:06 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-27 22:43:06 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;&lt;&quot;
+LINE 3: WHERE &quot;peng_id&quot; = '&lt;'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(95): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('<')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('<')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-10-27 22:43:06 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-27 22:43:06 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;&lt;&quot;
+LINE 3: WHERE &quot;peng_id&quot; = '&lt;'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(95): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('<')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('<')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-10-27 22:43:06 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-27 22:43:09 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;&lt;&quot;
+LINE 3: WHERE &quot;peng_id&quot; = '&lt;'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(95): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('<')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('<')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-10-27 22:43:09 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-27 22:43:09 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;&lt;&quot;
+LINE 3: WHERE &quot;peng_id&quot; = '&lt;'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(95): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('<')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('<')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-10-27 22:43:09 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-10-27 22:43:09 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;&lt;&quot;
+LINE 3: WHERE &quot;peng_id&quot; = '&lt;'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(95): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(87): App\Controllers\Admin\Pengajuan->stepper_form('<')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->detail('<')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-10-27 22:43:09 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

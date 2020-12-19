@@ -1,0 +1,72 @@
+CRITICAL - 2020-12-03 00:37:21 --> View themes, no current section.
+#0 C:\xampp7\htdocs\apps\dinkop\app\Views\admin\pembayaran\form_file.php(34): CodeIgniter\View\View->endSection()
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pembayara...', Array, true)
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pembayaran.php(205): view('admin/pembayara...', Array)
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pembayaran->form_import('13')
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pembayaran))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-03 00:38:59 --> You must use the "set" method to update an entry.
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2430): CodeIgniter\Database\BaseBuilder->validateUpdate()
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pembayaran.php(225): CodeIgniter\Database\BaseBuilder->update(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pembayaran.php(201): App\Controllers\Admin\Pembayaran->import('13')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pembayaran->form_import('13')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pembayaran))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-03 00:39:25 --> You must use the "set" method to update an entry.
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2430): CodeIgniter\Database\BaseBuilder->validateUpdate()
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pembayaran.php(225): CodeIgniter\Database\BaseBuilder->update(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pembayaran.php(201): App\Controllers\Admin\Pembayaran->import('13')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pembayaran->form_import('13')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pembayaran))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-03 00:52:01 --> date_format() expects parameter 1 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() e...', 'C:\\xampp7\\htdoc...', 230, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pembayaran.php(230): date_format('10/3/2020', 'Y-m-d')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pembayaran.php(201): App\Controllers\Admin\Pembayaran->import('13')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pembayaran->form_import('13')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pembayaran))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-03 00:54:48 --> pg_query(): Query failed: ERROR:  column &quot;peng_id&quot; does not exist
+LINE 2: WHERE &quot;peng_id&quot; = '13'
+              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'UPDATE "pembaya...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "pembaya...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "pembaya...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2456): CodeIgniter\Database\BaseConnection->query('UPDATE "pembaya...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pembayaran.php(230): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pembayaran.php(201): App\Controllers\Admin\Pembayaran->import('13')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pembayaran->form_import('13')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pembayaran))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-03 01:01:29 --> Use of undefined constant jenis - assumed 'jenis' (this will throw an Error in a future version of PHP)
+#0 C:\xampp7\htdocs\apps\dinkop\app\Views\admin\verifikasi\list.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp7\\htdoc...', 48, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/verifikas...', Array, true)
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Verifikasi.php(16): view('admin/verifikas...', Array)
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Verifikasi->index()
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Verifikasi))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-03 01:01:30 --> Use of undefined constant jenis - assumed 'jenis' (this will throw an Error in a future version of PHP)
+#0 C:\xampp7\htdocs\apps\dinkop\app\Views\admin\verifikasi\list.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp7\\htdoc...', 48, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/verifikas...', Array, true)
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Verifikasi.php(16): view('admin/verifikas...', Array)
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Verifikasi->index()
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Verifikasi))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

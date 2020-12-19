@@ -1,0 +1,1018 @@
+CRITICAL - 2020-11-20 00:08:00 --> number_format() expects parameter 1 to be float, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'number_format()...', 'C:\\xampp7\\htdoc...', 237, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(237): number_format('tes', 2, ',', '.')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1822): App\Controllers\Admin\Cetak3->profil3('5')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-20 00:36:44 --> Cannot redeclare App\Controllers\Admin\Survey::start()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 00:42:46 --> Undefined variable: url_survey
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 28, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(13): App\Controllers\Admin\Survey->grid_survey()
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->index()
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-20 00:42:59 --> Undefined variable: url_survey
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 28, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(13): App\Controllers\Admin\Survey->grid_survey()
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->index()
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-20 00:42:59 --> Undefined variable: url_survey
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 28, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(13): App\Controllers\Admin\Survey->grid_survey()
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->index()
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-20 00:43:23 --> Invalid file: admin/survey/index.php
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/survey/in...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/survey/in...', Array, true)
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(17): view('admin/survey/in...', Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->index()
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-20 00:43:40 --> Undefined variable: url_delete
+#0 C:\xampp7\htdocs\apps\dinkop\app\Views\global\list.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 20, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('global/list', Array, true)
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(17): view('global/list', Array)
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->index()
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 00:43:53 --> Undefined variable: url_delete
+#0 C:\xampp7\htdocs\apps\dinkop\app\Views\global\list.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 20, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('global/list', Array, true)
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(18): view('global/list', Array)
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->index()
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 00:43:55 --> Undefined variable: url_delete
+#0 C:\xampp7\htdocs\apps\dinkop\app\Views\global\list.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 20, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('global/list', Array, true)
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(18): view('global/list', Array)
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->index()
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 00:44:08 --> Undefined variable: url_delete
+#0 C:\xampp7\htdocs\apps\dinkop\app\Views\global\list.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 20, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('global/list', Array, true)
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(18): view('global/list', Array)
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->index()
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 00:44:23 --> Undefined variable: url_delete
+#0 C:\xampp7\htdocs\apps\dinkop\app\Views\global\list.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 20, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('global/list', Array, true)
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(18): view('global/list', Array)
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->index()
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 00:44:26 --> Undefined variable: url_delete
+#0 C:\xampp7\htdocs\apps\dinkop\app\Views\global\list.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 20, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('global/list', Array, true)
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(18): view('global/list', Array)
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->index()
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 00:44:37 --> pg_query(): Query failed: ERROR:  column &quot;status&quot; does not exist
+LINE 10: ...is_pengajuan where peng_verif_is is true order by status des...
+                                                              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT\r\n       ...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(155): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(119): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(80): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_survey()
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#10 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-11-20 00:44:37 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 00:45:13 --> pg_query(): Query failed: ERROR:  column &quot;status&quot; does not exist
+LINE 10: ...is_pengajuan where peng_verif_is is true order by status des...
+                                                              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT\r\n       ...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(155): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(119): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(81): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_survey()
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#10 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-11-20 00:45:13 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 00:49:33 --> Undefined variable: url_survey
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 111, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(86): App\Controllers\Admin\Survey->grid()
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->start()
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-20 01:05:25 --> Undefined variable: grid
+#0 C:\xampp7\htdocs\apps\dinkop\app\Views\admin\survey\start.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 39, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/survey/st...', Array, true)
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(195): view('admin/survey/st...', Array)
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->form('5')
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 01:06:42 --> pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;tes&quot;
+LINE 1: ...ngan&quot;, &quot;survey_tanggal&quot;) VALUES ('tes', 'tes', 'tes', 'tes')
+                                                                 ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'INSERT INTO "su...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "su...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "su...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(216): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(190): App\Controllers\Admin\Survey->form_survey('5')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->form('5')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 01:14:16 --> Too few arguments to function App\Controllers\Admin\Survey::grid_tempat(), 0 passed in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_tempat()
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-20 01:14:17 --> Too few arguments to function App\Controllers\Admin\Survey::grid_petugas(), 0 passed in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_petugas()
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-20 01:16:54 --> Too few arguments to function App\Controllers\Admin\Survey::grid_tempat(), 0 passed in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_tempat()
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-20 01:16:54 --> Too few arguments to function App\Controllers\Admin\Survey::grid_petugas(), 0 passed in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_petugas()
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-20 01:19:16 --> Too few arguments to function App\Controllers\Admin\Survey::grid_tempat(), 0 passed in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_tempat()
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-20 01:19:16 --> Too few arguments to function App\Controllers\Admin\Survey::grid_petugas(), 0 passed in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_petugas()
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-20 01:19:41 --> Too few arguments to function App\Controllers\Admin\Survey::grid_tempat(), 0 passed in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_tempat()
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-20 01:19:41 --> Too few arguments to function App\Controllers\Admin\Survey::grid_petugas(), 0 passed in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_petugas()
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-20 01:19:52 --> Too few arguments to function App\Controllers\Admin\Survey::grid_tempat(), 0 passed in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_tempat()
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-20 01:20:22 --> pg_query(): Query failed: ERROR:  syntax error at or near &quot;as&quot;
+LINE 4:                     survey_tem_id as id
+                                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT\r\n       ...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(155): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(119): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(254): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_tempat('5')
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#10 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-11-20 01:20:22 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 01:20:22 --> pg_query(): Query failed: ERROR:  column &quot;status&quot; does not exist
+LINE 6: ...e survey_detail.survey_det_head_id = '5' order by status des...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT\r\n       ...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(155): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(119): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(294): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_petugas('5')
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#10 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-11-20 01:20:22 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 01:20:34 --> pg_query(): Query failed: ERROR:  syntax error at or near &quot;as&quot;
+LINE 4:                     survey_tem_id as id
+                                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT\r\n       ...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(155): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(119): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(254): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_tempat('5')
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#10 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-11-20 01:20:48 --> pg_query(): Query failed: ERROR:  column &quot;status&quot; does not exist
+LINE 7: ...= peng_id where survey_tem_head_id = '5' order by status des...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT\r\n       ...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(155): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(119): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(254): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_tempat('5')
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#10 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-11-20 01:30:37 --> pg_query(): Query failed: ERROR:  column &quot;status&quot; does not exist
+LINE 10: ...is_pengajuan where peng_verif_is is true order by status des...
+                                                              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT\r\n       ...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(155): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(119): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(81): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_survey()
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#10 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-11-20 01:30:37 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 01:33:46 --> Undefined variable: id
+#0 C:\xampp7\htdocs\apps\dinkop\app\Views\admin\survey\start.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 71, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/survey/st...', Array, true)
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(197): view('admin/survey/st...', Array)
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->form('5')
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 01:33:48 --> Undefined variable: id
+#0 C:\xampp7\htdocs\apps\dinkop\app\Views\admin\survey\start.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 71, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/survey/st...', Array, true)
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(197): view('admin/survey/st...', Array)
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->form('5')
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 01:39:42 --> Cannot redeclare App\Controllers\Admin\Survey::deleteTempat()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 19:51:26 --> pg_query(): Query failed: ERROR:  column &quot;status&quot; does not exist
+LINE 10: ...is_pengajuan where peng_verif_is is true order by status des...
+                                                              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT\r\n       ...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(155): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(119): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(81): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_survey()
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#10 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-11-20 19:51:26 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 19:51:34 --> Invalid file: admin/survey/add_tempat.php
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/survey/ad...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/survey/ad...', Array, true)
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(331): view('admin/survey/ad...', Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->add_lokasi('21')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-20 19:52:42 --> Undefined variable: title
+#0 C:\xampp7\htdocs\apps\dinkop\app\Views\admin\survey\add_tempat.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 8, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/survey/ad...', Array, true)
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(332): view('admin/survey/ad...', Array)
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->add_lokasi('21')
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-20 20:24:06 --> pg_query(): Query failed: ERROR:  column &quot;status&quot; does not exist
+LINE 10: ...is_pengajuan where peng_verif_is is true order by status des...
+                                                              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT\r\n       ...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(155): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(119): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(81): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_survey()
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#10 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-11-20 20:24:06 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 22:11:25 --> Undefined index: rows
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(16983): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 16983, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(17266): TCPDF->getHtmlDomArray('<table><tr><td ...')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1842): TCPDF->writeHTML('\n\t\t\t\t<table>\n\t\t...', true, false, true, false, '')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-20 22:11:25 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;assets&quot;
+LINE 3: WHERE &quot;peng_id&quot; = 'assets'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #192, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(17): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1809): App\Controllers\Admin\Cetak3->profil1('assets')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('assets', 'images', 'logokoperasi.jp...')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 22:11:25 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 22:12:24 --> pg_query(): Query failed: ERROR:  column &quot;status&quot; does not exist
+LINE 10: ...is_pengajuan where peng_verif_is is true order by status des...
+                                                              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT\r\n       ...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(155): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(119): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(81): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_survey()
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#10 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-11-20 22:12:24 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 22:13:07 --> Undefined index: rows
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(16983): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 16983, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(17266): TCPDF->getHtmlDomArray('<table><tr><td ...')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1842): TCPDF->writeHTML('\n\t\t\t\t<table>\n\t\t...', true, false, true, false, '')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-20 22:13:07 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;assets&quot;
+LINE 3: WHERE &quot;peng_id&quot; = 'assets'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #192, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(17): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1809): App\Controllers\Admin\Cetak3->profil1('assets')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('assets', 'images', 'logokoperasi.jp...')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 22:13:07 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 22:14:05 --> Undefined index: rows
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(16983): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 16983, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(17266): TCPDF->getHtmlDomArray('<table><tr><td ...')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1842): TCPDF->writeHTML('\n\t\t\t\t<table>\n\t\t...', true, false, true, false, '')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-20 22:14:06 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;assets&quot;
+LINE 3: WHERE &quot;peng_id&quot; = 'assets'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #192, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(17): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1809): App\Controllers\Admin\Cetak3->profil1('assets')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('assets', 'images', 'logokoperasi.jp...')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 22:14:06 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 22:14:58 --> Undefined index: rows
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(16983): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 16983, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(17266): TCPDF->getHtmlDomArray('<table><tr><td ...')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1842): TCPDF->writeHTML('\n\t\t\t\t<table>\n\t\t...', true, false, true, false, '')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-20 22:14:59 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;assets&quot;
+LINE 3: WHERE &quot;peng_id&quot; = 'assets'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #192, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(17): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1809): App\Controllers\Admin\Cetak3->profil1('assets')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('assets', 'images', 'logokoperasi.jp...')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 22:14:59 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 22:15:06 --> Undefined index: rows
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(16983): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 16983, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(17266): TCPDF->getHtmlDomArray('<table><tr><td ...')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1842): TCPDF->writeHTML('\n\t\t\t\t<table>\n\t\t...', true, false, true, false, '')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-20 22:15:06 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;assets&quot;
+LINE 3: WHERE &quot;peng_id&quot; = 'assets'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #192, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(17): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1809): App\Controllers\Admin\Cetak3->profil1('assets')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('assets', 'images', 'logokoperasi.jp...')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 22:15:06 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 22:16:05 --> Undefined variable: action
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(372): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 372, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(334): App\Controllers\Admin\Survey->grid_lokasi_belum_survey('22')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->add_lokasi('22')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-20 22:16:06 --> Undefined variable: action
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(372): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 372, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(334): App\Controllers\Admin\Survey->grid_lokasi_belum_survey('22')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->add_lokasi('22')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-20 22:16:07 --> Undefined index: rows
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(16983): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 16983, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(17266): TCPDF->getHtmlDomArray('<table><tr><td ...')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1842): TCPDF->writeHTML('\n\t\t\t\t<table>\n\t\t...', true, false, true, false, '')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-20 22:16:07 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;assets&quot;
+LINE 3: WHERE &quot;peng_id&quot; = 'assets'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #192, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(17): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1809): App\Controllers\Admin\Cetak3->profil1('assets')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('assets', 'images', 'logokoperasi.jp...')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 22:16:07 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 22:17:03 --> Undefined index: rows
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(16983): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 16983, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(17266): TCPDF->getHtmlDomArray('<table><tr><td ...')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1841): TCPDF->writeHTML('\n\t\t\t\t<table>\n\t\t...', true, false, true, false, '')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-20 22:17:04 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;assets&quot;
+LINE 3: WHERE &quot;peng_id&quot; = 'assets'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #192, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(17): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1808): App\Controllers\Admin\Cetak3->profil1('assets')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('assets', 'images', 'logokoperasi.jp...')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 22:17:04 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 22:18:15 --> Undefined index: rows
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(16983): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 16983, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(17266): TCPDF->getHtmlDomArray('<table><tr><td ...')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1822): TCPDF->writeHTML('\n\t\t\t\t<table>\n\t\t...', true, false, true, false, '')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-20 22:18:16 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;assets&quot;
+LINE 3: WHERE &quot;peng_id&quot; = 'assets'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #192, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(17): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1789): App\Controllers\Admin\Cetak3->profil1('assets')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('assets', 'images', 'logokoperasi.jp...')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 22:18:16 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 22:18:49 --> Undefined index: rows
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(16983): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 16983, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(17266): TCPDF->getHtmlDomArray('<table><tr><td ...')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1841): TCPDF->writeHTML('\n\t\t\t\t<table>\n\t\t...', true, false, true, false, '')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-20 22:18:50 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;assets&quot;
+LINE 3: WHERE &quot;peng_id&quot; = 'assets'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #192, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(17): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1808): App\Controllers\Admin\Cetak3->profil1('assets')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('assets', 'images', 'logokoperasi.jp...')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 22:18:50 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 22:19:16 --> Undefined index: rows
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(16983): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 16983, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(17266): TCPDF->getHtmlDomArray('<table><tr><td ...')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1833): TCPDF->writeHTML('\n\t\t\t\t<table>\n\t\t...', true, false, true, false, '')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-20 22:19:16 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;assets&quot;
+LINE 3: WHERE &quot;peng_id&quot; = 'assets'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #192, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(17): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1800): App\Controllers\Admin\Cetak3->profil1('assets')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('assets', 'images', 'logokoperasi.jp...')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 22:19:16 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 22:20:32 --> Undefined index: rows
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(16983): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 16983, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\tecnickcom\tcpdf\tcpdf.php(17266): TCPDF->getHtmlDomArray('<table><tr><td ...')
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1841): TCPDF->writeHTML('\n\t\t\t\t<table>\n\t\t...', true, false, true, false, '')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('5')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-11-20 22:20:33 --> pg_query(): Query failed: ERROR:  invalid input syntax for integer: &quot;assets&quot;
+LINE 3: WHERE &quot;peng_id&quot; = 'assets'
+                          ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #192, 'SELECT *\nFROM "...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(17): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Cetak3.php(1808): App\Controllers\Admin\Cetak3->profil1('assets')
+#7 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Cetak3->profil('assets', 'images', 'logokoperasi.jp...')
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Cetak3))
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-11-20 22:20:33 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 22:20:41 --> Call to undefined method App\Controllers\Admin\Survey::table()
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->proses_add_lokasi('22')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-20 22:20:49 --> Call to undefined method App\Controllers\Admin\Survey::table()
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->proses_add_lokasi('22')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-11-20 22:35:29 --> pg_query(): Query failed: ERROR:  column &quot;status&quot; does not exist
+LINE 10: ...is_pengajuan where peng_verif_is is true order by status des...
+                                                              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT\r\n       ...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(155): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(119): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(81): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_survey()
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#10 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-11-20 22:35:29 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 22:35:57 --> pg_query(): Query failed: ERROR:  column &quot;status&quot; does not exist
+LINE 10: ...is_pengajuan where peng_verif_is is true order by status des...
+                                                              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT\r\n       ...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(155): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(119): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(81): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_survey()
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#10 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-11-20 22:35:57 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 22:37:36 --> pg_query(): Query failed: ERROR:  column &quot;status&quot; does not exist
+LINE 4:                 from survey order by status desc limit 25 of...
+                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT\r\n       ...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(155): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(119): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(57): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_survey()
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#10 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-11-20 22:37:36 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-11-20 22:37:47 --> pg_query(): Query failed: ERROR:  column &quot;status&quot; does not exist
+LINE 4:                 from survey order by status desc limit 25 of...
+                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT\r\n       ...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(155): App\Libraries\SmartComponent\Datasource->run()
+#6 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Grid.php(119): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(57): App\Libraries\SmartComponent\Grid->output()
+#8 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->grid_survey()
+#9 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#10 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-11-20 22:43:22 --> Undefined index: survey_dasar
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(186): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 186, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(171): App\Controllers\Admin\Survey->form_survey('23')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->form('23')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-20 22:43:24 --> Undefined index: survey_dasar
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(186): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 186, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(171): App\Controllers\Admin\Survey->form_survey('23')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->form('23')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-20 22:44:53 --> Undefined variable: search
+#0 C:\xampp7\htdocs\apps\dinkop\app\Views\admin\survey\list.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 13, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/survey/li...', Array, true)
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Survey.php(67): view('admin/survey/li...', Array)
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Survey->start()
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Survey))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

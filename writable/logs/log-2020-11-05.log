@@ -1,0 +1,15 @@
+CRITICAL - 2020-11-05 02:21:45 --> Undefined index: member_id
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(150): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 150, Array)
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(100): App\Controllers\Admin\Pengajuan->formPilihPaket()
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->pilihPaket()
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-05 02:22:34 --> Call to undefined method App\Controllers\Admin\Pengajuan::formPengajuan()
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\Pengajuan.php(177): App\Controllers\Admin\Pengajuan->step1('3', '17')
+#1 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Pengajuan->pengajuan('3', '17')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengajuan))
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

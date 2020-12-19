@@ -1,0 +1,94 @@
+CRITICAL - 2020-12-04 20:15:46 --> Illegal string offset 'jml'
+#0 C:\xampp7\htdocs\apps\sidamis\app\Views\admin\home.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp7\\htdoc...', 103, Array)
+#1 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/home', Array, true)
+#3 C:\xampp7\htdocs\apps\sidamis\app\Controllers\Admin\Home.php(28): view('admin/home', Array)
+#4 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#5 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#6 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-04 20:16:56 --> Undefined variable: search
+#0 C:\xampp7\htdocs\apps\sidamis\app\Views\global\list.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 12, Array)
+#1 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('global/list', Array, true)
+#3 C:\xampp7\htdocs\apps\sidamis\app\Controllers\Admin\Home.php(15): view('global/list', Array)
+#4 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#5 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#6 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-04 20:17:09 --> Undefined variable: url_delete
+#0 C:\xampp7\htdocs\apps\sidamis\app\Views\global\list.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 20, Array)
+#1 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('global/list', Array, true)
+#3 C:\xampp7\htdocs\apps\sidamis\app\Controllers\Admin\Home.php(16): view('global/list', Array)
+#4 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#5 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#6 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-04 20:17:10 --> Undefined variable: url_delete
+#0 C:\xampp7\htdocs\apps\sidamis\app\Views\global\list.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 20, Array)
+#1 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('global/list', Array, true)
+#3 C:\xampp7\htdocs\apps\sidamis\app\Controllers\Admin\Home.php(16): view('global/list', Array)
+#4 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#5 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#6 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-04 20:17:22 --> Undefined index: user_namalengkap
+#0 C:\xampp7\htdocs\apps\sidamis\app\Views\template\default.php(114): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 114, Array)
+#1 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\View\View.php(257): CodeIgniter\View\View->render('template/defaul...', Array, true)
+#3 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('global/list', Array, true)
+#4 C:\xampp7\htdocs\apps\sidamis\app\Controllers\Admin\Home.php(17): view('global/list', Array)
+#5 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#6 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#7 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp7\htdocs\apps\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-12-04 20:19:33 --> pg_query(): Query failed: ERROR:  relation &quot;member&quot; does not exist
+LINE 1: ... member_id as id, member_nama_lengkap as label from member  
+                                                               ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #183, 'select member_i...')
+#2 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select member_i...')
+#3 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select member_i...')
+#4 C:\xampp7\htdocs\apps\sidamis\app\Libraries\SmartComponent\Form.php(181): CodeIgniter\Database\BaseConnection->query('select member_i...')
+#5 C:\xampp7\htdocs\apps\sidamis\app\Controllers\Admin\AksesUser.php(78): App\Libraries\SmartComponent\Form->add('peng_member_id', 'Nama Member', 'select', false, 1, 'style="width:10...', Array)
+#6 C:\xampp7\htdocs\apps\sidamis\app\Controllers\Admin\AksesUser.php(14): App\Controllers\Admin\AksesUser->search()
+#7 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->index()
+#8 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#9 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp7\htdocs\apps\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-04 20:21:02 --> Invalid file: admin/add.php
+#0 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/add.php')
+#1 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/add', Array, true)
+#2 C:\xampp7\htdocs\apps\sidamis\app\Controllers\Admin\AksesUser.php(85): view('admin/add', Array)
+#3 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->add()
+#4 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#5 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-04 20:21:43 --> Undefined variable: url_back
+#0 C:\xampp7\htdocs\apps\sidamis\app\Views\global\form.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 9, Array)
+#1 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('global/form', Array, true)
+#3 C:\xampp7\htdocs\apps\sidamis\app\Controllers\Admin\AksesUser.php(85): view('global/form', Array)
+#4 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesUser->add()
+#5 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesUser))
+#6 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-04 20:23:39 --> Invalid file: admin/add.php
+#0 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/add.php')
+#1 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/add', Array, true)
+#2 C:\xampp7\htdocs\apps\sidamis\app\Controllers\Admin\AksesModul.php(77): view('admin/add', Array)
+#3 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\AksesModul->add()
+#4 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AksesModul))
+#5 C:\xampp7\htdocs\apps\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp7\htdocs\apps\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}

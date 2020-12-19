@@ -1,0 +1,115 @@
+CRITICAL - 2020-10-06 00:04:33 --> pg_query(): Query failed: ERROR:  syntax error at or near &quot;=&quot;
+LINE 1: ...vey_det_produk_var_id =  ref_produk_var_produk_id = 1) as av...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #179, 'select DATE AS ...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select DATE AS ...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select DATE AS ...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(117): CodeIgniter\Database\BaseConnection->query('select DATE AS ...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(32): App\Controllers\Admin\Home->dash()
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#7 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-10-06 00:05:21 --> pg_query(): Query failed: ERROR:  syntax error at or near &quot;=&quot;
+LINE 1: ...vey_det_produk_var_id =  ref_produk_var_produk_id = 1) as av...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #178, 'select DATE AS ...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select DATE AS ...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select DATE AS ...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(117): CodeIgniter\Database\BaseConnection->query('select DATE AS ...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(32): App\Controllers\Admin\Home->dash()
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#7 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-10-06 00:05:40 --> pg_query(): Query failed: ERROR:  syntax error at or near &quot;=&quot;
+LINE 1: ...vey_det_produk_var_id =  ref_produk_var_produk_id = 1) as av...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #178, 'select DATE AS ...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select DATE AS ...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select DATE AS ...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(117): CodeIgniter\Database\BaseConnection->query('select DATE AS ...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(32): App\Controllers\Admin\Home->dash()
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#7 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-10-06 00:06:57 --> Undefined variable: where2
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp7\\htdoc...', 117, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(32): App\Controllers\Admin\Home->dash()
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-06 00:12:00 --> Undefined index: name
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(126): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 126, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(32): App\Controllers\Admin\Home->dash()
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-06 00:12:07 --> Undefined index: name
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(126): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 126, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(32): App\Controllers\Admin\Home->dash()
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-06 00:47:15 --> Invalid argument supplied for foreach()
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp7\\htdoc...', 118, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(32): App\Controllers\Admin\Home->dash()
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-06 00:47:40 --> Invalid argument supplied for foreach()
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp7\\htdoc...', 118, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(32): App\Controllers\Admin\Home->dash()
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-06 00:48:27 --> Undefined index: jml
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Views\admin\home.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp7\\htdoc...', 103, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/home', Array, true)
+#3 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(39): view('admin/home', Array)
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#5 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-10-06 01:01:33 --> Array to string conversion
+#0 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(109): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp7\\htdoc...', 109, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(32): App\Controllers\Admin\Home->dash()
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#4 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-06 01:02:23 --> pg_query(): Query failed: ERROR:  operator does not exist: text = integer
+LINE 1: ...ail where to_char(survey_det_tanggal,'YYYY-MM-DD')=2020-09-2...
+                                                             ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp7\\htdoc...', 196, Array)
+#1 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #178, 'SELECT coalesce...')
+#2 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT coalesce...')
+#3 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT coalesce...')
+#4 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(116): CodeIgniter\Database\BaseConnection->query('SELECT coalesce...')
+#5 C:\xampp7\htdocs\apps\surveypasar\app\Controllers\Admin\Home.php(32): App\Controllers\Admin\Home->dash()
+#6 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#7 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#8 C:\xampp7\htdocs\apps\surveypasar\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp7\htdocs\apps\surveypasar\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}

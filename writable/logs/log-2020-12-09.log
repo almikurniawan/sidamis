@@ -1,0 +1,10 @@
+CRITICAL - 2020-12-09 00:10:42 --> Undefined variable: gallery
+#0 D:\xampp\htdocs\sidamis\app\Views\frontend\gallery_detail.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 32, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('frontend/galler...', Array, true)
+#3 D:\xampp\htdocs\sidamis\app\Controllers\Gallery.php(30): view('frontend/galler...', Array)
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Gallery->detail('2')
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gallery))
+#6 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

@@ -1,0 +1,38 @@
+CRITICAL - 2020-11-28 02:01:09 --> Too few arguments to function App\Libraries\SmartComponent\Form::set_resume(), 0 passed in C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\SurveyHasil.php on line 112 and exactly 1 expected
+#0 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\SurveyHasil.php(112): App\Libraries\SmartComponent\Form->set_resume()
+#1 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\SurveyHasil.php(82): App\Controllers\Admin\SurveyHasil->form_survey('24', '13')
+#2 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\SurveyHasil->form('24', '13')
+#3 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SurveyHasil))
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-11-28 02:10:14 --> syntax error, unexpected end of file
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('template/defaul...', Array, true)
+#1 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Form.php(314): view('template/defaul...', Array)
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\SurveyHasil.php(140): App\Libraries\SmartComponent\Form->output()
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\SurveyHasil.php(82): App\Controllers\Admin\SurveyHasil->form_survey('24', '13')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\SurveyHasil->form('24', '13')
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SurveyHasil))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-28 02:10:15 --> syntax error, unexpected end of file
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('template/defaul...', Array, true)
+#1 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Form.php(314): view('template/defaul...', Array)
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\SurveyHasil.php(140): App\Libraries\SmartComponent\Form->output()
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\SurveyHasil.php(82): App\Controllers\Admin\SurveyHasil->form_survey('24', '13')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\SurveyHasil->form('24', '13')
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SurveyHasil))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-28 02:10:25 --> syntax error, unexpected end of file
+#0 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('template/defaul...', Array, true)
+#1 C:\xampp7\htdocs\apps\dinkop\app\Libraries\SmartComponent\Form.php(314): view('template/defaul...', Array)
+#2 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\SurveyHasil.php(140): App\Libraries\SmartComponent\Form->output()
+#3 C:\xampp7\htdocs\apps\dinkop\app\Controllers\Admin\SurveyHasil.php(82): App\Controllers\Admin\SurveyHasil->form_survey('24', '13')
+#4 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\SurveyHasil->form('24', '13')
+#5 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SurveyHasil))
+#6 C:\xampp7\htdocs\apps\dinkop\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp7\htdocs\apps\dinkop\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
