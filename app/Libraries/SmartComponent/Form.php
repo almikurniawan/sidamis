@@ -252,7 +252,7 @@ class Form{
         $field = '';
 
         if($type=='text'){
-            $field = $this->tag_start_resume . $value . $this->tag_end_resume;
+            $field = $this->tag_start_resume . ($value=='' ? '-' : $value) . $this->tag_end_resume;
         }else if($type=='hidden'){
             $field = '<input type="hidden" name="'.$name.'" value="'.$value.'" '.$extraAttribute.' />';
         }else if($type=='password'){
@@ -270,8 +270,11 @@ class Form{
         }else if($type=='select'){
             if($value!=''){
                 $data = $this->db->query("select ".$attribute_select['id']." as id, ".$attribute_select['label']." as label from ".$attribute_select['table'] . " where " . $attribute_select['id'] . " = '".$value."'")->getRowArray();
+                if(empty($data)){
+                    $data['label'] = '-';
+                }
             }else{
-                $data['label'] = '';
+                $data['label'] = '-';
             }
             $field = $this->tag_start_resume . $data['label'] . $this->tag_end_resume;
         }

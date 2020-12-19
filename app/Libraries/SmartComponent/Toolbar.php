@@ -22,7 +22,7 @@ class Toolbar{
     {
         if($type=='add'){
             $label = (isset($config['label']) ? $config['label'] : 'Tambah Data');
-            $class = (isset($config['class']) ? $config['class'] : 'btn btn-sm btn-raised mr-1 btn-primary');
+            $class = (isset($config['class']) ? $config['class'] : 'btn btn-sm mr-1 btn-primary');
             if(!isset($config['jsf'])){
                 $url = (isset($config['url']) ? $config['url'] : base_url(uri_string()) . '/add');
                 $this->toolbar .= '<a class="'.$class.'" href="'.$url.'"><i class="k-icon k-i-plus"></i> '.$label.'</a>';
@@ -32,7 +32,7 @@ class Toolbar{
             }
         }else if($type=='download'){
             $label = (isset($config['label']) ? $config['label'] : 'Download Excel');
-            $class = (isset($config['class']) ? $config['class'] : 'btn btn-sm btn-raised mr-1 btn-success');
+            $class = (isset($config['class']) ? $config['class'] : 'btn btn-sm mr-1 btn-success');
             if(!isset($config['jsf'])){
                 $this->toolbar .= '<a target="_new" class="'.$class.'" href="'.$this->base_url.'"><i class="k-icon k-i-download"></i> '.$label.'</a>';
             }else{

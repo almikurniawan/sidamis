@@ -81,6 +81,11 @@ class Navigation
                 'icon'          => 'fa-home',
             ),
             array(
+                'label'         => 'History Import',
+                'controller'    => 'admin/historyImport',
+                'icon'          => 'fa-home',
+            ),
+            array(
                 'label'         => 'Data Master',
                 'controller'    => '#master',
                 'icon'          => 'fa-home',
