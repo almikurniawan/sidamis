@@ -481,3 +481,30 @@ CRITICAL - 2020-12-20 15:51:47 --> Undefined index: slide_slide
 #4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #6 {main}
+CRITICAL - 2020-12-20 16:05:26 --> Undefined index: dinas_nama
+#0 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Form.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 140, Array)
+#1 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Dinas.php(92): App\Libraries\SmartComponent\Form->add('dinas_nama', 'Nama dinas', 'text', false, NULL, 'style="width:10...')
+#2 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Dinas.php(14): App\Controllers\Admin\Dinas->search()
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Dinas->index()
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dinas))
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-20 16:05:30 --> Undefined index: dinas_nama
+#0 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Form.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 140, Array)
+#1 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Dinas.php(92): App\Libraries\SmartComponent\Form->add('dinas_nama', 'Nama dinas', 'text', false, NULL, 'style="width:10...')
+#2 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Dinas.php(14): App\Controllers\Admin\Dinas->search()
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Dinas->index()
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dinas))
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-20 16:05:33 --> Undefined index: dinas_nama
+#0 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Form.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 140, Array)
+#1 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Dinas.php(92): App\Libraries\SmartComponent\Form->add('dinas_nama', 'Nama dinas', 'text', false, NULL, 'style="width:10...')
+#2 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Dinas.php(14): App\Controllers\Admin\Dinas->search()
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Dinas->index()
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dinas))
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
