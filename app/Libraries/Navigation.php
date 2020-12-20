@@ -83,11 +83,24 @@ class Navigation
             array(
                 'label'         => 'History Import',
                 'controller'    => 'admin/historyImport',
+                'icon'          => 'fa-home',
             ),
             array(
-                'label'         => 'Berita',
-                'controller'    => 'admin/berita',
+                'label'         => 'Data Site',
+                'controller'    => '#master',
                 'icon'          => 'fa-home',
+                'child'         => array(
+                    array(
+                        'label'         => 'Berita',
+                        'controller'    => 'admin/berita',
+                        'icon'          => 'fa-home',
+                    ),
+                    array(
+                        'label'         => 'Layanan',
+                        'controller'    => 'admin/layanan',
+                        'icon'          => 'fa-home',
+                    ),
+                )
             ),
             array(
                 'label'         => 'Data Master',
