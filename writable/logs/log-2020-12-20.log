@@ -44,3 +44,18 @@ CRITICAL - 2020-12-20 05:20:47 --> Invalid file: App\Views\frontend\Pagers\boots
 #9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #10 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #11 {main}
+CRITICAL - 2020-12-20 06:39:23 --> Undefined index: icon
+#0 D:\xampp\htdocs\sidamis\app\Libraries\Navigation.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 32, Array)
+#1 D:\xampp\htdocs\sidamis\app\Libraries\Navigation.php(15): App\Libraries\Navigation->gen_menu()
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\Cell.php(149): App\Libraries\Navigation->menu()
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1140): CodeIgniter\View\Cell->render('\\App\\Libraries\\...', NULL, 0, 'AppLibrariesNav...')
+#4 D:\xampp\htdocs\sidamis\app\Views\template\default.php(110): view_cell('\\App\\Libraries\\...')
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(257): CodeIgniter\View\View->render('template/defaul...', Array, true)
+#7 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('global/list', Array, true)
+#8 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Home.php(17): view('global/list', Array)
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#10 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#11 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 {main}
