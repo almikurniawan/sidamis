@@ -81,6 +81,10 @@ class Navigation
                 'icon'          => 'fa-home',
             ),
             array(
+                'label'         => 'History Import',
+                'controller'    => 'admin/historyImport',
+            ),
+            array(
                 'label'         => 'Berita',
                 'controller'    => 'admin/berita',
                 'icon'          => 'fa-home',
