@@ -1,0 +1,92 @@
+CRITICAL - 2020-12-19 21:40:50 --> Class 'App\Models\layanan_model' not found
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\layanan->index()
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\layanan))
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-12-19 22:17:44 --> Undefined property: stdClass::$informasi_id
+#0 D:\xampp\htdocs\sidamis\app\Views\frontend\layanan.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 35, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('frontend/layana...', Array, true)
+#3 D:\xampp\htdocs\sidamis\app\Controllers\Layanan.php(22): view('frontend/layana...', Array)
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\layanan->index()
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\layanan))
+#6 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-19 22:17:55 --> Undefined property: stdClass::$informasi_id
+#0 D:\xampp\htdocs\sidamis\app\Views\frontend\layanan.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 35, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('frontend/layana...', Array, true)
+#3 D:\xampp\htdocs\sidamis\app\Controllers\Layanan.php(22): view('frontend/layana...', Array)
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\layanan->index()
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\layanan))
+#6 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-19 22:35:46 --> Undefined variable: tentang
+#0 D:\xampp\htdocs\sidamis\app\Models\Tentang_model.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 12, Array)
+#1 D:\xampp\htdocs\sidamis\app\Controllers\Tentang.php(21): App\Models\Tentang_model->get('profil')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Tentang->index('profil')
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tentang))
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-19 22:38:40 --> Undefined variable: tentang
+#0 D:\xampp\htdocs\sidamis\app\Models\Tentang_model.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 12, Array)
+#1 D:\xampp\htdocs\sidamis\app\Controllers\Tentang.php(21): App\Models\Tentang_model->get('profil')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Tentang->index('profil')
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tentang))
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-19 22:38:58 --> Undefined property: stdClass::$tentang_foto
+#0 D:\xampp\htdocs\sidamis\app\Views\frontend\tentang.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 35, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('frontend/tentan...', Array, true)
+#3 D:\xampp\htdocs\sidamis\app\Controllers\Tentang.php(22): view('frontend/tentan...', Array)
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Tentang->index('profil')
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tentang))
+#6 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-19 22:39:47 --> Undefined property: stdClass::$tentang_nama
+#0 D:\xampp\htdocs\sidamis\app\Views\frontend\tentang.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 36, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('frontend/tentan...', Array, true)
+#3 D:\xampp\htdocs\sidamis\app\Controllers\Tentang.php(22): view('frontend/tentan...', Array)
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Tentang->index('profil')
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tentang))
+#6 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-19 22:40:06 --> Undefined property: stdClass::$tentang_isi
+#0 D:\xampp\htdocs\sidamis\app\Views\frontend\tentang.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 42, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('frontend/tentan...', Array, true)
+#3 D:\xampp\htdocs\sidamis\app\Controllers\Tentang.php(22): view('frontend/tentan...', Array)
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Tentang->index('profil')
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tentang))
+#6 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-19 23:09:39 --> Undefined variable: dinas
+#0 D:\xampp\htdocs\sidamis\app\Views\frontend\home.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 67, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('frontend/home', Array, true)
+#3 D:\xampp\htdocs\sidamis\app\Controllers\Home.php(15): view('frontend/home', Array)
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-19 23:10:07 --> Undefined property: stdClass::$gallery_foto
+#0 D:\xampp\htdocs\sidamis\app\Views\frontend\home.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 69, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('frontend/home', Array, true)
+#3 D:\xampp\htdocs\sidamis\app\Controllers\Home.php(16): view('frontend/home', Array)
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

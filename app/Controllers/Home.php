@@ -3,16 +3,16 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-
+use App\Models\home_model;
 class Home extends BaseController
 {
     public function index()
     {
-        $data['title']  = 'Dashboard';
-        $data['grid']  = 'Dashboard';
-        $data['search']  = 'Dashboard';
-        $data['url_delete']  = 'Dashboard';
-        // return view('global/list', $data);
-        return view('frontend/home');
+        $model = new home_model();
+        $data['slide']  = $model->get('slide')->getResult();
+        $data['layanan']  = $model->get('layanan')->getResult();
+        $data['gallery']  = $model->get_gallery()->getResult();
+        $data['dinas']  = $model->get('dinas')->getResult();
+        return view('frontend/home',$data);
     }
 }
