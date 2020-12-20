@@ -69,7 +69,7 @@
 
       </nav><!-- .nav-menu -->
 
-      <a href="index.html" class="get-started-btn ml-auto">Kontak</a>
+      <a href="<?php echo base_url();?>/kontak" class="get-started-btn ml-auto">Kontak</a>
 
     </div>
   </header><!-- End Header -->

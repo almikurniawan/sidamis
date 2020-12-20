@@ -7,22 +7,22 @@ class Informasi_model extends Model
 
     public function get()
     {
-        $builder = $this->db->table('informasi');
+        $builder = $this->db->table('Informasi');
         $builder->select('*');
         return $builder->get();
     }
 
-    public function detail($informasi_id)
+    public function detail($Informasi_id)
     {
-        $builder = $this->db->table('informasi');
+        $builder = $this->db->table('Informasi');
         $builder->select('*');
-        $builder->where('informasi_id =', $informasi_id);
+        $builder->where('Informasi_id =', $Informasi_id);
         return $builder->get();
     }
 
-    public function informasi_random()
+    public function Informasi_random()
     {
-        $result = $this->db->query("SELECT * FROM informasi order by random() LIMIT 7");
+        $result = $this->db->query("SELECT * FROM Informasi order by random() LIMIT 7");
         return $result;
     }
  }
