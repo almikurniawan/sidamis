@@ -12,7 +12,7 @@
  Target Server Version : 100015
  File Encoding         : 65001
 
- Date: 20/12/2020 12:14:02
+ Date: 20/12/2020 12:41:39
 */
 
 
@@ -296,9 +296,16 @@ CREATE TABLE "public"."kontak" (
   "kontak_nama" varchar(255) COLLATE "pg_catalog"."default",
   "kontak_email" varchar(255) COLLATE "pg_catalog"."default",
   "kontak_telp" varchar(255) COLLATE "pg_catalog"."default",
+  "kontak_subjek" varchar(255) COLLATE "pg_catalog"."default",
   "kontak_pesan" varchar(255) COLLATE "pg_catalog"."default"
 )
 ;
+
+-- ----------------------------
+-- Records of kontak
+-- ----------------------------
+INSERT INTO "public"."kontak" VALUES (1, 'fddfd', 'sdsfsf@gmail.com', '434', 'sfssdsd', 'sfsffs');
+INSERT INTO "public"."kontak" VALUES (2, 'fdfd', 'fdfdf@gmail.com', '43334', 'dff', 'dff');
 
 -- ----------------------------
 -- Table structure for layanan
@@ -503,7 +510,7 @@ SELECT setval('"public"."seq_informasi_id"', 2, false);
 -- ----------------------------
 -- Alter sequences owned by
 -- ----------------------------
-SELECT setval('"public"."seq_kontak_id"', 2, false);
+SELECT setval('"public"."seq_kontak_id"', 3, true);
 
 -- ----------------------------
 -- Alter sequences owned by
