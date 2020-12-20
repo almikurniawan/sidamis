@@ -7,16 +7,16 @@ class Informasi_model extends Model
 
     public function get()
     {
-        $builder = $this->db->table('Informasi');
+        $builder = $this->db->table('informasi');
         $builder->select('*');
         return $builder->get();
     }
 
     public function detail($Informasi_id)
     {
-        $builder = $this->db->table('Informasi');
+        $builder = $this->db->table('informasi');
         $builder->select('*');
-        $builder->where('Informasi_id =', $Informasi_id);
+        $builder->where('informasi_id =', $Informasi_id);
         return $builder->get();
     }
 

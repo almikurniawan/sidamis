@@ -158,3 +158,33 @@ LINE 1: INSERT INTO &quot;kontak&quot; (&quot;kontak_nama&quot;, &quot;kontak&qu
 #9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #10 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #11 {main}
+CRITICAL - 2020-12-19 23:44:25 --> pg_query(): Query failed: ERROR:  relation &quot;Informasi&quot; does not exist
+LINE 2: FROM &quot;Informasi&quot;
+             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 196, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #184, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\sidamis\app\Models\Informasi_model.php(12): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\sidamis\app\Controllers\Informasi.php(21): App\Models\Informasi_model->get()
+#7 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\informasi->index()
+#8 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\informasi))
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-19 23:44:38 --> pg_query(): Query failed: ERROR:  relation &quot;Informasi&quot; does not exist
+LINE 2: FROM &quot;Informasi&quot;
+             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 196, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #185, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\sidamis\app\Models\Informasi_model.php(12): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\sidamis\app\Controllers\Informasi.php(21): App\Models\Informasi_model->get()
+#7 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\informasi->index()
+#8 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\informasi))
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
