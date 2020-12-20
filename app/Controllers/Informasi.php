@@ -18,7 +18,11 @@ class informasi extends BaseController
     public function index()
     {
         $model = new informasi_model();
-        $data['informasi']  = $model->get()->getResult();
+        $data = [
+            'informasi' => $model->asObject()->paginate(10,'btinformasi'),
+            'pager' => $model->pager
+        ];
+        // $data['informasi']  = $model->get()->getResult();
         return view('frontend/informasi',$data);
     }
 

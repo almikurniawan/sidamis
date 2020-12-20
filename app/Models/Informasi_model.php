@@ -4,6 +4,7 @@ use CodeIgniter\Model;
 
 class Informasi_model extends Model
 {
+    protected $table = 'informasi';
 
     public function get()
     {

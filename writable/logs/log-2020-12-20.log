@@ -1,0 +1,46 @@
+CRITICAL - 2020-12-20 05:12:46 --> You must set the database table to be used with your query.
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Model.php(1673): CodeIgniter\Model->builder()
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Model.php(1176): CodeIgniter\Model->countAllResults(false)
+#3 D:\xampp\htdocs\sidamis\app\Controllers\Informasi.php(22): CodeIgniter\Model->paginate(6)
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\informasi->index()
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\informasi))
+#6 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-20 05:13:21 --> Trying to get property 'informasi_foto' of non-object
+#0 D:\xampp\htdocs\sidamis\app\Views\frontend\informasi.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 35, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('frontend/inform...', Array, true)
+#3 D:\xampp\htdocs\sidamis\app\Controllers\Informasi.php(26): view('frontend/inform...', Array)
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\informasi->index()
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\informasi))
+#6 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-20 05:19:24 --> Invalid file: App\Views\Pagers\bootstrap.php
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Views\\Pager...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Pager\Pager.php(186): CodeIgniter\View\View->render('App\\Views\\Pager...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Pager\Pager.php(121): CodeIgniter\Pager\Pager->displayLinks('btinformasi', 'bootstrap_pagin...')
+#3 D:\xampp\htdocs\sidamis\app\Views\frontend\informasi.php(72): CodeIgniter\Pager\Pager->links('btinformasi', 'bootstrap_pagin...')
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('frontend/inform...', Array, true)
+#6 D:\xampp\htdocs\sidamis\app\Controllers\Informasi.php(26): view('frontend/inform...', Array)
+#7 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\informasi->index()
+#8 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\informasi))
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-20 05:20:47 --> Invalid file: App\Views\frontend\Pagers\bootstrap.php
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Views\\front...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Pager\Pager.php(186): CodeIgniter\View\View->render('App\\Views\\front...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Pager\Pager.php(121): CodeIgniter\Pager\Pager->displayLinks('btinformasi', 'bootstrap_pagin...')
+#3 D:\xampp\htdocs\sidamis\app\Views\frontend\informasi.php(72): CodeIgniter\Pager\Pager->links('btinformasi', 'bootstrap_pagin...')
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('frontend/inform...', Array, true)
+#6 D:\xampp\htdocs\sidamis\app\Controllers\Informasi.php(26): view('frontend/inform...', Array)
+#7 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\informasi->index()
+#8 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\informasi))
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}

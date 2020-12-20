@@ -69,8 +69,8 @@
 
 
         </div>
-
-        <div class="blog-pagination" data-aos="fade-up">
+        <?= $pager->links('btinformasi', 'bootstrap_pagination') ?>
+        <!-- <div class="blog-pagination" data-aos="fade-up">
           <ul class="justify-content-center">
             <li class="disabled"><i class="icofont-rounded-left"></i></li>
             <li><a href="#">1</a></li>
@@ -78,7 +78,7 @@
             <li><a href="#">3</a></li>
             <li><a href="#"><i class="icofont-rounded-right"></i></a></li>
           </ul>
-        </div>
+        </div> -->
 
       </div>
     </section><!-- End Blog Section -->
