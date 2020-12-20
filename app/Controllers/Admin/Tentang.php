@@ -6,66 +6,66 @@ use App\Controllers\BaseController;
 use App\Libraries\SmartComponent\Grid;
 use App\Libraries\SmartComponent\Form;
 
-class Layanan extends BaseController
+class tentang extends BaseController
 {
     public function index()
     {
         $data['grid']   = $this->grid();
         $data['search'] = $this->search();
-        $data['title']  = 'Layanan';
+        $data['title']  = 'Tentang';
 
-        return view('admin/layanan/list', $data);
+        return view('admin/tentang/list', $data);
     }
 
     public function grid()
     {
         $SQL = "SELECT
-                    layanan_id||'/'||layanan_nama as id, *,
-                    '<button onclick=\"approve('||layanan_id||')\" class=\"btn btn-sm btn-success\">Approve</button>' as approve
+                    tentang_id||'/'||tentang_judul as id, *,
+                    '<button onclick=\"approve('||tentang_id||')\" class=\"btn btn-sm btn-success\">Approve</button>' as approve
                 FROM
-                    layanan";
+                    tentang";
 
         $action['edit']     = array(
-            'link'          => 'admin/layanan/edit/'
+            'link'          => 'admin/tentang/edit/'
         );
         $action['detail']     = array(
-            'link'          => 'admin/layanan/detail/'
+            'link'          => 'admin/tentang/detail/'
         );
         $action['delete']     = array(
-            'jsf'          => 'deletelayanan'
+            'jsf'          => 'deletetentang'
         );
 
         $grid = new Grid();
         return $grid->set_query($SQL, array(
-            array('layanan_nama', $this->request->getGet('layanan_nama')),
+            array('tentang_judul', $this->request->getGet('tentang_judul')),
           ))
             ->set_sort(array('id', 'asc'))
             // ->set_snippet(function($id, $data){
-            //     $data['layanan_name'] = $data['layanan_name'];
+            //     $data['tentang_name'] = $data['tentang_name'];
             //     return $data;
             // })
             ->configure(
                 array(
-                    'datasouce_url' => base_url("admin/layanan/grid?datasource&" . get_query_string()),
+                    'datasouce_url' => base_url("admin/tentang/grid?datasource&" . get_query_string()),
                     'grid_columns'  => array(
                         array(
-                            'field' => 'layanan_nama',
-                            'title' => 'Nama layanan',
+                            'field' => 'tentang_judul',
+                            'title' => 'Judul tentang',
                         ),
                         array(
-                            'field' => 'layanan_deskripsi',
-                            'title' => 'Deskripsi',
+                            'field' => 'tentang_konten',
+                            'title' => 'Konten',
                             'encoded'=> false
                         ),
                         array(
-                            'field' => 'layanan_foto',
+                            'field' => 'tentang_file',
                             'title' => 'Foto',
                             'encoded'=> false
                         ),
                         array(
-                            'field' => 'layanan_icon',
-                            'title' => 'Icon',
-                            'encoded'=> true
+                            'field' => 'tentang_tipe',
+                            'title' => 'Link',
+                            'encoded'=> false
                         ),
                         array(
                             'field' => 'approve',
@@ -80,7 +80,7 @@ class Layanan extends BaseController
             ->set_toolbar(function($toolbar){
                 $toolbar
                 ->addHtml('<a href="" class="btn ">Print PDF</a>')
-                ->add('add', ['label'=>'Tambah layanan', 'url'=> base_url("admin/layanan/add")])
+                ->add('add', ['label'=>'Tambah tentang', 'url'=> base_url("admin/tentang/add")])
                 ->add('download')
                 ;
             })
@@ -93,29 +93,29 @@ class Layanan extends BaseController
         return $form->set_form_type('search')
             ->set_form_method('GET')
             ->set_submit_label('Search')
-            ->add('layanan_judul', 'Nama layanan', 'text', false, $this->request->getGet('layanan_nama'), 'style="width:100%;" ')
+            ->add('tentang_judul', 'Judul tentang', 'text', false, $this->request->getGet('tentang_judul'), 'style="width:100%;" ')
             ->output();
     }
 
     public function add()
     {
-        $data['title']  = 'Tambah Layanan';
+        $data['title']  = 'Tambah tentang';
         $data['form']   = $this->form();
-        $data['url_back']= base_url("admin/layanan");
+        $data['url_back']= base_url("admin/tentang");
         return view('global/form', $data);
     }
 
     public function edit($id)
     {
-        $data['title']  = 'Edit Layanan';
+        $data['title']  = 'Edit tentang';
         $data['form']   = $this->form($id);
-        $data['url_back']= base_url("admin/layanan");
+        $data['url_back']= base_url("admin/tentang");
         return view('global/form', $data);
     }
     public function delete()
     {
         $id = $this->request->getPost('id');
-        $this->db->table('layanan')->delete(['layanan_id' => $id]);
+        $this->db->table('tentang')->delete(['tentang_id' => $id]);
         return $this->response->setJSON(
             array(
                 'status' => true,
@@ -127,41 +127,41 @@ class Layanan extends BaseController
     {
 
         if ($id != null) {
-            $data = $this->db->table('layanan')->getWhere(['layanan_id' => $id])->getRowArray();
+            $data = $this->db->table('tentang')->getWhere(['tentang_id' => $id])->getRowArray();
         } else {
             $data = array(
                 'group' => array(),
-                'layanan_nama' => '',
-                'layanan_deskripsi' => '',
-                'layanan_foto' => '',
-                'layanan_icon' => '',
+                'tentang_judul' => '',
+                'tentang_konten' => '',
+                'tentang_file' => '',
+                'tentang_tipe' => '',
             );
             $group = array();
         }
 
         $form = new Form();
         $form->set_attribute_form('class="form-horizontal"')
-            ->add('layanan_nama', 'Nama Layanan', 'text', true, ($data) ? $data['layanan_nama'] : '', 'style="width:100%;"')
-            ->add('layanan_deskripsi', 'Deskripsi', 'text', true, ($data) ? $data['layanan_deskripsi'] : '', 'style="width:100%;"')
-            ->add('layanan_foto', 'Foto', 'text', true, ($data) ? $data['layanan_foto'] : '', 'style="width:100%;"')
-            ->add('layanan_icon', 'Icon', 'text', true, ($data) ? $data['layanan_icon'] : '', 'style="width:100%;"');
+            ->add('tentang_judul', 'Judul tentang', 'text', true, ($data) ? $data['tentang_judul'] : '', 'style="width:100%;"')
+            ->add('tentang_konten', 'Konten', 'text', true, ($data) ? $data['tentang_konten'] : '', 'style="width:100%;"')
+            ->add('tentang_file', 'Foto', 'file', true, ($data) ? $data['tentang_file'] : '', 'style="width:100%;"')
+            ->add('tentang_tipe', 'Link', 'text', true, ($data) ? $data['tentang_tipe'] : '', 'style="width:100%;"');
         if ($form->formVerified()) {
             die(print_r($form->get_data()));
             $data_insert = array(
-                'layanan_nama'    => $this->request->getPost('layanan_nama'),
-                'layanan_deskrispi'    => $this->request->getPost('layanan_deskripsi'),
-                'layanan_foto'    => $this->request->getPost('layanan_foto'),
-                'layanan_icon'    => $this->request->getPost('layanan_icon'),
-                // 'layanan_password'    => sha1($this->request->getPost('layanan_password')),
+                'tentang_judul'    => $this->request->getPost('tentang_judul'),
+                'tentang_konten'    => $this->request->getPost('tentang_konten'),
+                'tentang_file'    => $this->request->getPost('tentang_file'),
+                'tentang_tipe'    => $this->request->getPost('tentang_tipe'),
+                // 'tentang_password'    => sha1($this->request->getPost('tentang_password')),
             );
             if ($id != null) {
-                $this->db->table('public.layanan')->where('layanan_id', $id)->update($data_insert);
+                $this->db->table('public.tentang')->where('tentang_id', $id)->update($data_insert);
                 $this->session->setFlashdata('success', 'Sukses Edit Data');
             } else {
-                $this->db->table('public.layanan')->insert($data_insert);
+                $this->db->table('public.tentang')->insert($data_insert);
                 $this->session->setFlashdata('success', 'Sukses Insert Baru');
             }
-            die(forceRedirect(base_url('/admin/layanan')));
+            die(forceRedirect(base_url('/admin/tentang')));
         } else {
             return $form->output();
         }
