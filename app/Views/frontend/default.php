@@ -27,10 +27,10 @@
 
   <!-- Template Main CSS File -->
   <link href="<?php echo base_url();?>/frontend/assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="<?php echo base_url();?>/frontend/webfont/demo-files/demo.css">
+  <!-- <link rel="stylesheet" href="<?php echo base_url();?>/frontend/webfont/demo-files/demo.css">
   <link rel="stylesheet" href="<?php echo base_url();?>/frontend/webfont/style.css">
   <!--[if lt IE 8]><!-->
-  <link rel="stylesheet" href="<?php echo base_url();?>/frontend/webfont/ie7/ie7.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>/frontend/webfont/ie7/ie7.css"> -->
 
 
   <!-- =======================================================
@@ -106,14 +106,13 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Links Bantuan</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Beranda</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Tentang</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Profil</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Informasi Umum</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Layanan</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Gallery</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Berita</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Kontak</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url();?>">Beranda</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url();?>/tentang/index/profil">Profil</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url();?>/informasi">Informasi Umum</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url();?>/layanan">Layanan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url();?>/gallery">Gallery</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url();?>/berita">Berita</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url();?>/kontak">Kontak</a></li>
             </ul>
           </div>
 
@@ -125,10 +124,9 @@
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Langganan</h4>
             <p>Dapatkan informasi terbaru dari kami melalui email</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Langganan">
+            <form action="<?php echo base_url();?>/langganan/save" method="post">
+              <input type="email" name="langganan_email"><input type="submit" value="Langganan">
             </form>
-
           </div>
 
         </div>

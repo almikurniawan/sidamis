@@ -121,13 +121,18 @@ class Navigation
                         'icon'          => 'fa-home',
                     ),
                     array(
+                        'label'         => 'Dinas terkait',
+                        'controller'    => 'admin/dinas',
+                        'icon'          => 'fa-home',
+                    ),
+                    array(
                         'label'         => 'Kontak',
                         'controller'    => 'admin/kontak',
                         'icon'          => 'fa-home',
                     ),
                     array(
-                        'label'         => 'Dinas terkait',
-                        'controller'    => 'admin/dinas',
+                        'label'         => 'Langganan',
+                        'controller'    => 'admin/langganan',
                         'icon'          => 'fa-home',
                     ),
                 )

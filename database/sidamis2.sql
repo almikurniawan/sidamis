@@ -12,7 +12,7 @@
  Target Server Version : 100015
  File Encoding         : 65001
 
- Date: 21/12/2020 05:02:06
+ Date: 21/12/2020 05:25:56
 */
 
 
@@ -24,6 +24,17 @@ CREATE SEQUENCE "public"."karyawan_kar_id_seq"
 INCREMENT 1
 MINVALUE  1
 MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for langganan_langganan_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."langganan_langganan_id_seq";
+CREATE SEQUENCE "public"."langganan_langganan_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 32767
 START 1
 CACHE 1;
 
@@ -308,6 +319,21 @@ INSERT INTO "public"."kontak" VALUES (1, 'fddfd', 'sdsfsf@gmail.com', '434', 'sf
 INSERT INTO "public"."kontak" VALUES (2, 'fdfd', 'fdfdf@gmail.com', '43334', 'dff', 'dff');
 
 -- ----------------------------
+-- Table structure for langganan
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."langganan";
+CREATE TABLE "public"."langganan" (
+  "langganan_id" int2 NOT NULL DEFAULT nextval('langganan_langganan_id_seq'::regclass),
+  "langganan_email" varchar(255) COLLATE "pg_catalog"."default"
+)
+;
+
+-- ----------------------------
+-- Records of langganan
+-- ----------------------------
+INSERT INTO "public"."langganan" VALUES (1, 'edsff@gamol.com');
+
+-- ----------------------------
 -- Table structure for layanan
 -- ----------------------------
 DROP TABLE IF EXISTS "public"."layanan";
@@ -463,6 +489,13 @@ SELECT setval('"public"."karyawan_kar_id_seq"', 2, false);
 -- ----------------------------
 -- Alter sequences owned by
 -- ----------------------------
+ALTER SEQUENCE "public"."langganan_langganan_id_seq"
+OWNED BY "public"."langganan"."langganan_id";
+SELECT setval('"public"."langganan_langganan_id_seq"', 2, true);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
 SELECT setval('"public"."ref_group_akses_ref_group_akses_id_seq"', 2, false);
 
 -- ----------------------------
@@ -568,6 +601,11 @@ ALTER TABLE "public"."karyawan" ADD CONSTRAINT "karyawan_pkey" PRIMARY KEY ("kar
 -- Primary Key structure for table kontak
 -- ----------------------------
 ALTER TABLE "public"."kontak" ADD CONSTRAINT "kontak_pkey" PRIMARY KEY ("kontak_id");
+
+-- ----------------------------
+-- Primary Key structure for table langganan
+-- ----------------------------
+ALTER TABLE "public"."langganan" ADD CONSTRAINT "langganan_pkey" PRIMARY KEY ("langganan_id");
 
 -- ----------------------------
 -- Primary Key structure for table layanan
