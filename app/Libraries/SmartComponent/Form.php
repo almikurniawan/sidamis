@@ -5,6 +5,7 @@ class Form{
     protected $template  = 'template/default_smart_form';
     protected $fields    = array();
     protected $attribute_form = '';
+    protected $file_upload = false;
     protected $resume    = false;
     protected $form_action = '';
     protected $submit_label = 'Simpan';
@@ -164,6 +165,7 @@ class Form{
             <script type="text/javascript">$(document).ready(function(){$("#'.$name.'").kendoDatePicker({start: "year", depth: "year", format: "yyyy-MM", dateInput: true});});</script>
             ';
         }else if($type=='file'){
+            $this->file_upload = true;
             $field = '<input type="file" name="'.$name.'" value="'.$value.'" '.$extraAttribute.'/>';
             if($value!=''){
                 $field .= '<a target="_new" href="'.$value.'">Lihat File</a>';
@@ -328,6 +330,9 @@ class Form{
         }
 
         $this->fields = array();
+        if($this->file_upload){
+            $this->attribute_form .= 'enctype="multipart/form-data"';
+        }
 
         $form = $alert . '<form action="'.$this->form_action.'" autocomplete="off" method="'.$this->form_method.'" '.$this->attribute_form.'>'.$view.'</form>';
         return $form;
