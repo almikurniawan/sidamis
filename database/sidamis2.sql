@@ -12,7 +12,7 @@
  Target Server Version : 100015
  File Encoding         : 65001
 
- Date: 09/12/2020 13:15:33
+ Date: 21/12/2020 05:25:56
 */
 
 
@@ -24,6 +24,17 @@ CREATE SEQUENCE "public"."karyawan_kar_id_seq"
 INCREMENT 1
 MINVALUE  1
 MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for langganan_langganan_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."langganan_langganan_id_seq";
+CREATE SEQUENCE "public"."langganan_langganan_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 32767
 START 1
 CACHE 1;
 
@@ -83,6 +94,94 @@ START 1
 CACHE 1;
 
 -- ----------------------------
+-- Sequence structure for seq_dinas_id
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."seq_dinas_id";
+CREATE SEQUENCE "public"."seq_dinas_id" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for seq_gallery_id
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."seq_gallery_id";
+CREATE SEQUENCE "public"."seq_gallery_id" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for seq_gallery_kategori_id
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."seq_gallery_kategori_id";
+CREATE SEQUENCE "public"."seq_gallery_kategori_id" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for seq_informasi_id
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."seq_informasi_id";
+CREATE SEQUENCE "public"."seq_informasi_id" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for seq_kontak_id
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."seq_kontak_id";
+CREATE SEQUENCE "public"."seq_kontak_id" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for seq_layanan_id
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."seq_layanan_id";
+CREATE SEQUENCE "public"."seq_layanan_id" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for seq_slide_id
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."seq_slide_id";
+CREATE SEQUENCE "public"."seq_slide_id" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+
+-- ----------------------------
+-- Sequence structure for tentang_tentang_id_seq
+-- ----------------------------
+DROP SEQUENCE IF EXISTS "public"."tentang_tentang_id_seq";
+CREATE SEQUENCE "public"."tentang_tentang_id_seq" 
+INCREMENT 1
+MINVALUE  1
+MAXVALUE 32767
+START 1
+CACHE 1;
+
+-- ----------------------------
 -- Sequence structure for user_user_id_seq
 -- ----------------------------
 DROP SEQUENCE IF EXISTS "public"."user_user_id_seq";
@@ -116,7 +215,7 @@ INSERT INTO "public"."berita" VALUES (1, 'banjir', '2020-12-06', 'berita <br> ba
 -- ----------------------------
 DROP TABLE IF EXISTS "public"."dinas";
 CREATE TABLE "public"."dinas" (
-  "dinas_id" int4 NOT NULL,
+  "dinas_id" int4 NOT NULL DEFAULT nextval('seq_dinas_id'::regclass),
   "dinas_nama" varchar(255) COLLATE "pg_catalog"."default",
   "dinas_logo" varchar(255) COLLATE "pg_catalog"."default",
   "dinas_link" varchar(255) COLLATE "pg_catalog"."default"
@@ -124,11 +223,16 @@ CREATE TABLE "public"."dinas" (
 ;
 
 -- ----------------------------
+-- Records of dinas
+-- ----------------------------
+INSERT INTO "public"."dinas" VALUES (1, 'Pemerintah Kab Kediri', 'logo1.jpg', '#');
+
+-- ----------------------------
 -- Table structure for gallery
 -- ----------------------------
 DROP TABLE IF EXISTS "public"."gallery";
 CREATE TABLE "public"."gallery" (
-  "gallery_id" int4 NOT NULL,
+  "gallery_id" int4 NOT NULL DEFAULT nextval('seq_gallery_id'::regclass),
   "gallery_nama" varchar(255) COLLATE "pg_catalog"."default",
   "gallery_foto" varchar(255) COLLATE "pg_catalog"."default",
   "gallery_deskripsi" varchar(255) COLLATE "pg_catalog"."default",
@@ -147,7 +251,7 @@ INSERT INTO "public"."gallery" VALUES (2, 'Event 1', 'foto1.jpg', 'snj jsn snj',
 -- ----------------------------
 DROP TABLE IF EXISTS "public"."gallery_kategori";
 CREATE TABLE "public"."gallery_kategori" (
-  "gallery_kategori_id" int4 NOT NULL,
+  "gallery_kategori_id" int4 NOT NULL DEFAULT nextval('seq_gallery_kategori_id'::regclass),
   "kategori_nama" varchar(255) COLLATE "pg_catalog"."default"
 )
 ;
@@ -163,7 +267,7 @@ INSERT INTO "public"."gallery_kategori" VALUES (2, 'EVENT');
 -- ----------------------------
 DROP TABLE IF EXISTS "public"."informasi";
 CREATE TABLE "public"."informasi" (
-  "informasi_id" int4 NOT NULL,
+  "informasi_id" int4 NOT NULL DEFAULT nextval('seq_informasi_id'::regclass),
   "informasi_nama" varchar(255) COLLATE "pg_catalog"."default",
   "informasi_tanggal" date,
   "informasi_isi" varchar(255) COLLATE "pg_catalog"."default",
@@ -199,30 +303,56 @@ CREATE TABLE "public"."karyawan" (
 -- ----------------------------
 DROP TABLE IF EXISTS "public"."kontak";
 CREATE TABLE "public"."kontak" (
-  "kontak_id" int4 NOT NULL,
+  "kontak_id" int4 NOT NULL DEFAULT nextval('seq_kontak_id'::regclass),
   "kontak_nama" varchar(255) COLLATE "pg_catalog"."default",
   "kontak_email" varchar(255) COLLATE "pg_catalog"."default",
   "kontak_telp" varchar(255) COLLATE "pg_catalog"."default",
+  "kontak_subjek" varchar(255) COLLATE "pg_catalog"."default",
   "kontak_pesan" varchar(255) COLLATE "pg_catalog"."default"
 )
 ;
+
+-- ----------------------------
+-- Records of kontak
+-- ----------------------------
+INSERT INTO "public"."kontak" VALUES (1, 'fddfd', 'sdsfsf@gmail.com', '434', 'sfssdsd', 'sfsffs');
+INSERT INTO "public"."kontak" VALUES (2, 'fdfd', 'fdfdf@gmail.com', '43334', 'dff', 'dff');
+
+-- ----------------------------
+-- Table structure for langganan
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."langganan";
+CREATE TABLE "public"."langganan" (
+  "langganan_id" int2 NOT NULL DEFAULT nextval('langganan_langganan_id_seq'::regclass),
+  "langganan_email" varchar(255) COLLATE "pg_catalog"."default"
+)
+;
+
+-- ----------------------------
+-- Records of langganan
+-- ----------------------------
+INSERT INTO "public"."langganan" VALUES (1, 'edsff@gamol.com');
 
 -- ----------------------------
 -- Table structure for layanan
 -- ----------------------------
 DROP TABLE IF EXISTS "public"."layanan";
 CREATE TABLE "public"."layanan" (
-  "layanan_id" int4 NOT NULL,
+  "layanan_id" int4 NOT NULL DEFAULT nextval('seq_layanan_id'::regclass),
   "layanan_nama" varchar(255) COLLATE "pg_catalog"."default",
   "layanan_deskripsi" varchar(255) COLLATE "pg_catalog"."default",
-  "layanan_foto" varchar(255) COLLATE "pg_catalog"."default"
+  "layanan_foto" varchar(255) COLLATE "pg_catalog"."default",
+  "layanan_icon" varchar(255) COLLATE "pg_catalog"."default"
 )
 ;
 
 -- ----------------------------
 -- Records of layanan
 -- ----------------------------
-INSERT INTO "public"."layanan" VALUES (1, 'SIDAMIS', 'SIDAMIS', 'foto1.jpg');
+INSERT INTO "public"."layanan" VALUES (1, 'Layanan Sosial', 'Program pemberdayaan manusia', 'foto1.jpg', '<i class="icofont-computer"></i>');
+INSERT INTO "public"."layanan" VALUES (2, 'Sidamis', 'Merupakan tempat pusat data Dinas Sosial Kabupaten Kediri', 'foto1.jpg', '<i class="icofont-computer"></i>');
+INSERT INTO "public"."layanan" VALUES (3, 'Layanan Pengaduan', 'Masyarakat dapat berkontak langsung dengan kami dengan layanan pengaduan jika ada permasalahan mengenai sosial', 'foto1.jpg', '<i class="icofont-computer"></i>');
+INSERT INTO "public"."layanan" VALUES (4, 'PKH', 'Program pemberian bantuan sosial bersyarat kepada Keluarga Miskin (KM)', 'foto1.jpg', '<i class="icofont-computer"></i>');
 
 -- ----------------------------
 -- Table structure for ref_group_akses
@@ -297,18 +427,39 @@ CREATE TABLE "public"."ruta" (
 -- ----------------------------
 DROP TABLE IF EXISTS "public"."slide";
 CREATE TABLE "public"."slide" (
-  "slide_id" int4 NOT NULL,
+  "slide_id" int4 NOT NULL DEFAULT nextval('seq_slide_id'::regclass),
   "slide_judul" varchar(255) COLLATE "pg_catalog"."default",
   "slide_tag" varchar(255) COLLATE "pg_catalog"."default",
-  "slide_foto" varchar(255) COLLATE "pg_catalog"."default"
+  "slide_foto" varchar(255) COLLATE "pg_catalog"."default",
+  "slide_link" varchar(255) COLLATE "pg_catalog"."default"
 )
 ;
 
 -- ----------------------------
 -- Records of slide
 -- ----------------------------
-INSERT INTO "public"."slide" VALUES (1, 'Slide 1', 'slide 1 merupakan ......', 'foto1.jpg');
-INSERT INTO "public"."slide" VALUES (2, 'Slide 2', 'slide 2 merupakan ......', 'foto2.jpg');
+INSERT INTO "public"."slide" VALUES (1, 'Slide 1', 'slide 1 merupakan ......', 'slide-1.jpg', '#');
+INSERT INTO "public"."slide" VALUES (2, 'Slide 2', 'slide 2 merupakan ......', 'slide-2.jpg', '#');
+
+-- ----------------------------
+-- Table structure for tentang
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."tentang";
+CREATE TABLE "public"."tentang" (
+  "tentang_id" int2 NOT NULL DEFAULT nextval('tentang_tentang_id_seq'::regclass),
+  "tentang_judul" varchar(255) COLLATE "pg_catalog"."default",
+  "tentang_konten" varchar(255) COLLATE "pg_catalog"."default",
+  "tentang_file" varchar(255) COLLATE "pg_catalog"."default",
+  "tentang_tipe" varchar(255) COLLATE "pg_catalog"."default"
+)
+;
+
+-- ----------------------------
+-- Records of tentang
+-- ----------------------------
+INSERT INTO "public"."tentang" VALUES (1, 'Profil', 'Profil', 'file1.pdf', 'profil');
+INSERT INTO "public"."tentang" VALUES (2, 'tugas pokok dan fungsi', 'tugas pokok dan fungsi', 'file1.pdf', 'tugas pokok dan fungsi');
+INSERT INTO "public"."tentang" VALUES (3, 'Struktur Organisasi', 'Struktur Organisasi', 'file1.pdf', 'struktur organisasi');
 
 -- ----------------------------
 -- Table structure for user
@@ -338,6 +489,13 @@ SELECT setval('"public"."karyawan_kar_id_seq"', 2, false);
 -- ----------------------------
 -- Alter sequences owned by
 -- ----------------------------
+ALTER SEQUENCE "public"."langganan_langganan_id_seq"
+OWNED BY "public"."langganan"."langganan_id";
+SELECT setval('"public"."langganan_langganan_id_seq"', 2, true);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
 SELECT setval('"public"."ref_group_akses_ref_group_akses_id_seq"', 2, false);
 
 -- ----------------------------
@@ -361,6 +519,48 @@ SELECT setval('"public"."ruta_ruta_id_seq"', 2, false);
 -- Alter sequences owned by
 -- ----------------------------
 SELECT setval('"public"."seq_berita_id"', 2, true);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+SELECT setval('"public"."seq_dinas_id"', 2, true);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+SELECT setval('"public"."seq_gallery_id"', 2, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+SELECT setval('"public"."seq_gallery_kategori_id"', 2, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+SELECT setval('"public"."seq_informasi_id"', 2, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+SELECT setval('"public"."seq_kontak_id"', 3, true);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+SELECT setval('"public"."seq_layanan_id"', 2, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+SELECT setval('"public"."seq_slide_id"', 2, false);
+
+-- ----------------------------
+-- Alter sequences owned by
+-- ----------------------------
+ALTER SEQUENCE "public"."tentang_tentang_id_seq"
+OWNED BY "public"."tentang"."tentang_id";
+SELECT setval('"public"."tentang_tentang_id_seq"', 4, true);
 
 -- ----------------------------
 -- Alter sequences owned by
@@ -403,6 +603,11 @@ ALTER TABLE "public"."karyawan" ADD CONSTRAINT "karyawan_pkey" PRIMARY KEY ("kar
 ALTER TABLE "public"."kontak" ADD CONSTRAINT "kontak_pkey" PRIMARY KEY ("kontak_id");
 
 -- ----------------------------
+-- Primary Key structure for table langganan
+-- ----------------------------
+ALTER TABLE "public"."langganan" ADD CONSTRAINT "langganan_pkey" PRIMARY KEY ("langganan_id");
+
+-- ----------------------------
 -- Primary Key structure for table layanan
 -- ----------------------------
 ALTER TABLE "public"."layanan" ADD CONSTRAINT "layanan_pkey" PRIMARY KEY ("layanan_id");
@@ -431,6 +636,11 @@ ALTER TABLE "public"."ruta" ADD CONSTRAINT "ruta_pkey" PRIMARY KEY ("ruta_id");
 -- Primary Key structure for table slide
 -- ----------------------------
 ALTER TABLE "public"."slide" ADD CONSTRAINT "slide_pkey" PRIMARY KEY ("slide_id");
+
+-- ----------------------------
+-- Primary Key structure for table tentang
+-- ----------------------------
+ALTER TABLE "public"."tentang" ADD CONSTRAINT "tentang_pkey" PRIMARY KEY ("tentang_id");
 
 -- ----------------------------
 -- Primary Key structure for table user

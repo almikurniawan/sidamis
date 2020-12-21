@@ -1,27 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Blog - Sailor Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <?php include("css.php");?>
-
-  <!-- =======================================================
-  * Template Name: Sailor - v2.2.0
-  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
-  <?php include("header.php");?>
+<?= $this->extend('frontend/default') ?>
+<?= $this->section('content') ?>
 
   <main id="main">
 
@@ -91,8 +69,8 @@
 
 
         </div>
-
-        <div class="blog-pagination" data-aos="fade-up">
+        <?= $pager->links('btinformasi', 'bootstrap_pagination') ?>
+        <!-- <div class="blog-pagination" data-aos="fade-up">
           <ul class="justify-content-center">
             <li class="disabled"><i class="icofont-rounded-left"></i></li>
             <li><a href="#">1</a></li>
@@ -100,20 +78,11 @@
             <li><a href="#">3</a></li>
             <li><a href="#"><i class="icofont-rounded-right"></i></a></li>
           </ul>
-        </div>
+        </div> -->
 
       </div>
     </section><!-- End Blog Section -->
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <?php include("footer.php");?>
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-  <?php include("js.php");?>
-
-</body>
-
-</html>
+<?= $this->endSection() ?>

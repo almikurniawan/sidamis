@@ -91,9 +91,56 @@ class Navigation
                 'icon'          => 'fa-home',
             ),
             array(
-                'label'         => 'Berita',
-                'controller'    => 'admin/berita',
+                'label'         => 'Data Site',
+                'controller'    => '#master',
                 'icon'          => 'fa-home',
+                'child'         => array(
+                    array(
+                        'label'         => 'Slide',
+                        'controller'    => 'admin/slide',
+                        'icon'          => 'fa-home',
+                    ),
+                    array(
+                        'label'         => 'Tentang',
+                        'controller'    => 'admin/tentang',
+                        'icon'          => 'fa-home',
+                    ),
+                    array(
+                        'label'         => 'Berita',
+                        'controller'    => 'admin/berita',
+                        'icon'          => 'fa-home',
+                    ),
+                    array(
+                        'label'         => 'Layanan',
+                        'controller'    => 'admin/layanan',
+                        'icon'          => 'fa-home',
+                    ),
+                    array(
+                        'label'         => 'Informasi',
+                        'controller'    => 'admin/informasi',
+                        'icon'          => 'fa-home',
+                    ),
+                    array(
+                        'label'         => 'Gallery',
+                        'controller'    => 'admin/gallery',
+                        'icon'          => 'fa-home',
+                    ),
+                    array(
+                        'label'         => 'Dinas terkait',
+                        'controller'    => 'admin/dinas',
+                        'icon'          => 'fa-home',
+                    ),
+                    array(
+                        'label'         => 'Kontak',
+                        'controller'    => 'admin/kontak',
+                        'icon'          => 'fa-home',
+                    ),
+                    array(
+                        'label'         => 'Langganan',
+                        'controller'    => 'admin/langganan',
+                        'icon'          => 'fa-home',
+                    ),
+                )
             ),
             array(
                 'label'         => 'Data Master',

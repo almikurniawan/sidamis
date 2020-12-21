@@ -1,0 +1,519 @@
+CRITICAL - 2020-12-20 05:12:46 --> You must set the database table to be used with your query.
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Model.php(1673): CodeIgniter\Model->builder()
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Model.php(1176): CodeIgniter\Model->countAllResults(false)
+#3 D:\xampp\htdocs\sidamis\app\Controllers\Informasi.php(22): CodeIgniter\Model->paginate(6)
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\informasi->index()
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\informasi))
+#6 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-20 05:13:21 --> Trying to get property 'informasi_foto' of non-object
+#0 D:\xampp\htdocs\sidamis\app\Views\frontend\informasi.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 35, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('frontend/inform...', Array, true)
+#3 D:\xampp\htdocs\sidamis\app\Controllers\Informasi.php(26): view('frontend/inform...', Array)
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\informasi->index()
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\informasi))
+#6 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-12-20 05:19:24 --> Invalid file: App\Views\Pagers\bootstrap.php
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Views\\Pager...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Pager\Pager.php(186): CodeIgniter\View\View->render('App\\Views\\Pager...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Pager\Pager.php(121): CodeIgniter\Pager\Pager->displayLinks('btinformasi', 'bootstrap_pagin...')
+#3 D:\xampp\htdocs\sidamis\app\Views\frontend\informasi.php(72): CodeIgniter\Pager\Pager->links('btinformasi', 'bootstrap_pagin...')
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('frontend/inform...', Array, true)
+#6 D:\xampp\htdocs\sidamis\app\Controllers\Informasi.php(26): view('frontend/inform...', Array)
+#7 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\informasi->index()
+#8 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\informasi))
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-20 05:20:47 --> Invalid file: App\Views\frontend\Pagers\bootstrap.php
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Views\\front...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Pager\Pager.php(186): CodeIgniter\View\View->render('App\\Views\\front...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Pager\Pager.php(121): CodeIgniter\Pager\Pager->displayLinks('btinformasi', 'bootstrap_pagin...')
+#3 D:\xampp\htdocs\sidamis\app\Views\frontend\informasi.php(72): CodeIgniter\Pager\Pager->links('btinformasi', 'bootstrap_pagin...')
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('frontend/inform...', Array, true)
+#6 D:\xampp\htdocs\sidamis\app\Controllers\Informasi.php(26): view('frontend/inform...', Array)
+#7 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\informasi->index()
+#8 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\informasi))
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-20 06:39:23 --> Undefined index: icon
+#0 D:\xampp\htdocs\sidamis\app\Libraries\Navigation.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 32, Array)
+#1 D:\xampp\htdocs\sidamis\app\Libraries\Navigation.php(15): App\Libraries\Navigation->gen_menu()
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\Cell.php(149): App\Libraries\Navigation->menu()
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1140): CodeIgniter\View\Cell->render('\\App\\Libraries\\...', NULL, 0, 'AppLibrariesNav...')
+#4 D:\xampp\htdocs\sidamis\app\Views\template\default.php(110): view_cell('\\App\\Libraries\\...')
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(257): CodeIgniter\View\View->render('template/defaul...', Array, true)
+#7 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('global/list', Array, true)
+#8 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Home.php(17): view('global/list', Array)
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#10 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#11 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-12-20 06:44:39 --> pg_query(): Query failed: ERROR:  relation &quot;import&quot; does not exist
+LINE 1: ...loads/\'||import_file||'&quot;&gt;File&lt;/a&gt;' as jenis from import lef...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 196, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'select *, impor...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select *, impor...')
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select *, impor...')
+#4 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('select *, impor...')
+#5 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(172): App\Libraries\SmartComponent\Datasource->run()
+#6 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(127): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 D:\xampp\htdocs\sidamis\app\Controllers\Admin\HistoryImport.php(72): App\Libraries\SmartComponent\Grid->output()
+#8 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\HistoryImport->grid()
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HistoryImport))
+#10 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-12-20 06:44:39 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-20 06:44:45 --> pg_query(): Query failed: ERROR:  relation &quot;import&quot; does not exist
+LINE 1: ...loads/\'||import_file||'&quot;&gt;File&lt;/a&gt;' as jenis from import lef...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 196, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'select *, impor...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select *, impor...')
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select *, impor...')
+#4 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('select *, impor...')
+#5 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(172): App\Libraries\SmartComponent\Datasource->run()
+#6 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(127): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 D:\xampp\htdocs\sidamis\app\Controllers\Admin\HistoryImport.php(72): App\Libraries\SmartComponent\Grid->output()
+#8 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\HistoryImport->grid()
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HistoryImport))
+#10 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-12-20 06:44:45 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-20 06:52:01 --> pg_query(): Query failed: ERROR:  column &quot;layanan_judul&quot; does not exist
+LINE 2:                     layanan_id||'/'||layanan_judul as id, *,
+                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 196, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #182, 'SELECT\r\n       ...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(172): App\Libraries\SmartComponent\Datasource->run()
+#6 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(127): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(83): App\Libraries\SmartComponent\Grid->output()
+#8 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Layanan->grid()
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Layanan))
+#10 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-12-20 06:52:01 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-20 06:56:19 --> pg_query(): Query failed: ERROR:  column &quot;layanan_judul&quot; does not exist
+LINE 2:                     layanan_id||'/'||layanan_judul as id, *,
+                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 196, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #182, 'SELECT\r\n       ...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(172): App\Libraries\SmartComponent\Datasource->run()
+#6 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(127): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(82): App\Libraries\SmartComponent\Grid->output()
+#8 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Layanan->grid()
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Layanan))
+#10 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-12-20 06:56:19 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-20 06:58:29 --> pg_query(): Query failed: ERROR:  column &quot;layanan_judul&quot; does not exist
+LINE 2:                     layanan_id||'/'||layanan_judul as id, *,
+                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 196, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #182, 'SELECT\r\n       ...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(172): App\Libraries\SmartComponent\Datasource->run()
+#6 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(127): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(82): App\Libraries\SmartComponent\Grid->output()
+#8 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Layanan->grid()
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Layanan))
+#10 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-12-20 06:58:29 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-20 06:58:56 --> pg_query(): Query failed: ERROR:  column &quot;layanan_judul&quot; does not exist
+LINE 2:                     layanan_id||'/'||layanan_judul as id, *,
+                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 196, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #182, 'SELECT\r\n       ...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(172): App\Libraries\SmartComponent\Datasource->run()
+#6 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(127): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(82): App\Libraries\SmartComponent\Grid->output()
+#8 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Layanan->grid()
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Layanan))
+#10 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-12-20 06:58:56 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-20 06:59:04 --> pg_query(): Query failed: ERROR:  column &quot;layanan_judul&quot; does not exist
+LINE 2:                     layanan_id||'/'||layanan_judul as id, *,
+                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 196, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #182, 'SELECT\r\n       ...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(172): App\Libraries\SmartComponent\Datasource->run()
+#6 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(127): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(82): App\Libraries\SmartComponent\Grid->output()
+#8 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Layanan->grid()
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Layanan))
+#10 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-12-20 06:59:04 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-20 07:01:07 --> pg_query(): Query failed: ERROR:  column &quot;layanan_judul&quot; does not exist
+LINE 2:                     layanan_id||'/'||layanan_judul as id, *,
+                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 196, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #182, 'SELECT\r\n       ...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(172): App\Libraries\SmartComponent\Datasource->run()
+#6 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(127): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(82): App\Libraries\SmartComponent\Grid->output()
+#8 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Layanan->grid()
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Layanan))
+#10 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-12-20 07:01:07 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-20 07:01:14 --> pg_query(): Query failed: ERROR:  column &quot;layanan_judul&quot; does not exist
+LINE 2:                     layanan_id||'/'||layanan_judul as id, *,
+                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 196, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #182, 'SELECT\r\n       ...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT\r\n       ...')
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n       ...')
+#4 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('SELECT\r\n       ...')
+#5 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(172): App\Libraries\SmartComponent\Datasource->run()
+#6 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(127): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(82): App\Libraries\SmartComponent\Grid->output()
+#8 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Layanan->grid()
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Layanan))
+#10 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-12-20 07:01:14 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-20 11:31:35 --> pg_query(): Query failed: ERROR:  relation &quot;ref_layanan_akses&quot; does not exist
+LINE 2: FROM &quot;ref_layanan_akses&quot;
+             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 196, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'SELECT "ref_lay...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('SELECT "ref_lay...')
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "ref_lay...')
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2019): CodeIgniter\Database\BaseConnection->query('SELECT "ref_lay...', Array, false)
+#5 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(126): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(106): App\Controllers\Admin\Layanan->form('1')
+#7 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Layanan->edit('1', 'Layanan Sosial')
+#8 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Layanan))
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-12-20 11:33:59 --> Undefined index: layanan_namalengkap
+#0 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 139, Array)
+#1 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(106): App\Controllers\Admin\Layanan->form('1')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Layanan->edit('1', 'Layanan Sosial')
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Layanan))
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-20 11:35:26 --> syntax error, unexpected 'if' (T_IF)
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('admin/layanan')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('admin/layanan')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-20 11:40:49 --> pg_query(): Query failed: ERROR:  relation &quot;import&quot; does not exist
+LINE 1: ...loads/\'||import_file||'&quot;&gt;File&lt;/a&gt;' as jenis from import lef...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 196, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #181, 'select *, impor...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select *, impor...')
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select *, impor...')
+#4 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Datasource.php(73): CodeIgniter\Database\BaseConnection->query('select *, impor...')
+#5 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(172): App\Libraries\SmartComponent\Datasource->run()
+#6 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Grid.php(127): App\Libraries\SmartComponent\Grid->get_datasource()
+#7 D:\xampp\htdocs\sidamis\app\Controllers\Admin\HistoryImport.php(72): App\Libraries\SmartComponent\Grid->output()
+#8 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\HistoryImport->grid()
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\HistoryImport))
+#10 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-12-20 11:40:49 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\Exceptions\FormatException.php:9
+Stack trace:
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(71): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(414): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\API\ResponseTrait.php(134): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Debug\Exceptions.php(168): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-20 14:57:13 --> Undefined index: layanan_nama
+#0 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Form.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 140, Array)
+#1 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(91): App\Libraries\SmartComponent\Form->add('layanan_nama', 'Nama layanan', 'text', false, NULL, 'style="width:10...')
+#2 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(14): App\Controllers\Admin\Layanan->search()
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Layanan->index()
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Layanan))
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-20 14:58:34 --> Undefined index: layanan_nama
+#0 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Form.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 140, Array)
+#1 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(91): App\Libraries\SmartComponent\Form->add('layanan_nama', 'Nama layanan', 'text', true, NULL, 'style="width:10...')
+#2 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(14): App\Controllers\Admin\Layanan->search()
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Layanan->index()
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Layanan))
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-20 14:59:13 --> Undefined index: layanan_nama
+#0 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Form.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 140, Array)
+#1 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(91): App\Libraries\SmartComponent\Form->add('layanan_nama', 'Nama layanan', 'text', false, NULL, 'style="width:10...')
+#2 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(14): App\Controllers\Admin\Layanan->search()
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Layanan->index()
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Layanan))
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-20 15:04:50 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('admin/layanan/a...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('admin/layanan/a...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-20 15:05:02 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('admin/layanan/a...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('admin/layanan/a...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-20 15:05:03 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('admin/layanan/a...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('admin/layanan/a...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-20 15:05:04 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('admin/layanan/a...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('admin/layanan/a...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-20 15:05:31 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('admin/layanan/a...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('admin/layanan/a...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-12-20 15:07:16 --> Undefined index: layanan_foto
+#0 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Form.php(348): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 348, Array)
+#1 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(143): App\Libraries\SmartComponent\Form->formVerified()
+#2 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(98): App\Controllers\Admin\Layanan->form()
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Layanan->add()
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Layanan))
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-20 15:09:10 --> Undefined index: layanan_foto
+#0 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Form.php(348): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 348, Array)
+#1 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(143): App\Libraries\SmartComponent\Form->formVerified()
+#2 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Layanan.php(98): App\Controllers\Admin\Layanan->form()
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Layanan->add()
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Layanan))
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-20 15:24:58 --> Undefined index: informasi_deskripsi
+#0 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Informasi.php(156): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 156, Array)
+#1 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Informasi.php(113): App\Controllers\Admin\Informasi->form()
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Informasi->add()
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Informasi))
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-20 15:25:09 --> Undefined index: informasi_deskripsi
+#0 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Informasi.php(156): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 156, Array)
+#1 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Informasi.php(113): App\Controllers\Admin\Informasi->form()
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Informasi->add()
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Informasi))
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-20 15:35:25 --> Invalid file: admin/gallery/list.php
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/gallery/l...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/gallery/l...', Array, true)
+#2 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Gallery.php(17): view('admin/gallery/l...', Array)
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Gallery->index()
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gallery))
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-20 15:43:03 --> Invalid file: admin/kontak/list.php
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/kontak/li...')
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/kontak/li...', Array, true)
+#2 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Kontak.php(17): view('admin/kontak/li...', Array)
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Kontak->index()
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Kontak))
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-20 15:51:47 --> Undefined index: slide_slide
+#0 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Slide.php(144): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 144, Array)
+#1 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Slide.php(103): App\Controllers\Admin\slide->form()
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\slide->add()
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\slide))
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-12-20 16:05:26 --> Undefined index: dinas_nama
+#0 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Form.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 140, Array)
+#1 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Dinas.php(92): App\Libraries\SmartComponent\Form->add('dinas_nama', 'Nama dinas', 'text', false, NULL, 'style="width:10...')
+#2 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Dinas.php(14): App\Controllers\Admin\Dinas->search()
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Dinas->index()
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dinas))
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-20 16:05:30 --> Undefined index: dinas_nama
+#0 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Form.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 140, Array)
+#1 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Dinas.php(92): App\Libraries\SmartComponent\Form->add('dinas_nama', 'Nama dinas', 'text', false, NULL, 'style="width:10...')
+#2 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Dinas.php(14): App\Controllers\Admin\Dinas->search()
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Dinas->index()
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dinas))
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-20 16:05:33 --> Undefined index: dinas_nama
+#0 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Form.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 140, Array)
+#1 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Dinas.php(92): App\Libraries\SmartComponent\Form->add('dinas_nama', 'Nama dinas', 'text', false, NULL, 'style="width:10...')
+#2 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Dinas.php(14): App\Controllers\Admin\Dinas->search()
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Dinas->index()
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dinas))
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-12-20 16:23:46 --> Declaration of App\Models\Layanan_model::save($data) must be compatible with CodeIgniter\Model::save($data): bool
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-12-20 16:24:59 --> Class 'App\Models\langganan_model' not found
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Langganan->save()
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Langganan))
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}

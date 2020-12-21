@@ -18,7 +18,11 @@ class Berita extends BaseController
     public function index()
     {
         $model = new Berita_model();
-        $data['berita']  = $model->get()->getResult();
+        $data = [
+            'berita' => $model->asObject()->paginate(10,'btberita'),
+            'pager' => $model->pager
+        ];
+        // $data['berita']  = $model->get()->getResult();
         return view('frontend/berita',$data);
     }
 

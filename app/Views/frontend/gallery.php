@@ -1,27 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Portfolio - Sailor Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <?php include("css.php");?>
-
-  <!-- =======================================================
-  * Template Name: Sailor - v2.2.0
-  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
-  <?php include("header.php");?>
+<?= $this->extend('frontend/default') ?>
+<?= $this->section('content') ?>
 
   <main id="main">
 
@@ -103,12 +81,4 @@
 
   </main><!-- End #main -->
 
-  <?php include("footer.php");?>
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-  <?php include("js.php");?>
-
-</body>
-
-</html>
+<?= $this->endSection() ?>
