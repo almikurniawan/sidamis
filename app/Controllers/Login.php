@@ -13,8 +13,13 @@ class Login extends BaseController
 	{
 		$user_name 		= addslashes($this->request->getPost('username'));
 		$user_password 	= $this->request->getPost('password');
-		$sql 			= $this->db->query("select * from public.user where public.user.user_name='" . $user_name . "' and public.user.user_password='" . sha1($user_password) . "'");
-		$data 			= $sql->getRowArray();
+		try {
+			$sql 			= $this->db->query("select * from public.user where public.user.user_name='" . $user_name . "' and public.user.user_password='" . sha1($user_password) . "'");
+			$data 			= $sql->getRowArray();
+		} catch (\Exception $e) {
+			$this->session->setFlashdata('error', $e->getMessage());
+			return redirect()->to(base_url("login"));
+		}
 		if (!empty($data)) {
 			$this->session->set('user', $data);
 			return redirect()->to(base_url("admin/home"));

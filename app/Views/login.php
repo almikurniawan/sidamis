@@ -531,7 +531,9 @@
 		}
 	</style>
 </head>
-
+<?php
+$session = session();
+?>
 <body class="text-center">
 	<div class="container">
 		<div class="row mt-3">
@@ -541,8 +543,16 @@
 				</center>
 				<div class="card">
 					<center>
-						<img src="./assets/images/logo.svg" width="100"/>
+						<img src="./assets/images/login.png" width="100"/>
 					</center>
+					<?php
+					if($session->getFlashdata('error')){
+						echo '<div class="alert m-2 alert-danger">Terjadi kesalahan diserver</div>';
+					}
+					if($session->getFlashdata('warning')){
+						echo '<div class="alert m-2 alert-warning">'.$session->getFlashdata('warning').'</div>';
+					}
+					?>
 					<form class="form-signin text-left" method="post" action="<?= base_url("login/auth")?>">
 						<div class="input-container">
 							<input type="text" id="Username" name="username" required="required" />
