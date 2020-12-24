@@ -20,7 +20,7 @@ class Informasi extends BaseController
     public function grid()
     {
         $SQL = "SELECT
-                    informasi_id||'/'||informasi_nama as id, *,
+                    informasi_id as id, *,
                     '<button onclick=\"approve('||informasi_id||')\" class=\"btn btn-sm btn-success\">Approve</button>' as approve
                 FROM
                     informasi";
@@ -29,10 +29,10 @@ class Informasi extends BaseController
             'link'          => 'admin/informasi/edit/'
         );
         $action['detail']     = array(
-            'link'          => 'admin/informasi/detail/'
+            'jsf'          => 'lihatInformasi'
         );
         $action['delete']     = array(
-            'jsf'          => 'deleteinformasi'
+            'jsf'          => 'deleteInformasi'
         );
 
         $grid = new Grid();
@@ -103,7 +103,7 @@ class Informasi extends BaseController
         return $form->set_form_type('search')
             ->set_form_method('GET')
             ->set_submit_label('Search')
-            ->add('informasi_judul', 'Nama informasi', 'text', false, $this->request->getGet('informasi_nama'), 'style="width:100%;" ')
+            ->add('informasi_nama', 'Nama informasi', 'text', false, $this->request->getGet('informasi_nama'), 'style="width:100%;" ')
             ->output();
     }
 
@@ -135,38 +135,43 @@ class Informasi extends BaseController
     }
     public function form($id = null)
     {
-
+        $data = array();
         if ($id != null) {
             $data = $this->db->table('informasi')->getWhere(['informasi_id' => $id])->getRowArray();
-        } else {
-            $data = array(
-                'group' => array(),
-                'informasi_nama' => '',
-                'informasi_tanggal' => '',
-                'informasi_isi' => '',
-                'informasi_file' => '',
-                'informasi_foto' => '',
-            );
-            $group = array();
         }
 
         $form = new Form();
         $form->set_attribute_form('class="form-horizontal"')
-            ->add('informasi_nama', 'Nama informasi', 'text', true, ($data) ? $data['informasi_nama'] : '', 'style="width:100%;"')
-            ->add('informasi_tanggal', 'Tanggal', 'text', true, ($data) ? $data['informasi_tanggal'] : '', 'style="width:100%;"')
-            ->add('informasi_isi', 'Konten', 'text', true, ($data) ? $data['informasi_isi'] : '', 'style="width:100%;"')
-            ->add('informasi_file', 'File', 'file', true, ($data) ? $data['informasi_file'] : '', 'style="width:100%;"')
-            ->add('informasi_foto', 'Foto', 'file', true, ($data) ? $data['informasi_foto'] : '', 'style="width:100%;"');
+            ->add('informasi_nama', 'Nama informasi', 'text', true, (!empty($data)) ? $data['informasi_nama'] : '', 'style="width:100%;"')
+            ->add('informasi_tanggal', 'Tanggal', 'date', true, (!empty($data)) ? $data['informasi_tanggal'] : '', 'style="width:100%;"')
+            ->add('informasi_isi', 'Konten', 'text', true, (!empty($data)) ? $data['informasi_isi'] : '', 'style="width:100%;"')
+            ->add('informasi_file', 'File', 'file', false, (!empty($data)) ? base_url("uploads/informasi")."/".$data['informasi_file'] : '', 'style="width:100%;"')
+            ->add('informasi_foto', 'Foto', 'file', false, (!empty($data)) ? base_url("uploads/informasi")."/".$data['informasi_foto'] : '', 'style="width:100%;"');
         if ($form->formVerified()) {
-            die(print_r($form->get_data()));
-            $data_insert = array(
-                'informasi_nama'    => $this->request->getPost('informasi_nama'),
-                'informasi_tanggal'    => $this->request->getPost('informasi_tanggal'),
-                'informasi_isi'    => $this->request->getPost('informasi_isi'),
-                'informasi_file'    => $this->request->getPost('informasi_file'),
-                'informasi_foto'    => $this->request->getPost('informasi_foto'),
-                // 'informasi_password'    => sha1($this->request->getPost('informasi_password')),
-            );
+            // die(print_r($form->get_data()));
+            $data_insert = $form->get_data();
+            $file1 = $this->request->getFile('informasi_file');
+            $name1 = $file->getRandomName();
+            if ($file1->getName() != '') {
+              if ($file1->move('./uploads/informasi/', $name1)) {
+                $data_insert['informasi_file'] = $name1;
+              }
+            }
+            $file2 = $this->request->getFile('informasi_foto');
+            $name2 = $file->getRandomName();
+            if ($file2->getName() != '') {
+              if ($file->move('./uploads/informasi/', $name2)) {
+                $data_insert['informasi_foto'] = $name2;
+              }
+            }
+            // $data_insert = array(
+            //     'informasi_nama'    => $this->request->getPost('informasi_nama'),
+            //     'informasi_tanggal'    => $this->request->getPost('informasi_tanggal'),
+            //     'informasi_isi'    => $this->request->getPost('informasi_isi'),
+            //     'informasi_file'    => $this->request->getPost('informasi_file'),
+            //     'informasi_foto'    => $this->request->getPost('informasi_foto'),
+            //     // 'informasi_password'    => sha1($this->request->getPost('informasi_password')),
+            // );
             if ($id != null) {
                 $this->db->table('public.informasi')->where('informasi_id', $id)->update($data_insert);
                 $this->session->setFlashdata('success', 'Sukses Edit Data');

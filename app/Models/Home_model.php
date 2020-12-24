@@ -22,7 +22,7 @@ class home_model extends Model
     {
         $builder = $this->db->table('gallery');
         $builder->select('*');
-        $builder->join('gallery_kategori', 'gallery_kategori.gallery_kategori_id = gallery.kategori_id', 'LEFT');
+        $builder->join('gallery_kategori', 'gallery_kategori.gallery_kategori_id = gallery.gallery_kategori_id', 'LEFT');
         return $builder->get();
     }
 

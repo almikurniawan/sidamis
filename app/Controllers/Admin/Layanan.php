@@ -19,8 +19,9 @@ class Layanan extends BaseController
 
     public function grid()
     {
+      // iki parameter id seng bakal di gae view, update, dan delete zin.
         $SQL = "SELECT
-                    layanan_id||'/'||layanan_nama as id, *,
+                    layanan_id as id, *,
                     '<button onclick=\"approve('||layanan_id||')\" class=\"btn btn-sm btn-success\">Approve</button>' as approve
                 FROM
                     layanan";
@@ -29,10 +30,10 @@ class Layanan extends BaseController
             'link'          => 'admin/layanan/edit/'
         );
         $action['detail']     = array(
-            'link'          => 'admin/layanan/detail/'
+            'jsf'          => 'lihatLayanan'
         );
         $action['delete']     = array(
-            'jsf'          => 'deletelayanan'
+            'jsf'          => 'deleteLayanan'
         );
 
         $grid = new Grid();
@@ -52,6 +53,7 @@ class Layanan extends BaseController
                             'field' => 'layanan_nama',
                             'title' => 'Nama layanan',
                         ),
+                        // encode true itu render text, encoded false iku render html
                         array(
                             'field' => 'layanan_deskripsi',
                             'title' => 'Deskripsi',
@@ -65,7 +67,7 @@ class Layanan extends BaseController
                         array(
                             'field' => 'layanan_icon',
                             'title' => 'Icon',
-                            'encoded'=> true
+                            'encoded'=> false
                         ),
                         array(
                             'field' => 'approve',
@@ -93,7 +95,7 @@ class Layanan extends BaseController
         return $form->set_form_type('search')
             ->set_form_method('GET')
             ->set_submit_label('Search')
-            ->add('layanan_judul', 'Nama layanan', 'text', false, $this->request->getGet('layanan_nama'), 'style="width:100%;" ')
+            ->add('layanan_nama', 'Nama layanan', 'text', false, $this->request->getGet('layanan_nama'), 'style="width:100%;" ')
             ->output();
     }
 
@@ -115,7 +117,8 @@ class Layanan extends BaseController
     public function delete()
     {
         $id = $this->request->getPost('id');
-        $this->db->table('layanan')->delete(['layanan_id' => $id]);
+        // dek ci4 query builder e beda emang. method update dan delete database gak enek parameter e
+        $this->db->table('layanan')->where(['layanan_id' => $id])->delete();
         return $this->response->setJSON(
             array(
                 'status' => true,
@@ -126,34 +129,33 @@ class Layanan extends BaseController
     public function form($id = null)
     {
 
+        $data = array();
         if ($id != null) {
             $data = $this->db->table('layanan')->getWhere(['layanan_id' => $id])->getRowArray();
-        } else {
-            $data = array(
-                'group' => array(),
-                'layanan_nama' => '',
-                'layanan_deskripsi' => '',
-                'layanan_foto' => '',
-                'layanan_icon' => '',
-            );
-            $group = array();
         }
-
         $form = new Form();
         $form->set_attribute_form('class="form-horizontal"')
-            ->add('layanan_nama', 'Nama Layanan', 'text', true, ($data) ? $data['layanan_nama'] : '', 'style="width:100%;"')
-            ->add('layanan_deskripsi', 'Deskripsi', 'text', true, ($data) ? $data['layanan_deskripsi'] : '', 'style="width:100%;"')
-            ->add('layanan_foto', 'Foto', 'text', true, ($data) ? $data['layanan_foto'] : '', 'style="width:100%;"')
-            ->add('layanan_icon', 'Icon', 'text', true, ($data) ? $data['layanan_icon'] : '', 'style="width:100%;"');
+            ->add('layanan_nama', 'Nama Layanan', 'text', true, (!empty($data)) ? $data['layanan_nama'] : '', 'style="width:100%;"')
+            ->add('layanan_deskripsi', 'Deskripsi', 'text', true, (!empty($data)) ? $data['layanan_deskripsi'] : '', 'style="width:100%;"')
+            ->add('layanan_foto', 'Foto', 'file', false, (!empty($data)) ? base_url("uploads/layanan")."/".$data['layanan_foto'] : '', 'style="width:100%;"')
+            ->add('layanan_icon', 'Icon', 'textArea', true, (!empty($data)) ? $data['layanan_icon'] : '', 'style="width:100%;"');
         if ($form->formVerified()) {
-            die(print_r($form->get_data()));
-            $data_insert = array(
-                'layanan_nama'    => $this->request->getPost('layanan_nama'),
-                'layanan_deskrispi'    => $this->request->getPost('layanan_deskripsi'),
-                'layanan_foto'    => $this->request->getPost('layanan_foto'),
-                'layanan_icon'    => $this->request->getPost('layanan_icon'),
-                // 'layanan_password'    => sha1($this->request->getPost('layanan_password')),
-            );
+            // die(print_r($form->get_data()));
+            $data_insert = $form->get_data();
+            $file = $this->request->getFile('layanan_foto');
+            $name = $file->getRandomName();
+            if ($file->getName() != '') {
+              if ($file->move('./uploads/layanan/', $name)) {
+                $data_insert['layanan_foto'] = $name;
+              }
+            }
+            // $data_insert = array(
+            //     'layanan_nama'    => $this->request->getPost('layanan_nama'),
+            //     'layanan_deskripsi'    => $this->request->getPost('layanan_deskripsi'),
+            //     'layanan_icon'    => $this->request->getPost('layanan_icon'),
+            //     // 'dinas_password'    => sha1($this->request->getPost('dinas_password')),
+            // );
+            // die(print_r($data_insert));
             if ($id != null) {
                 $this->db->table('public.layanan')->where('layanan_id', $id)->update($data_insert);
                 $this->session->setFlashdata('success', 'Sukses Edit Data');

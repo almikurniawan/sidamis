@@ -25,14 +25,14 @@ class Kontak extends BaseController
                 FROM
                     kontak";
 
-        $action['edit']     = array(
-            'link'          => 'admin/kontak/edit/'
-        );
-        $action['detail']     = array(
-            'link'          => 'admin/kontak/detail/'
-        );
+        // $action['edit']     = array(
+        //     'link'          => 'admin/kontak/edit/'
+        // );
+        // $action['detail']     = array(
+        //     'link'          => 'admin/kontak/detail/'
+        // );
         $action['delete']     = array(
-            'jsf'          => 'deletekontak'
+            'jsf'          => 'deleteKontak'
         );
 
         $grid = new Grid();
@@ -97,7 +97,7 @@ class Kontak extends BaseController
         return $form->set_form_type('search')
             ->set_form_method('GET')
             ->set_submit_label('Search')
-            ->add('kontak_judul', 'Nama kontak', 'text', false, $this->request->getGet('kontak_nama'), 'style="width:100%;" ')
+            ->add('kontak_nama', 'Nama kontak', 'text', false, $this->request->getGet('kontak_nama'), 'style="width:100%;" ')
             ->output();
     }
 

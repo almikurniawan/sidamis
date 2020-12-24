@@ -34,7 +34,7 @@ class Database extends \CodeIgniter\Database\Config
 		'DSN'      => '',
 		'hostname' => 'localhost',
 		'username' => 'postgres',
-		'password' => 'mtdev123',
+		'password' => 'root',
 		'database' => 'sidamis',
 		'DBDriver' => 'Postgre',
 		'DBPrefix' => '',

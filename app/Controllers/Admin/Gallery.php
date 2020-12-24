@@ -20,7 +20,7 @@ class Gallery extends BaseController
     public function grid()
     {
         $SQL = "SELECT
-                    gallery_id||'/'||gallery_nama as id, *,
+                    gallery_id as id, *,
                     '<button onclick=\"approve('||gallery_id||')\" class=\"btn btn-sm btn-success\">Approve</button>' as approve
                 FROM
                     gallery";
@@ -29,10 +29,10 @@ class Gallery extends BaseController
             'link'          => 'admin/gallery/edit/'
         );
         $action['detail']     = array(
-            'link'          => 'admin/gallery/detail/'
+            'jsf'          => 'lihatGallery'
         );
         $action['delete']     = array(
-            'jsf'          => 'deletegallery'
+            'jsf'          => 'deleteGallery'
         );
 
         $grid = new Grid();
@@ -63,8 +63,8 @@ class Gallery extends BaseController
                             'encoded'=> false
                         ),
                         array(
-                            'field' => 'kategori_id',
-                            'title' => 'Kategori',
+                            'field' => 'gallery_kategori_id',
+                            'title' => 'Kategori gallery',
                             'encoded'=> false
                         ),
 
@@ -94,7 +94,7 @@ class Gallery extends BaseController
         return $form->set_form_type('search')
             ->set_form_method('GET')
             ->set_submit_label('Search')
-            ->add('gallery_judul', 'Nama gallery', 'text', false, $this->request->getGet('gallery_nama'), 'style="width:100%;" ')
+            ->add('gallery_nama', 'Nama gallery', 'text', false, $this->request->getGet('gallery_nama'), 'style="width:100%;" ')
             ->output();
     }
 
@@ -126,35 +126,39 @@ class Gallery extends BaseController
     }
     public function form($id = null)
     {
-
+        $data = array();
         if ($id != null) {
             $data = $this->db->table('gallery')->getWhere(['gallery_id' => $id])->getRowArray();
-        } else {
-            $data = array(
-                'group' => array(),
-                'gallery_nama' => '',
-                'gallery_foto' => '',
-                'gallery_deskripsi' => '',
-                'gallery_kategori' => '',
-            );
-            $group = array();
         }
 
         $form = new Form();
         $form->set_attribute_form('class="form-horizontal"')
-            ->add('gallery_nama', 'Nama gallery', 'text', true, ($data) ? $data['gallery_nama'] : '', 'style="width:100%;"')
-            ->add('gallery_foto', 'Logo', 'text', true, ($data) ? $data['gallery_foto'] : '', 'style="width:100%;"')
-            ->add('gallery_deskripsi', 'Link', 'text', true, ($data) ? $data['gallery_deskripsi'] : '', 'style="width:100%;"')
-            ->add('gallery_kategori', 'Link', 'text', true, ($data) ? $data['gallery_kategori'] : '', 'style="width:100%;"');
+            ->add('gallery_nama', 'Nama gallery', 'text', true, (!empty($data)) ? $data['gallery_nama'] : '', 'style="width:100%;"')
+            ->add('gallery_foto', 'Logo', 'file', false, (!empty($data)) ? base_url("uploads/gallery")."/".$data['gallery_foto'] : '', 'style="width:100%;"')
+            ->add('gallery_deskripsi', 'Deskripsi', 'textArea', true, (!empty($data)) ? $data['gallery_deskripsi'] : '', 'style="width:100%;"')
+            ->add('gallery_kategori_id', 'Kategori gallery', 'select', false, ($data) ? $data['gallery_kategori'] : '', ' style="width:100%;"', array(
+                'table' => 'public.gallery_kategori',
+                'id' => 'gallery_kategori_id',
+                'label' => 'gallery_kategori_nama',
+            ));
         if ($form->formVerified()) {
-            die(print_r($form->get_data()));
-            $data_insert = array(
-                'gallery_nama'    => $this->request->getPost('gallery_nama'),
-                'gallery_foto'    => $this->request->getPost('gallery_foto'),
-                'gallery_deskripsi'    => $this->request->getPost('gallery_deskripsi'),
-                'gallery_kategori'    => $this->request->getPost('gallery_kategori'),
-                // 'gallery_password'    => sha1($this->request->getPost('gallery_password')),
-            );
+            // die(print_r($form->get_data()));
+            $data_insert = $form->get_data();
+            $file = $this->request->getFile('gallery_foto');
+            $name = $file->getRandomName();
+            if ($file->getName() != '') {
+              if ($file->move('./uploads/gallery/', $name)) {
+                // harus e gini doang sih zin
+                $data_insert['gallery_foto'] = $name;
+              }
+            }
+            // $data_insert = array(
+            //     'gallery_nama'    => $this->request->getPost('gallery_nama'),
+            //     'gallery_foto'    => $this->request->getPost('gallery_foto'),
+            //     'gallery_deskripsi'    => $this->request->getPost('gallery_deskripsi'),
+            //     'gallery_kategori'    => $this->request->getPost('gallery_kategori'),
+            //     // 'gallery_password'    => sha1($this->request->getPost('gallery_password')),
+            // );
             if ($id != null) {
                 $this->db->table('public.gallery')->where('gallery_id', $id)->update($data_insert);
                 $this->session->setFlashdata('success', 'Sukses Edit Data');
