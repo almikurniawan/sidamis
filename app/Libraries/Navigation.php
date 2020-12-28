@@ -76,9 +76,26 @@ class Navigation
     {
         $list_menu = array(
             array(
-                'label'         => 'Pencarian RUTA',
+                'label'         => 'RUTA',
                 'controller'    => 'admin/ruta',
                 'icon'          => 'fa-home',
+            ),
+            array(
+                'label'         => 'Pencarian Profil',
+                'controller'    => '#pencarian_profil',
+                'icon'          => 'fa-home',
+                'child'         => array(
+                    array(
+                        'label'         => 'Pencarian Profil RUTA',
+                        'controller'    => 'admin/pencarianProfilRuta',
+                        'icon'          => 'fa-home',
+                    ),
+                    array(
+                        'label'         => 'Pencarian Profil ART',
+                        'controller'    => 'admin/pencarianProfilArt',
+                        'icon'          => 'fa-home',
+                    ),
+                )
             ),
             array(
                 'label'         => 'History Import',

@@ -4,7 +4,7 @@
         if($value['type']=='hidden'){
             echo $value['field'];
         }else{?>
-            <div class="form-group col-sm-3">
+            <div class="form-group col-sm-2">
                 <label class="<?= $value['class']?>"><?= $value['title']?></label>
                 <?= $value['field']?>
             </div>

@@ -138,7 +138,9 @@ class Form{
         // die();
         if(isset($method[$this->submit_name])){
             if($type!='file' && $type!='select_multiple'){
-                $value = $method[$name];
+                if(isset($method[$name])){
+                    $value = $method[$name];
+                }
             }
         }
 
@@ -171,7 +173,7 @@ class Form{
                 $field .= '<a target="_new" href="'.$value.'">Lihat File</a>';
             }
         }else if($type=='select'){
-            $option = '<option value="">Pilih</option>';
+            $option = '<option value="">No Option</option>';
             $where = '  ';
             if(isset($attribute_select['where'])){
                 $where .= ' where ' . $attribute_select['where'];
@@ -189,6 +191,60 @@ class Form{
             }
 
             $field = '<select name="'.$name.'" id="'.$name.'" '.$extraAttribute.'>'.$option.'</select><script type="text/javascript">$(document).ready(function(){$("#'.$name.'").kendoComboBox({placeholder: "Please select", delay: 50, filter:"contains", suggest:false });});</script>';
+        }
+        else if($type=='select_rbi'){
+            $cascade = '';
+            foreach ($attribute_select['cascade'] as $key => $v) {
+                $cascade .= ''.$v.': function () {return $("#'.$v.'").val();},';
+            }
+            $js = '<script>$(document).ready(function () { $("#'.$name.'").kendoComboBox({
+                dataSource: {
+                  type: "json",
+                  serverFiltering: true,
+                  schema: {
+                    total: function (record) { return record.total; },
+                    data: function (record) { return record.data; },
+                    model: {
+                      id: "id",
+                      fields: {
+                        "id": {
+                          type: "string"
+                        },
+                        "value": {
+                          type: "string"
+                        }
+                      }
+                    },
+                  },
+                  transport: {
+                    read: {
+                      url: "'.$attribute_select['url'].'",
+                      dataType: "json",
+                      data: {
+                        q: function () {
+                          var tmp = $("#'.$name.'").data("kendoComboBox");
+                          console.log($("#'.$name.'").data("kendoComboBox"), tmp.value());
+                          return tmp.value();
+                        },
+                        '.$cascade.'
+                      }
+                    }
+                  }
+                },
+                autoBind: true,
+                open: function (e) {
+                  var tmp = $("#'.$name.'").data("kendoComboBox");
+                  tmp.dataSource.read()
+                },
+                filter: "contains",
+                dataValueField: "id",
+                dataTextField: "value",
+                placeholder: "Ketik kata",
+                cascadeFrom: "'.implode(",", $attribute_select['cascade']).'",
+                value : '.($value=='' ? 'null' : $value).'
+              }); })</script>';
+
+            $field = "<input name='".$name."' id='".$name."' />".$js;
         }
         else if($type == 'select_custom'){
             $option = '';
@@ -266,7 +322,7 @@ class Form{
         }else if($type=='number'){
             $field = $this->tag_start_resume . number_format($value,0,'',',')  . $this->tag_end_resume;
         }else if($type=='date'){
-            $field = $this->tag_start_resume . $value . $this->tag_end_resume;
+            $field = $this->tag_start_resume . date_format(date_create($value),'d F Y') . $this->tag_end_resume;
         }else if($type=='month'){
             $field = $this->tag_start_resume . $value . $this->tag_end_resume;
         }else if($type=='file'){
@@ -281,8 +337,7 @@ class Form{
                 $data['label'] = '-';
             }
             $field = $this->tag_start_resume . $data['label'] . $this->tag_end_resume;
-        }
-        else if($type=='select_custom'){
+        }else if($type=='select_custom'){
             foreach ($attribute_select['option'] as $key => $v) {
                 // $selected = ($value==$v['id']) ? 'selected="selected"' : "";
             }

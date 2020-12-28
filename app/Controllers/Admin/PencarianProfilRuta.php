@@ -5,17 +5,75 @@ namespace App\Controllers\Admin;
 use App\Controllers\BaseController;
 use App\Libraries\SmartComponent\Grid;
 use App\Libraries\SmartComponent\Form;
-use App\Libraries\BackgroundProcess;
 
-class Ruta extends BaseController
+class PencarianProfilRuta extends BaseController
 {
     public function index()
     {
         $data['grid']   = $this->grid();
         $data['search'] = $this->search();
-        $data['title']  = 'Ruta';
+        $data['title']  = 'Pencarian Profile Ruta';
+        $data['url_delete']  = '';
         
-        return view('admin/ruta/list', $data);
+        return view('global/list', $data);
+    }
+
+    public function search()
+    {
+        $form = new Form();
+        return $form->set_form_type('search')
+            ->set_form_method('GET')
+            ->set_submit_label('Cari')
+            ->add('ruta_kd_kec', 'Kecamatan', 'select', false, $this->request->getGet('ruta_kd_kec'), 'style="width:100%;" ', [
+                'table' => 'ref_kecamatan',
+                'id' => 'kec_kode',
+                'label' => 'kec_label'
+            ])
+            ->add('ruta_kd_desa', 'Desa', 'select_rbi', false, $this->request->getGet('ruta_kd_desa'), 'style="width:100%;" ', [
+                'url' => base_url('admin/pencarianProfilArt/getDesa'),
+                'cascade' => ['ruta_kd_kec'],
+            ])
+            ->add('ruta_sumber_air_minum', 'Air Minum', 'select', false, $this->request->getGet('ruta_sumber_air_minum'), 'style="width:100%;" ', [
+                'table' => 'ref_air_minum',
+                'id' => 'ref_minum_id',
+                'label' => 'ref_minum_label'
+            ])
+            ->add('ruta_fas_bab', 'Fasilitas BAB', 'select', false, $this->request->getGet('ruta_fas_bab'), 'style="width:100%;" ', [
+                'table' => 'ref_bab',
+                'id' => 'ref_bab_id',
+                'label' => 'ref_bab_label'
+            ])
+            ->add('ruta_daya', 'Daya Listrik', 'select', false, $this->request->getGet('ruta_daya'), 'style="width:100%;" ', [
+                'table' => 'ref_listrik',
+                'id' => 'ref_listrik_id',
+                'label' => 'ref_listrik_label'
+            ])
+            ->add('ruta_sta_dinding', 'Jenis Dinding', 'select', false, $this->request->getGet('ruta_sta_dinding'), 'style="width:100%;" ', [
+                'table' => 'ref_dinding',
+                'id' => 'ref_dinding_id',
+                'label' => 'ref_dinding_label'
+            ])
+            ->add('ruta_sta_bangunan', 'Kepemilikan Tempat', 'select', false, $this->request->getGet('ruta_sta_bangunan'), 'style="width:100%;" ', [
+                'table' => 'ref_status_bangunan',
+                'id' => 'ref_sta_bangunan_id',
+                'label' => 'ref_sta_bangunan_label'
+            ])
+            ->output();
+    }
+
+    public function getDesa()
+    {
+        $filter = $this->request->getGet('filter');
+        $ruta_kd_kec = $this->request->getGet('ruta_kd_kec');
+        $where = "";
+        if($filter['filters'][0]['value']!='' && $filter['filters'][0]['operator']=='contains'){
+            $where = " and lower(desa_label) like '%".$filter['filters'][0]['value']."%'";
+        }
+        $data_desa = $this->db->query("select desa_kode as id, desa_label as value from ref_desa where desa_kode_kec=".$ruta_kd_kec." ".$where)->getResultArray();
+        return $this->response->setJSON([
+            'total' => count($data_desa),
+            'data'  => $data_desa
+        ]);
     }
 
     public function grid()
@@ -26,15 +84,20 @@ class Ruta extends BaseController
                 from ruta ";
 
         $grid = new Grid();
-        return $grid->set_query($SQL, array(
-                array('ruta_id_bdt', $this->request->getGet('ruta_id_bdt'),'='),
-                array('ruta_nama_krt', $this->request->getGet('ruta_nama_krt')),
-                array('ruta_alamat', $this->request->getGet('ruta_alamat')),
-            ))
+        return $grid->set_query($SQL,[
+            ['ruta_kd_kec' , $this->request->getGet('ruta_kd_kec'),'='],
+            ['ruta_kd_desa' , $this->request->getGet('ruta_kd_desa'),'='],
+            ['ruta_sumber_air_minum' , $this->request->getGet('ruta_sumber_air_minum'),'='],
+            ['ruta_fas_bab' , $this->request->getGet('ruta_fas_bab'),'='],
+            ['ruta_daya' , $this->request->getGet('ruta_daya'),'='],
+            ['ruta_sta_dinding' , $this->request->getGet('ruta_sta_dinding'),'='],
+            ['ruta_sta_bangunan' , $this->request->getGet('ruta_sta_bangunan'),'=']
+            
+        ])
             ->set_sort(array('id', 'desc'))
             ->configure(
                 array(
-                    'datasouce_url' => base_url("admin/ruta/grid?datasource&" . get_query_string()),
+                    'datasouce_url' => base_url("admin/pencarianProfilRuta/grid?datasource&" . get_query_string()),
                     'grid_columns'  => array(
                         array(
                             'field' => 'ruta_id_bdt',
@@ -56,99 +119,12 @@ class Ruta extends BaseController
                     ),
                     'action'=> [
                         'detail' => [
-                            'link'=> 'admin/ruta/detail/'
-                        ]
-                    ]
-                ),
-            )
-            ->set_toolbar(function($toolbar){
-                $toolbar
-                    ->add('add', ['label'=>'Import Ruta', 'url'=> base_url("admin/ruta/import")])
-                    ->addHtml('<a href="'.base_url("admin/ruta/importArt").'" class="btn btn-sm btn-warning"><i class="k-icon k-i-plus"></i> Import ART</a>');
-            })
-            ->output();
-    }
-
-    public function gridArt($ruta_id)
-    {
-        $SQL = "SELECT
-                    art.*,
-                    art_id as id,
-                    ref_jk_label as jenis_kelamin,
-                    art_tempat_lahir ||', '||to_char(art_tanggal_lahir,'DD MONTH YYYY') as ttl
-                FROM
-                    art
-                    LEFT JOIN ruta ON ruta_tahun = art_tahun 
-                    AND ruta_periode = art_periode 
-                    AND ruta_id_bdt = art_bdt_id
-                    left join ref_jk on ref_jk_id = art_jns_kel
-                where ruta_id = ".$ruta_id;
-
-        $grid = new Grid();
-        return $grid->set_query($SQL)
-            ->set_sort(array('id', 'desc'))
-            ->configure(
-                array(
-                    'datasouce_url' => base_url("admin/ruta/gridArt/".$ruta_id."?datasource&" . get_query_string()),
-                    'grid_columns'  => array(
-                        array(
-                            'field' => 'art_art_id',
-                            'title' => 'ARTID',
-                        ),
-                        array(
-                            'field' => 'art_nama',
-                            'title' => 'Nama'
-                        ),
-                        array(
-                            'field' => 'jenis_kelamin',
-                            'title' => 'Jenis Kelamin'
-                        ),
-                        array(
-                            'field' => 'art_no_pkh',
-                            'title' => 'No PKH'
-                        ),
-                        array(
-                            'field' => 'ttl',
-                            'title' => 'TTL'
-                        ),
-                        
-                    ),
-                    'action'=> [
-                        'detail' => [
-                            'jsf'=> 'detailArt'
+                            'link'=> 'admin/pencarianProfilRuta/detail/'
                         ]
                     ]
                 ),
             )
             ->output();
-    }
-
-    public function search()
-    {
-        $form = new Form();
-        return $form->set_form_type('search')
-            ->set_form_method('GET')
-            ->set_submit_label('Cari')
-            ->add('ruta_id_bdt', 'IDBDT', 'text', false, $this->request->getGet('ruta_id_bdt'), 'style="width:100%;" ')
-            ->add('ruta_nama_krt', 'KRT', 'text', false, $this->request->getGet('ruta_nama_krt'), 'style="width:100%;" ')
-            ->add('ruta_alamat', 'Alamat', 'text', false, $this->request->getGet('ruta_alamat'), 'style="width:100%;" ')
-            ->output();
-    }
-
-    public function import()
-    {
-        $data['title']  = 'Import Ruta';
-        $data['form']   = $this->form();
-        $data['url_back']= base_url("admin/ruta");
-        return view('global/form', $data);
-    }
-
-    public function importArt()
-    {
-        $data['title']  = 'Import ART';
-        $data['form']   = $this->form_art();
-        $data['url_back']= base_url("admin/ruta");
-        return view('global/form', $data);
     }
 
     public function detail($ruta_id)
@@ -156,8 +132,8 @@ class Ruta extends BaseController
         $data['title']  = 'Detail Ruta ID '.$ruta_id;
         $data['form']   = $this->formDetail($ruta_id);
         $data['grid_anggota']   = $this->gridArt($ruta_id);
-        $data['url_back']= base_url("admin/ruta");
-        return view('admin/ruta/detail', $data);
+        $data['url_back']= base_url("admin/pencarianProfilRuta");
+        return view('admin/pencarianProfil/detail', $data);
     }
 
     public function formDetail($ruta_id)
@@ -364,71 +340,58 @@ class Ruta extends BaseController
             ->output();
     }
 
-    public function form()
+    public function gridArt($ruta_id)
     {
-        $form = new Form();
-        $form->set_attribute_form('class="form-horizontal"  enctype="multipart/form-data"')
-            ->set_submit_label("Import")
-            ->add('file', 'File Excel', 'file', false, '', 'style="width:100%;"')
-            ->add('tahun', 'Tahun', 'number', true, '', ' style="width:100%;"')
-            ->add('periode', 'Periode', 'select', true, '', ' style="width:100%;"', array(
-                'table' => 'ref_periode',
-                'id' => 'periode_id',
-                'label' => 'periode_label',
-            ));
-        if ($form->formVerified()) {
-            $file = $this->request->getFile('file');
-            $name = $file->getRandomName();
-            if ($file->move('./uploads/', $name)) {
-                $dataForm['import_file'] = $name;
-                $dataForm['import_finish'] = false;
-                $dataForm['import_at'] = date("Y-m-d H:i:s");
-                $dataForm['import_by'] = $this->user['user_id'];
-                $dataForm['import_tahun'] = $this->request->getPost('tahun');
-                $dataForm['import_periode'] = $this->request->getPost('periode');
-                $dataForm['import_jenis'] = 1;
-                
-                $this->db->table("import")->insert($dataForm);
-                $id = $this->db->insertID();
-                pclose(popen('start /B cmd /C "php \xampp7\htdocs\apps\sidamis\public\index.php import ruta '.$id.'"','r'));
-            }
-            die(forceRedirect(base_url('/admin/ruta')));
-        } else {
-            return $form->output();
-        }
-    }
+        $SQL = "SELECT
+                    art.*,
+                    art_id as id,
+                    ref_jk_label as jenis_kelamin,
+                    art_tempat_lahir ||', '||to_char(art_tanggal_lahir,'DD MONTH YYYY') as ttl
+                FROM
+                    art
+                    LEFT JOIN ruta ON ruta_tahun = art_tahun 
+                    AND ruta_periode = art_periode 
+                    AND ruta_id_bdt = art_bdt_id
+                    left join ref_jk on ref_jk_id = art_jns_kel
+                where ruta_id = ".$ruta_id;
 
-    function form_art(){
-        $form = new Form();
-        $form->set_attribute_form('class="form-horizontal"  enctype="multipart/form-data"')
-            ->set_submit_label("Import")
-            ->add('file', 'File Excel', 'file', false, '', 'style="width:100%;"')
-            ->add('tahun', 'Tahun', 'number', true, '', ' style="width:100%;"')
-            ->add('periode', 'Periode', 'select', true, '', ' style="width:100%;"', array(
-                'table' => 'ref_periode',
-                'id' => 'periode_id',
-                'label' => 'periode_label',
-            ));
-        if ($form->formVerified()) {
-            $file = $this->request->getFile('file');
-            $name = $file->getRandomName();
-            if ($file->move('./uploads/', $name)) {
-                $dataForm['import_file'] = $name;
-                $dataForm['import_finish'] = false;
-                $dataForm['import_at'] = date("Y-m-d H:i:s");
-                $dataForm['import_by'] = $this->user['user_id'];
-                $dataForm['import_tahun'] = $this->request->getPost('tahun');
-                $dataForm['import_periode'] = $this->request->getPost('periode');
-                $dataForm['import_jenis'] = 2;
-                
-                $this->db->table("import")->insert($dataForm);
-                $id = $this->db->insertID();
-                pclose(popen('start /B cmd /C "php \xampp7\htdocs\apps\sidamis\public\index.php import art '.$id.'"','r'));
-            }
-            die(forceRedirect(base_url('/admin/ruta')));
-        } else {
-            return $form->output();
-        }
+        $grid = new Grid();
+        return $grid->set_query($SQL)
+            ->set_sort(array('id', 'desc'))
+            ->configure(
+                array(
+                    'datasouce_url' => base_url("admin/pencarianProfilRuta/gridArt/".$ruta_id."?datasource&" . get_query_string()),
+                    'grid_columns'  => array(
+                        array(
+                            'field' => 'art_art_id',
+                            'title' => 'ARTID',
+                        ),
+                        array(
+                            'field' => 'art_nama',
+                            'title' => 'Nama'
+                        ),
+                        array(
+                            'field' => 'jenis_kelamin',
+                            'title' => 'Jenis Kelamin'
+                        ),
+                        array(
+                            'field' => 'art_no_pkh',
+                            'title' => 'No PKH'
+                        ),
+                        array(
+                            'field' => 'ttl',
+                            'title' => 'TTL'
+                        ),
+                        
+                    ),
+                    'action'=> [
+                        'detail' => [
+                            'jsf'=> 'detailArt'
+                        ]
+                    ]
+                ),
+            )
+            ->output();
     }
 
     public function detailArt($art_id)
@@ -585,4 +548,5 @@ class Ruta extends BaseController
             ->add('art_nama_gadis_ibu', 'Nama Ibu', 'text', false, $art['art_nama_gadis_ibu'], 'style="width:100%;"')
             ->output();
     }
+
 }
