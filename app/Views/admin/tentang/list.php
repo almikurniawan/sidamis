@@ -14,9 +14,9 @@
     </div>
 </div>
 <script>
-    function deleteUser(id) {
+    function deleteTentang(id) {
         kendo.confirm("Yakin ingin delete data ini?").then(function() {
-            $.post("<?= base_url('admin/layanan/delete') ?>", {
+            $.post("<?= base_url('admin/tentang/delete') ?>", {
                 id: id
             }, function(result) {
                 if (result.status) {
@@ -28,8 +28,14 @@
             }, 'json');
         }, function() {});
     }
-    function approve(layanan_id){
-      alert(layanan_id)
+    function approve(tentang_id){
+      alert(tentang_id)
+    }
+    function lihatTentang(parameter){
+      res = parameter.split("/");
+      var tentang_tipe=res[1];
+      var win = window.open('<?= base_url()?>/tentang/index/'+tentang_tipe, '_blank');
+      win.focus();
     }
 </script>
 <?= $this->endSection() ?>

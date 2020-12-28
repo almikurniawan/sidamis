@@ -21,7 +21,7 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'http://localhost/apps/sidamis/public/';
+	public $baseURL = 'http://localhost/sidamis/public/';
 
 	/*
 	|--------------------------------------------------------------------------

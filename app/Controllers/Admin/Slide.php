@@ -20,7 +20,7 @@ class slide extends BaseController
     public function grid()
     {
         $SQL = "SELECT
-                    slide_id||'/'||slide_judul as id, *,
+                    slide_id as id, *,
                     '<button onclick=\"approve('||slide_id||')\" class=\"btn btn-sm btn-success\">Approve</button>' as approve
                 FROM
                     slide";
@@ -29,10 +29,10 @@ class slide extends BaseController
             'link'          => 'admin/slide/edit/'
         );
         $action['detail']     = array(
-            'link'          => 'admin/slide/detail/'
+            'jsf'          => 'lihatSlide'
         );
         $action['delete']     = array(
-            'jsf'          => 'deleteslide'
+            'jsf'          => 'deleteSlide'
         );
 
         $grid = new Grid();
@@ -125,35 +125,35 @@ class slide extends BaseController
     }
     public function form($id = null)
     {
-
+        $data = array();
         if ($id != null) {
             $data = $this->db->table('slide')->getWhere(['slide_id' => $id])->getRowArray();
-        } else {
-            $data = array(
-                'group' => array(),
-                'slide_judul' => '',
-                'slide_tag' => '',
-                'slide_foto' => '',
-                'slide_link' => '',
-            );
-            $group = array();
         }
 
         $form = new Form();
         $form->set_attribute_form('class="form-horizontal"')
-            ->add('slide_judul', 'Judul slide', 'text', true, ($data) ? $data['slide_judul'] : '', 'style="width:100%;"')
-            ->add('slide_tag', 'Tag', 'text', true, ($data) ? $data['slide_tag'] : '', 'style="width:100%;"')
-            ->add('slide_foto', 'Foto', 'file', true, ($data) ? $data['slide_foto'] : '', 'style="width:100%;"')
-            ->add('slide_link', 'Link', 'text', true, ($data) ? $data['slide_link'] : '', 'style="width:100%;"');
+            ->add('slide_judul', 'Judul slide', 'text', true, (!empty($data)) ? $data['slide_judul'] : '', 'style="width:100%;"')
+            ->add('slide_tag', 'Tag', 'text', true, (!empty($data)) ? $data['slide_tag'] : '', 'style="width:100%;"')
+            ->add('slide_foto', 'Foto', 'file', false, (!empty($data)) ? base_url("uploads/slide")."/".$data['slide_foto'] : '', 'style="width:100%;"')
+            ->add('slide_link', 'Link', 'text', true, (!empty($data)) ? $data['slide_link'] : '', 'style="width:100%;"');
         if ($form->formVerified()) {
-            die(print_r($form->get_data()));
-            $data_insert = array(
-                'slide_judul'    => $this->request->getPost('slide_judul'),
-                'slide_tag'    => $this->request->getPost('slide_tag'),
-                'slide_foto'    => $this->request->getPost('slide_foto'),
-                'slide_link'    => $this->request->getPost('slide_link'),
-                // 'slide_password'    => sha1($this->request->getPost('slide_password')),
-            );
+            // die(print_r($form->get_data()));
+            $data_insert = $form->get_data();
+            $file = $this->request->getFile('slide_foto');
+            $name = $file->getRandomName();
+            if ($file->getName() != '') {
+              if ($file->move('./uploads/slide/', $name)) {
+                // harus e gini doang sih zin
+                $data_insert['slide_foto'] = $name;
+              }
+            }
+            // $data_insert = array(
+            //     'slide_judul'    => $this->request->getPost('slide_judul'),
+            //     'slide_tag'    => $this->request->getPost('slide_tag'),
+            //     'slide_foto'    => $this->request->getPost('slide_foto'),
+            //     'slide_link'    => $this->request->getPost('slide_link'),
+            //     // 'slide_password'    => sha1($this->request->getPost('slide_password')),
+            // );
             if ($id != null) {
                 $this->db->table('public.slide')->where('slide_id', $id)->update($data_insert);
                 $this->session->setFlashdata('success', 'Sukses Edit Data');

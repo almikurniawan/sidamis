@@ -25,14 +25,14 @@ class Langganan extends BaseController
                 FROM
                     langganan";
 
-        $action['edit']     = array(
-            'link'          => 'admin/langganan/edit/'
-        );
-        $action['detail']     = array(
-            'link'          => 'admin/langganan/detail/'
-        );
+        // $action['edit']     = array(
+        //     'link'          => 'admin/langganan/edit/'
+        // );
+        // $action['detail']     = array(
+        //     'link'          => 'admin/langganan/detail/'
+        // );
         $action['delete']     = array(
-            'jsf'          => 'deletelangganan'
+            'jsf'          => 'deleteLangganan'
         );
 
         $grid = new Grid();

@@ -121,7 +121,7 @@
 
           <?php foreach($gallery as $row):?>
                <?php
-               if($row->kategori_nama=="KEGIATAN"){
+               if($row->gallery_kategori_nama=="KEGIATAN"){
                 ?>
                  <div class="col-lg-4 col-md-6 portfolio-item filter-kegiatan">
                    <div class="portfolio-wrap">
@@ -136,7 +136,7 @@
                    </div>
                  </div>
              <?php
-           }else if($row->kategori_nama=="EVENT"){
+           }else if($row->gallery_kategori_nama=="EVENT"){
              ?>
             <div class="col-lg-4 col-md-6 portfolio-item filter-event">
               <div class="portfolio-wrap">

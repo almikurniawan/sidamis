@@ -14,9 +14,9 @@
     </div>
 </div>
 <script>
-    function deleteUser(id) {
+    function deleteKontak(id) {
         kendo.confirm("Yakin ingin delete data ini?").then(function() {
-            $.post("<?= base_url('admin/layanan/delete') ?>", {
+            $.post("<?= base_url('admin/kontak/delete') ?>", {
                 id: id
             }, function(result) {
                 if (result.status) {
@@ -28,8 +28,8 @@
             }, 'json');
         }, function() {});
     }
-    function approve(layanan_id){
-      alert(layanan_id)
+    function approve(kontak_id){
+      alert(kontak_id)
     }
 </script>
 <?= $this->endSection() ?>

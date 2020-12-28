@@ -12,7 +12,7 @@
  Target Server Version : 100015
  File Encoding         : 65001
 
- Date: 21/12/2020 05:25:56
+ Date: 24/12/2020 15:32:58
 */
 
 
@@ -226,6 +226,7 @@ CREATE TABLE "public"."dinas" (
 -- Records of dinas
 -- ----------------------------
 INSERT INTO "public"."dinas" VALUES (1, 'Pemerintah Kab Kediri', 'logo1.jpg', '#');
+INSERT INTO "public"."dinas" VALUES (2, 'D', '1608791779_72d3a1ed9a31cd5562b6.png', 'D');
 
 -- ----------------------------
 -- Table structure for gallery
@@ -236,7 +237,7 @@ CREATE TABLE "public"."gallery" (
   "gallery_nama" varchar(255) COLLATE "pg_catalog"."default",
   "gallery_foto" varchar(255) COLLATE "pg_catalog"."default",
   "gallery_deskripsi" varchar(255) COLLATE "pg_catalog"."default",
-  "kategori_id" int4
+  "gallery_kategori_id" int4
 )
 ;
 
@@ -245,6 +246,7 @@ CREATE TABLE "public"."gallery" (
 -- ----------------------------
 INSERT INTO "public"."gallery" VALUES (1, 'Kegiatan 1', 'foto1.jpg', 'snsisjss', 1);
 INSERT INTO "public"."gallery" VALUES (2, 'Event 1', 'foto1.jpg', 'snj jsn snj', 2);
+INSERT INTO "public"."gallery" VALUES (4, 'dsf', '1608798340_4d90296f2e09689b2b2c.jpg', 'dff', 1);
 
 -- ----------------------------
 -- Table structure for gallery_kategori
@@ -252,7 +254,7 @@ INSERT INTO "public"."gallery" VALUES (2, 'Event 1', 'foto1.jpg', 'snj jsn snj',
 DROP TABLE IF EXISTS "public"."gallery_kategori";
 CREATE TABLE "public"."gallery_kategori" (
   "gallery_kategori_id" int4 NOT NULL DEFAULT nextval('seq_gallery_kategori_id'::regclass),
-  "kategori_nama" varchar(255) COLLATE "pg_catalog"."default"
+  "gallery_kategori_nama" varchar(255) COLLATE "pg_catalog"."default"
 )
 ;
 
@@ -349,10 +351,11 @@ CREATE TABLE "public"."layanan" (
 -- ----------------------------
 -- Records of layanan
 -- ----------------------------
-INSERT INTO "public"."layanan" VALUES (1, 'Layanan Sosial', 'Program pemberdayaan manusia', 'foto1.jpg', '<i class="icofont-computer"></i>');
 INSERT INTO "public"."layanan" VALUES (2, 'Sidamis', 'Merupakan tempat pusat data Dinas Sosial Kabupaten Kediri', 'foto1.jpg', '<i class="icofont-computer"></i>');
 INSERT INTO "public"."layanan" VALUES (3, 'Layanan Pengaduan', 'Masyarakat dapat berkontak langsung dengan kami dengan layanan pengaduan jika ada permasalahan mengenai sosial', 'foto1.jpg', '<i class="icofont-computer"></i>');
 INSERT INTO "public"."layanan" VALUES (4, 'PKH', 'Program pemberian bantuan sosial bersyarat kepada Keluarga Miskin (KM)', 'foto1.jpg', '<i class="icofont-computer"></i>');
+INSERT INTO "public"."layanan" VALUES (1, 'Layanan Sosial', 'Program pemberdayaan manusia', 'foto1.jpg', '<i class="k-icon k-plus"></i>');
+INSERT INTO "public"."layanan" VALUES (7, 'a', 'a', NULL, 'aa');
 
 -- ----------------------------
 -- Table structure for ref_group_akses
@@ -440,6 +443,7 @@ CREATE TABLE "public"."slide" (
 -- ----------------------------
 INSERT INTO "public"."slide" VALUES (1, 'Slide 1', 'slide 1 merupakan ......', 'slide-1.jpg', '#');
 INSERT INTO "public"."slide" VALUES (2, 'Slide 2', 'slide 2 merupakan ......', 'slide-2.jpg', '#');
+INSERT INTO "public"."slide" VALUES (4, 'a', 'a', '1608793872_2bdc0ad8b2923ebc6670.jpg', 'a');
 
 -- ----------------------------
 -- Table structure for tentang
@@ -460,6 +464,7 @@ CREATE TABLE "public"."tentang" (
 INSERT INTO "public"."tentang" VALUES (1, 'Profil', 'Profil', 'file1.pdf', 'profil');
 INSERT INTO "public"."tentang" VALUES (2, 'tugas pokok dan fungsi', 'tugas pokok dan fungsi', 'file1.pdf', 'tugas pokok dan fungsi');
 INSERT INTO "public"."tentang" VALUES (3, 'Struktur Organisasi', 'Struktur Organisasi', 'file1.pdf', 'struktur organisasi');
+INSERT INTO "public"."tentang" VALUES (4, '1111111111', '11111111', '1608795677_c205777ca205eef4a3c4.jpg', '11111111111');
 
 -- ----------------------------
 -- Table structure for user
@@ -523,12 +528,12 @@ SELECT setval('"public"."seq_berita_id"', 2, true);
 -- ----------------------------
 -- Alter sequences owned by
 -- ----------------------------
-SELECT setval('"public"."seq_dinas_id"', 2, true);
+SELECT setval('"public"."seq_dinas_id"', 3, true);
 
 -- ----------------------------
 -- Alter sequences owned by
 -- ----------------------------
-SELECT setval('"public"."seq_gallery_id"', 2, false);
+SELECT setval('"public"."seq_gallery_id"', 5, true);
 
 -- ----------------------------
 -- Alter sequences owned by
@@ -548,19 +553,19 @@ SELECT setval('"public"."seq_kontak_id"', 3, true);
 -- ----------------------------
 -- Alter sequences owned by
 -- ----------------------------
-SELECT setval('"public"."seq_layanan_id"', 2, false);
+SELECT setval('"public"."seq_layanan_id"', 8, true);
 
 -- ----------------------------
 -- Alter sequences owned by
 -- ----------------------------
-SELECT setval('"public"."seq_slide_id"', 2, false);
+SELECT setval('"public"."seq_slide_id"', 5, true);
 
 -- ----------------------------
 -- Alter sequences owned by
 -- ----------------------------
 ALTER SEQUENCE "public"."tentang_tentang_id_seq"
 OWNED BY "public"."tentang"."tentang_id";
-SELECT setval('"public"."tentang_tentang_id_seq"', 4, true);
+SELECT setval('"public"."tentang_tentang_id_seq"', 5, true);
 
 -- ----------------------------
 -- Alter sequences owned by

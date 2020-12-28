@@ -29,10 +29,10 @@ class Dinas extends BaseController
             'link'          => 'admin/dinas/edit/'
         );
         $action['detail']     = array(
-            'link'          => 'admin/dinas/detail/'
+            'jsf'          => 'lihatDinas'
         );
         $action['delete']     = array(
-            'jsf'          => 'deletedinas'
+            'jsf'          => 'deleteDinas'
         );
 
         $grid = new Grid();
@@ -111,7 +111,7 @@ class Dinas extends BaseController
     public function delete()
     {
         $id = $this->request->getPost('id');
-        $this->db->table('dinas')->delete(['dinas_id' => $id]);
+        $this->db->table('dinas')->where(['dinas_id' => $id])->delete();
         return $this->response->setJSON(
             array(
                 'status' => true,
@@ -121,32 +121,38 @@ class Dinas extends BaseController
     }
     public function form($id = null)
     {
-
+        $data = array();
         if ($id != null) {
             $data = $this->db->table('dinas')->getWhere(['dinas_id' => $id])->getRowArray();
-        } else {
-            $data = array(
-                'group' => array(),
-                'dinas_nama' => '',
-                'dinas_logo' => '',
-                'dinas_link' => '',
-            );
-            $group = array();
         }
-
         $form = new Form();
         $form->set_attribute_form('class="form-horizontal"')
-            ->add('dinas_nama', 'Nama dinas', 'text', true, ($data) ? $data['dinas_nama'] : '', 'style="width:100%;"')
-            ->add('dinas_logo', 'Logo', 'text', true, ($data) ? $data['dinas_logo'] : '', 'style="width:100%;"')
-            ->add('dinas_link', 'Link', 'text', true, ($data) ? $data['dinas_link'] : '', 'style="width:100%;"');
+            ->add('dinas_nama', 'Nama dinas', 'text', true, (!empty($data)) ? $data['dinas_nama'] : '', 'style="width:100%;"')
+            ->add('dinas_logo', 'Logo', 'file', false, (!empty($data)) ? base_url("uploads/dinas")."/".$data['dinas_logo'] : '', 'style="width:100%;"')
+            ->add('dinas_link', 'Link', 'text', true, (!empty($data)) ? $data['dinas_link'] : '', 'style="width:100%;"');
         if ($form->formVerified()) {
-            die(print_r($form->get_data()));
-            $data_insert = array(
-                'dinas_nama'    => $this->request->getPost('dinas_nama'),
-                'dinas_logo'    => $this->request->getPost('dinas_logo'),
-                'dinas_link'    => $this->request->getPost('dinas_link'),
-                // 'dinas_password'    => sha1($this->request->getPost('dinas_password')),
-            );
+            // die(print_r($form->get_data()));
+            // iki kan wes declare variabel dan enek isine
+            $data_insert = $form->get_data();
+            $file = $this->request->getFile('dinas_logo');
+            $name = $file->getRandomName();
+            if ($file->getName() != '') {
+              if ($file->move('./uploads/dinas/', $name)) {
+                // harus e gini doang sih zin
+                $data_insert['dinas_logo'] = $name;
+                // $data_insert = array(
+                //     'dinas_nama'    => $this->request->getPost('dinas_nama'),
+                //     'dinas_logo'    => $name,
+                //     'dinas_link'    => $this->request->getPost('dinas_link'),
+                //     // 'dinas_password'    => sha1($this->request->getPost('dinas_password')),
+                // );
+              }
+            }
+            // $data_insert = array(
+            //     'dinas_nama'    => $this->request->getPost('dinas_nama'),
+            //     'dinas_link'    => $this->request->getPost('dinas_link'),
+            //     // 'dinas_password'    => sha1($this->request->getPost('dinas_password')),
+            // );
             if ($id != null) {
                 $this->db->table('public.dinas')->where('dinas_id', $id)->update($data_insert);
                 $this->session->setFlashdata('success', 'Sukses Edit Data');

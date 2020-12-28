@@ -14,9 +14,9 @@
     </div>
 </div>
 <script>
-    function deleteUser(id) {
+    function deleteSlide(id) {
         kendo.confirm("Yakin ingin delete data ini?").then(function() {
-            $.post("<?= base_url('admin/layanan/delete') ?>", {
+            $.post("<?= base_url('admin/slide/delete') ?>", {
                 id: id
             }, function(result) {
                 if (result.status) {
@@ -28,8 +28,12 @@
             }, 'json');
         }, function() {});
     }
-    function approve(layanan_id){
-      alert(layanan_id)
+    function approve(slide_id){
+      alert(slide_id)
+    }
+    function lihatSlide(slide_id){
+      var win = window.open('<?= base_url()?>/', '_blank');
+      win.focus();
     }
 </script>
 <?= $this->endSection() ?>
