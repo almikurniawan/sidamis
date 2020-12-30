@@ -22,14 +22,17 @@ class Ruta extends BaseController
     {
         $SQL = "SELECT
                     ruta_id as id,
+                    ruta_tahun||' - '||periode_label as periode,
                     * 
-                from ruta ";
+                from view_ruta
+                left join ref_periode on periode_id = ruta_periode";
 
         $grid = new Grid();
         return $grid->set_query($SQL, array(
                 array('ruta_id_bdt', $this->request->getGet('ruta_id_bdt'),'='),
                 array('ruta_nama_krt', $this->request->getGet('ruta_nama_krt')),
                 array('ruta_alamat', $this->request->getGet('ruta_alamat')),
+                array('nik', $this->request->getGet('nik')),
             ))
             ->set_sort(array('id', 'desc'))
             ->configure(
@@ -41,8 +44,8 @@ class Ruta extends BaseController
                             'title' => 'IDBDT',
                         ),
                         array(
-                            'field' => 'ruta_tahun',
-                            'title' => 'Tahun'
+                            'field' => 'periode',
+                            'title' => 'Periode'
                         ),
                         array(
                             'field' => 'ruta_alamat',
@@ -61,11 +64,6 @@ class Ruta extends BaseController
                     ]
                 ),
             )
-            ->set_toolbar(function($toolbar){
-                $toolbar
-                    ->add('add', ['label'=>'Import Ruta', 'url'=> base_url("admin/ruta/import")])
-                    ->addHtml('<a href="'.base_url("admin/ruta/importArt").'" class="btn btn-sm btn-warning"><i class="k-icon k-i-plus"></i> Import ART</a>');
-            })
             ->output();
     }
 
@@ -131,6 +129,7 @@ class Ruta extends BaseController
             ->set_submit_label('Cari')
             ->add('ruta_id_bdt', 'IDBDT', 'text', false, $this->request->getGet('ruta_id_bdt'), 'style="width:100%;" ')
             ->add('ruta_nama_krt', 'KRT', 'text', false, $this->request->getGet('ruta_nama_krt'), 'style="width:100%;" ')
+            ->add('nik', 'NIK', 'text', false, $this->request->getGet('nik'), 'style="width:100%;" ')
             ->add('ruta_alamat', 'Alamat', 'text', false, $this->request->getGet('ruta_alamat'), 'style="width:100%;" ')
             ->output();
     }

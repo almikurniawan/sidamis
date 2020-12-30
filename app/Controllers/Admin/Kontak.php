@@ -25,12 +25,6 @@ class Kontak extends BaseController
                 FROM
                     kontak";
 
-        // $action['edit']     = array(
-        //     'link'          => 'admin/kontak/edit/'
-        // );
-        // $action['detail']     = array(
-        //     'link'          => 'admin/kontak/detail/'
-        // );
         $action['delete']     = array(
             'jsf'          => 'deleteKontak'
         );
@@ -40,10 +34,6 @@ class Kontak extends BaseController
             array('kontak_nama', $this->request->getGet('kontak_nama')),
           ))
             ->set_sort(array('id', 'asc'))
-            // ->set_snippet(function($id, $data){
-            //     $data['kontak_name'] = $data['kontak_name'];
-            //     return $data;
-            // })
             ->configure(
                 array(
                     'datasouce_url' => base_url("admin/kontak/grid?datasource&" . get_query_string()),
@@ -84,9 +74,7 @@ class Kontak extends BaseController
             )
             ->set_toolbar(function($toolbar){
                 $toolbar
-                ->addHtml('<a href="" class="btn ">Print PDF</a>')
-                ->add('download')
-                ;
+                ->add('add');
             })
             ->output();
     }

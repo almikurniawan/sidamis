@@ -40,10 +40,6 @@ class tentang extends BaseController
             array('tentang_judul', $this->request->getGet('tentang_judul')),
           ))
             ->set_sort(array('id', 'asc'))
-            // ->set_snippet(function($id, $data){
-            //     $data['tentang_name'] = $data['tentang_name'];
-            //     return $data;
-            // })
             ->configure(
                 array(
                     'datasouce_url' => base_url("admin/tentang/grid?datasource&" . get_query_string()),
@@ -79,10 +75,7 @@ class tentang extends BaseController
             )
             ->set_toolbar(function($toolbar){
                 $toolbar
-                ->addHtml('<a href="" class="btn ">Print PDF</a>')
-                ->add('add', ['label'=>'Tambah tentang', 'url'=> base_url("admin/tentang/add")])
-                ->add('download')
-                ;
+                ->add('add', ['label'=>'Tambah tentang', 'url'=> base_url("admin/tentang/add")]);
             })
             ->output();
     }
@@ -133,11 +126,10 @@ class tentang extends BaseController
         $form = new Form();
         $form->set_attribute_form('class="form-horizontal"')
             ->add('tentang_judul', 'Judul tentang', 'text', true, (!empty($data)) ? $data['tentang_judul'] : '', 'style="width:100%;"')
-            ->add('tentang_konten', 'Konten', 'text', true, (!empty($data)) ? $data['tentang_konten'] : '', 'style="width:100%;"')
+            ->add('tentang_konten', 'Konten', 'textEditor', true, (!empty($data)) ? $data['tentang_konten'] : '', 'style="width:100%;"')
             ->add('tentang_file', 'File', 'file', false, (!empty($data)) ? base_url("uploads/tentang")."/".$data['tentang_file'] : '', 'style="width:100%;"')
             ->add('tentang_tipe', 'Tipe', 'text', true, (!empty($data)) ? $data['tentang_tipe'] : '', 'style="width:100%;"');
         if ($form->formVerified()) {
-            // die(print_r($form->get_data()));
             $data_insert = $form->get_data();
             $file = $this->request->getFile('tentang_file');
             $name = $file->getRandomName();
@@ -145,21 +137,8 @@ class tentang extends BaseController
               if ($file->move('./uploads/tentang/', $name)) {
                 // harus e gini doang sih zin
                 $data_insert['tentang_file'] = $name;
-                // $data_insert = array(
-                //     'dinas_nama'    => $this->request->getPost('dinas_nama'),
-                //     'dinas_logo'    => $name,
-                //     'dinas_link'    => $this->request->getPost('dinas_link'),
-                //     // 'dinas_password'    => sha1($this->request->getPost('dinas_password')),
-                // );
               }
             }
-            // $data_insert = array(
-            //     'tentang_judul'    => $this->request->getPost('tentang_judul'),
-            //     'tentang_konten'    => $this->request->getPost('tentang_konten'),
-            //     'tentang_file'    => $this->request->getPost('tentang_file'),
-            //     'tentang_tipe'    => $this->request->getPost('tentang_tipe'),
-            //     // 'tentang_password'    => sha1($this->request->getPost('tentang_password')),
-            // );
             if ($id != null) {
                 $this->db->table('public.tentang')->where('tentang_id', $id)->update($data_insert);
                 $this->session->setFlashdata('success', 'Sukses Edit Data');

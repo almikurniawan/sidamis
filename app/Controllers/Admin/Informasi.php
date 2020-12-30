@@ -144,7 +144,7 @@ class Informasi extends BaseController
         $form->set_attribute_form('class="form-horizontal"')
             ->add('informasi_nama', 'Nama informasi', 'text', true, (!empty($data)) ? $data['informasi_nama'] : '', 'style="width:100%;"')
             ->add('informasi_tanggal', 'Tanggal', 'date', true, (!empty($data)) ? $data['informasi_tanggal'] : '', 'style="width:100%;"')
-            ->add('informasi_isi', 'Konten', 'text', true, (!empty($data)) ? $data['informasi_isi'] : '', 'style="width:100%;"')
+            ->add('informasi_isi', 'Konten', 'textEditor', true, (!empty($data)) ? $data['informasi_isi'] : '', 'style="width:100%;"')
             ->add('informasi_file', 'File', 'file', false, (!empty($data)) ? base_url("uploads/informasi")."/".$data['informasi_file'] : '', 'style="width:100%;"')
             ->add('informasi_foto', 'Foto', 'file', false, (!empty($data)) ? base_url("uploads/informasi")."/".$data['informasi_foto'] : '', 'style="width:100%;"');
         if ($form->formVerified()) {

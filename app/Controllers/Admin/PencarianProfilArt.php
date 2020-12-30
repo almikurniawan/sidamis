@@ -76,11 +76,13 @@ class PencarianProfilArt extends BaseController
     {
         $SQL = "SELECT
                     art_id as id,
+                    art_tahun||' - '||periode_label as periode,
                     *
                 from art
                 LEFT JOIN ruta ON ruta_tahun = art_tahun 
                     AND ruta_periode = art_periode 
-                    AND ruta_id_bdt = art_bdt_id";
+                    AND ruta_id_bdt = art_bdt_id
+                LEFT JOIN ref_periode on periode_id = art_periode";
 
         $grid = new Grid();
         return $grid->set_query($SQL,[
@@ -100,6 +102,10 @@ class PencarianProfilArt extends BaseController
                         array(
                             'field' => 'ruta_id_bdt',
                             'title' => 'IDBDT'
+                        ),
+                        array(
+                            'field' => 'periode',
+                            'title' => 'Periode'
                         ),
                         array(
                             'field' => 'art_nama',

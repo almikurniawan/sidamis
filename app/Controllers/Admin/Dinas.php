@@ -75,10 +75,7 @@ class Dinas extends BaseController
             )
             ->set_toolbar(function($toolbar){
                 $toolbar
-                ->addHtml('<a href="" class="btn ">Print PDF</a>')
-                ->add('add', ['label'=>'Tambah dinas', 'url'=> base_url("admin/dinas/add")])
-                ->add('download')
-                ;
+                ->add('add', ['label'=>'Tambah dinas', 'url'=> base_url("admin/dinas/add")]);
             })
             ->output();
     }

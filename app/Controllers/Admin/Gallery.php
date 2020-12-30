@@ -40,10 +40,6 @@ class Gallery extends BaseController
             array('gallery_nama', $this->request->getGet('gallery_nama')),
           ))
             ->set_sort(array('id', 'asc'))
-            // ->set_snippet(function($id, $data){
-            //     $data['gallery_name'] = $data['gallery_name'];
-            //     return $data;
-            // })
             ->configure(
                 array(
                     'datasouce_url' => base_url("admin/gallery/grid?datasource&" . get_query_string()),
@@ -80,10 +76,7 @@ class Gallery extends BaseController
             )
             ->set_toolbar(function($toolbar){
                 $toolbar
-                ->addHtml('<a href="" class="btn ">Print PDF</a>')
-                ->add('add', ['label'=>'Tambah gallery', 'url'=> base_url("admin/gallery/add")])
-                ->add('download')
-                ;
+                ->add('add', ['label'=>'Tambah gallery', 'url'=> base_url("admin/gallery/add")]);
             })
             ->output();
     }
@@ -136,29 +129,20 @@ class Gallery extends BaseController
             ->add('gallery_nama', 'Nama gallery', 'text', true, (!empty($data)) ? $data['gallery_nama'] : '', 'style="width:100%;"')
             ->add('gallery_foto', 'Logo', 'file', false, (!empty($data)) ? base_url("uploads/gallery")."/".$data['gallery_foto'] : '', 'style="width:100%;"')
             ->add('gallery_deskripsi', 'Deskripsi', 'textArea', true, (!empty($data)) ? $data['gallery_deskripsi'] : '', 'style="width:100%;"')
-            ->add('gallery_kategori_id', 'Kategori gallery', 'select', false, ($data) ? $data['gallery_kategori'] : '', ' style="width:100%;"', array(
+            ->add('gallery_kategori_id', 'Kategori gallery', 'select', false, (!empty($data)) ? $data['gallery_kategori_id'] : '', ' style="width:100%;"', array(
                 'table' => 'public.gallery_kategori',
                 'id' => 'gallery_kategori_id',
                 'label' => 'gallery_kategori_nama',
             ));
         if ($form->formVerified()) {
-            // die(print_r($form->get_data()));
             $data_insert = $form->get_data();
             $file = $this->request->getFile('gallery_foto');
             $name = $file->getRandomName();
             if ($file->getName() != '') {
               if ($file->move('./uploads/gallery/', $name)) {
-                // harus e gini doang sih zin
                 $data_insert['gallery_foto'] = $name;
               }
             }
-            // $data_insert = array(
-            //     'gallery_nama'    => $this->request->getPost('gallery_nama'),
-            //     'gallery_foto'    => $this->request->getPost('gallery_foto'),
-            //     'gallery_deskripsi'    => $this->request->getPost('gallery_deskripsi'),
-            //     'gallery_kategori'    => $this->request->getPost('gallery_kategori'),
-            //     // 'gallery_password'    => sha1($this->request->getPost('gallery_password')),
-            // );
             if ($id != null) {
                 $this->db->table('public.gallery')->where('gallery_id', $id)->update($data_insert);
                 $this->session->setFlashdata('success', 'Sukses Edit Data');

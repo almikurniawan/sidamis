@@ -41,10 +41,6 @@ class Berita extends BaseController
             array('berita_tanggal', $this->request->getGet('berita_tanggal'),'='),
           ))
             ->set_sort(array('id', 'asc'))
-            // ->set_snippet(function($id, $data){
-            //     $data['user_name'] = $data['user_name'];
-            //     return $data;
-            // })
             ->configure(
                 array(
                     'datasouce_url' => base_url("admin/berita/grid?datasource&" . get_query_string()),
@@ -75,10 +71,7 @@ class Berita extends BaseController
             )
             ->set_toolbar(function($toolbar){
                 $toolbar
-                ->addHtml('<a href="" class="btn ">Print PDF</a>')
-                ->add('add', ['label'=>'Tambah berita', 'url'=> base_url("admin/berita/add")])
-                ->add('download')
-                ;
+                ->add('add', ['label'=>'Tambah berita', 'url'=> base_url("admin/berita/add")]);
             })
             ->output();
     }

@@ -80,8 +80,10 @@ class PencarianProfilRuta extends BaseController
     {
         $SQL = "SELECT
                     ruta_id as id,
+                    ruta_tahun||' - '||periode_label as periode,
                     * 
-                from ruta ";
+                from ruta 
+                left join ref_periode on periode_id = ruta_periode";
 
         $grid = new Grid();
         return $grid->set_query($SQL,[
@@ -104,8 +106,8 @@ class PencarianProfilRuta extends BaseController
                             'title' => 'IDBDT',
                         ),
                         array(
-                            'field' => 'ruta_tahun',
-                            'title' => 'Tahun'
+                            'field' => 'periode',
+                            'title' => 'Periode'
                         ),
                         array(
                             'field' => 'ruta_alamat',

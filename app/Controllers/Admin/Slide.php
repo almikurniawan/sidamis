@@ -40,10 +40,6 @@ class slide extends BaseController
             array('slide_judul', $this->request->getGet('slide_judul')),
           ))
             ->set_sort(array('id', 'asc'))
-            // ->set_snippet(function($id, $data){
-            //     $data['slide_name'] = $data['slide_name'];
-            //     return $data;
-            // })
             ->configure(
                 array(
                     'datasouce_url' => base_url("admin/slide/grid?datasource&" . get_query_string()),
@@ -79,10 +75,7 @@ class slide extends BaseController
             )
             ->set_toolbar(function($toolbar){
                 $toolbar
-                ->addHtml('<a href="" class="btn ">Print PDF</a>')
-                ->add('add', ['label'=>'Tambah slide', 'url'=> base_url("admin/slide/add")])
-                ->add('download')
-                ;
+                    ->add('add', ['label'=>'Tambah slide', 'url'=> base_url("admin/slide/add")]);
             })
             ->output();
     }

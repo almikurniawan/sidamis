@@ -41,10 +41,6 @@ class Layanan extends BaseController
             array('layanan_nama', $this->request->getGet('layanan_nama')),
           ))
             ->set_sort(array('id', 'asc'))
-            // ->set_snippet(function($id, $data){
-            //     $data['layanan_name'] = $data['layanan_name'];
-            //     return $data;
-            // })
             ->configure(
                 array(
                     'datasouce_url' => base_url("admin/layanan/grid?datasource&" . get_query_string()),
@@ -81,10 +77,7 @@ class Layanan extends BaseController
             )
             ->set_toolbar(function($toolbar){
                 $toolbar
-                ->addHtml('<a href="" class="btn ">Print PDF</a>')
-                ->add('add', ['label'=>'Tambah layanan', 'url'=> base_url("admin/layanan/add")])
-                ->add('download')
-                ;
+                ->add('add', ['label'=>'Tambah layanan', 'url'=> base_url("admin/layanan/add")]);
             })
             ->output();
     }
@@ -136,11 +129,10 @@ class Layanan extends BaseController
         $form = new Form();
         $form->set_attribute_form('class="form-horizontal"')
             ->add('layanan_nama', 'Nama Layanan', 'text', true, (!empty($data)) ? $data['layanan_nama'] : '', 'style="width:100%;"')
-            ->add('layanan_deskripsi', 'Deskripsi', 'text', true, (!empty($data)) ? $data['layanan_deskripsi'] : '', 'style="width:100%;"')
+            ->add('layanan_deskripsi', 'Deskripsi', 'textEditor', true, (!empty($data)) ? $data['layanan_deskripsi'] : '', 'style="width:100%;"')
             ->add('layanan_foto', 'Foto', 'file', false, (!empty($data)) ? base_url("uploads/layanan")."/".$data['layanan_foto'] : '', 'style="width:100%;"')
             ->add('layanan_icon', 'Icon', 'textArea', true, (!empty($data)) ? $data['layanan_icon'] : '', 'style="width:100%;"');
         if ($form->formVerified()) {
-            // die(print_r($form->get_data()));
             $data_insert = $form->get_data();
             $file = $this->request->getFile('layanan_foto');
             $name = $file->getRandomName();
@@ -149,13 +141,6 @@ class Layanan extends BaseController
                 $data_insert['layanan_foto'] = $name;
               }
             }
-            // $data_insert = array(
-            //     'layanan_nama'    => $this->request->getPost('layanan_nama'),
-            //     'layanan_deskripsi'    => $this->request->getPost('layanan_deskripsi'),
-            //     'layanan_icon'    => $this->request->getPost('layanan_icon'),
-            //     // 'dinas_password'    => sha1($this->request->getPost('dinas_password')),
-            // );
-            // die(print_r($data_insert));
             if ($id != null) {
                 $this->db->table('public.layanan')->where('layanan_id', $id)->update($data_insert);
                 $this->session->setFlashdata('success', 'Sukses Edit Data');

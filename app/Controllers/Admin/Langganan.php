@@ -25,12 +25,6 @@ class Langganan extends BaseController
                 FROM
                     langganan";
 
-        // $action['edit']     = array(
-        //     'link'          => 'admin/langganan/edit/'
-        // );
-        // $action['detail']     = array(
-        //     'link'          => 'admin/langganan/detail/'
-        // );
         $action['delete']     = array(
             'jsf'          => 'deleteLangganan'
         );
@@ -40,10 +34,6 @@ class Langganan extends BaseController
             array('langganan_nama', $this->request->getGet('langganan_nama')),
           ))
             ->set_sort(array('id', 'asc'))
-            // ->set_snippet(function($id, $data){
-            //     $data['langganan_name'] = $data['langganan_name'];
-            //     return $data;
-            // })
             ->configure(
                 array(
                     'datasouce_url' => base_url("admin/langganan/grid?datasource&" . get_query_string()),
@@ -65,9 +55,7 @@ class Langganan extends BaseController
             )
             ->set_toolbar(function($toolbar){
                 $toolbar
-                ->addHtml('<a href="" class="btn ">Print PDF</a>')
-                ->add('download')
-                ;
+                ->addHtml('<a href="" class="btn ">Print PDF</a>');
             })
             ->output();
     }

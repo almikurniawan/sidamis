@@ -160,6 +160,16 @@ class Navigation
                 'icon'          => 'fa-home',
                 'child'         => array(
                     array(
+                        'label'     => 'Import Ruta',
+                        'controller' => 'admin/importRuta',
+                        'icon'          => 'fa-home',
+                    ),
+                    array(
+                        'label'     => 'Import Art',
+                        'controller' => 'admin/importArt',
+                        'icon'          => 'fa-home',
+                    ),
+                    array(
                         'label'     => 'Karyawan',
                         'controller' => 'admin/karyawan',
                         'icon'          => 'fa-home',
