@@ -31,7 +31,7 @@ class Langganan extends BaseController
 
         $grid = new Grid();
         return $grid->set_query($SQL, array(
-            array('langganan_nama', $this->request->getGet('langganan_nama')),
+            array('langganan_email', $this->request->getGet('langganan_email')),
           ))
             ->set_sort(array('id', 'asc'))
             ->configure(

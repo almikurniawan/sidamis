@@ -33,4 +33,16 @@ class informasi extends BaseController
         $data['informasi_random']  = $model->informasi_random()->getResult();
         return view('frontend/informasi_detail',$data);
     }
+
+    public function search()
+    {
+        $search=$this->request->getGet('search');
+        $model = new informasi_model();
+        $data = [
+            'informasi' => $model->like('informasi_nama', $search)->asObject()->paginate(10,'btinformasi'),
+            'pager' => $model->pager
+        ];
+        // $data['informasi']  = $model->get()->getResult();
+        return view('frontend/informasi',$data);
+    }
 }

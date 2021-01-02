@@ -5,6 +5,8 @@ use CodeIgniter\Model;
 class Berita_model extends Model
 {
     protected $table = 'berita';
+    protected $primaryKey = 'berita_id';
+    // protected $allowedFields = ['berita_judul', 'nama_pegawai' , 'alamat'];
 
     public function get()
     {

@@ -33,4 +33,16 @@ class Berita extends BaseController
         $data['berita_random']  = $model->berita_random()->getResult();
         return view('frontend/berita_detail',$data);
     }
+
+    public function search()
+    {
+        $search=$this->request->getGet('search');
+        $model = new Berita_model();
+        $data = [
+            'berita' => $model->like('berita_judul', $search)->asObject()->paginate(10,'btberita'),
+            'pager' => $model->pager
+        ];
+        // $data['berita']  = $model->get()->getResult();
+        return view('frontend/berita',$data);
+    }
 }

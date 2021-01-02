@@ -83,9 +83,9 @@
             <div class="sidebar">
 
               <h3 class="sidebar-title">Search</h3>
-              <div class="sidebar-item search-form">
-                <form action="">
-                  <input type="text">
+              <div class="sidebar-item search-form" >
+                <form action="<?php echo base_url();?>/informasi/search" method="get">
+                  <input name="search" type="text">
                   <button type="submit"><i class="icofont-search"></i></button>
                 </form>
 

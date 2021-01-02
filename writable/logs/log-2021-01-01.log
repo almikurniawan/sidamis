@@ -1,0 +1,40 @@
+CRITICAL - 2021-01-01 10:38:19 --> pg_query(): Query failed: ERROR:  relation &quot;ref_kecamatan&quot; does not exist
+LINE 1: select kec_kode as id, kec_label as label from ref_kecamatan...
+                                                       ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 196, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #180, 'select kec_kode...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select kec_kode...')
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select kec_kode...')
+#4 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Form.php(187): CodeIgniter\Database\BaseConnection->query('select kec_kode...')
+#5 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Home.php(247): App\Libraries\SmartComponent\Form->add('kecamatan', 'Kecamatan', 'select', false, NULL, 'style="width:10...', Array)
+#6 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Home.php(13): App\Controllers\Admin\Home->searchMiskin()
+#7 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#8 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-01 11:14:04 --> Unable to connect to the database.
+#0 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 D:\xampp\htdocs\sidamis\app\Models\Home_model.php(12): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\xampp\htdocs\sidamis\app\Controllers\Home.php(12): App\Models\home_model->get('slide')
+#4 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#5 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-01 11:14:49 --> pg_query(): Query failed: ERROR:  relation &quot;ref_kecamatan&quot; does not exist
+LINE 1: select kec_kode as id, kec_label as label from ref_kecamatan...
+                                                       ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 196, Array)
+#1 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(196): pg_query(Resource id #180, 'select kec_kode...')
+#2 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\Postgre\Connection->execute('select kec_kode...')
+#3 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('select kec_kode...')
+#4 D:\xampp\htdocs\sidamis\app\Libraries\SmartComponent\Form.php(189): CodeIgniter\Database\BaseConnection->query('select kec_kode...')
+#5 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Home.php(247): App\Libraries\SmartComponent\Form->add('kecamatan', 'Kecamatan', 'select', false, NULL, 'style="width:10...', Array)
+#6 D:\xampp\htdocs\sidamis\app\Controllers\Admin\Home.php(13): App\Controllers\Admin\Home->searchMiskin()
+#7 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Home->index()
+#8 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Home))
+#9 D:\xampp\htdocs\sidamis\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\sidamis\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}

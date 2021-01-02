@@ -29,4 +29,12 @@ class layanan extends BaseController
         $data['layanan_random']  = $model->layanan_random()->getResult();
         return view('frontend/layanan_detail',$data);
     }
+
+    public function search()
+    {
+        $search=$this->request->getGet('search');
+        $model = new layanan_model();
+        $data['layanan']  = $model->search($search)->getResult();
+        return view('frontend/layanan',$data);
+    }
 }

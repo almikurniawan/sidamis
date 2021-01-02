@@ -13,8 +13,8 @@
         </div>
     </div>
 </div>
-<script>
-    function deleteUser(id) {
+<script> 
+    function deleteBerita(id) {
         kendo.confirm("Yakin ingin delete data ini?").then(function() {
             $.post("<?= base_url('admin/berita/delete') ?>", {
                 id: id
@@ -30,6 +30,10 @@
     }
     function approve(berita_id){
       alert(berita_id)
+    }
+    function lihatBerita(berita_id){
+      var win = window.open('<?= base_url("berita/detail")?>/'+berita_id, '_blank');
+      win.focus();
     }
 </script>
 <?= $this->endSection() ?>

@@ -36,12 +36,12 @@
               </div>
 
               <h2 class="entry-title">
-                <a href="blog-single.html"><?= $row->berita_judul;?></a>
+                <a href="<?php echo base_url();?>/berita/detail/<?= $row->berita_id;?>"><?= $row->berita_judul;?></a>
               </h2>
 
               <div class="entry-meta">
                 <ul>
-                  <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">Admin</a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="#">Admin</a></li>
                   <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="<?php echo base_url();?>/berita/detail/<?= $row->berita_id;?>"><time datetime="2020-01-01"><?= $row->berita_tanggal;?></time></a></li>
                 </ul>
               </div>

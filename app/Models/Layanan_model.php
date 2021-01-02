@@ -5,6 +5,13 @@ use CodeIgniter\Model;
 class Layanan_model extends Model
 {
 
+    public function search($search)
+    {
+        $builder = $this->db->table('layanan');
+        $builder->select('*');
+        $builder->like('layanan_nama', $search);
+        return $builder->get();
+    }
     public function get()
     {
         $builder = $this->db->table('layanan');
